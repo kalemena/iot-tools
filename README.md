@@ -27,6 +27,7 @@ Here are unavoidable libraries:
 * [Low Power libraries](https://github.com/jcw/jeelib)
 * OneWire
 * Dallas
+* [DHT lib](https://github.com/markruys/arduino-DHT)
 
 Links
 =====
