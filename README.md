@@ -2,6 +2,7 @@ arduino-res
 ===========
 
 Few Arduino resources needed to start with.
+
 Sorry if references are ommited. Resources here come from external sites. 
 
 RFM12/RFM69CW
@@ -39,6 +40,7 @@ Links
 Low-power boards
 ================
 * Jeenode:
+** [Jeenode pinout](http://jeelabs.net/projects/hardware/wiki/Pinouts)
 ** [Specs](http://jeelabs.net/projects/hardware/wiki/JeeNode)
 ** [Assembling](http://jeelabs.org/2010/09/26/assembling-the-jeenode-v5/)
 ** [SMD kit](http://jeelabs.org/tag/jeesmd/)
