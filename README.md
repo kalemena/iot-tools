@@ -1,16 +1,15 @@
-arduino-res
-===========
-
-Few Arduino resources needed to start with.
+Few Arduino resources needed for low power sensors building.
 
 Sorry if references are ommited. Resources here come from external sites. 
 
-RFM12/RFM69CW
-=============
+Radio enable
+============
 
-* [Wiring](http://openenergymonitor.org/emon/buildingblocks/rfm12b-wireless)
+Radio module such as RFM12/RFM69CW can be used.
 
-[logo]: ./RFM12/connections1.png "RFM12 / RFM69CW wiring on 3.3v board"
+* [Wiring RFM69CW](http://openenergymonitor.org/emon/buildingblocks/rfm12b-wireless)
+
+[wiring]: RFM12/connections1.png "RFM12 / RFM69CW wiring on 3.3v board"
 
 Low Power
 =========
@@ -25,10 +24,11 @@ Libraries
 =========
 
 Here are unavoidable libraries:
-* [Low Power libraries](https://github.com/jcw/jeelib)
-* OneWire
-* Dallas
+* [Low Power libraries + radio](https://github.com/jcw/jeelib)
+* [OneWire](http://www.pjrc.com/teensy/arduino_libraries/OneWire.zip)
+* [Dallas](https://github.com/milesburton/Arduino-Temperature-Control-Library)
 * [DHT lib](https://github.com/markruys/arduino-DHT)
+
 
 Links
 =====
@@ -36,6 +36,7 @@ Links
 * [How to Run an Arduino for Years on a Battery](http://www.openhomeautomation.net/arduino-battery/)
 * [RFM12 board](http://hallard.me/tag/rfm69cw/)
 * [JeeNode Room Board](http://jeelabs.net/projects/hardware/wiki/Room_Board)
+
 
 Low-power boards
 ================
