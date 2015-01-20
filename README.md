@@ -9,7 +9,7 @@ Radio module such as RFM12/RFM69CW can be used.
 
 * [Wiring RFM69CW](http://openenergymonitor.org/emon/buildingblocks/rfm12b-wireless)
 
-[wiring]: RFM12/connections1.png "RFM12 / RFM69CW wiring on 3.3v board"
+![wiring](RFM12/connections1.png?raw=true "RFM12 / RFM69CW wiring on 3.3v board")
 
 Low Power
 =========
