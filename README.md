@@ -8,7 +8,7 @@ Radio module such as RFM12/RFM69CW can be used.
 
 * [Wiring RFM69CW](http://openenergymonitor.org/emon/buildingblocks/rfm12b-wireless)
 
-![wiring](res/RFM12-33v-1.png?raw=true "RFM12 / RFM69CW wiring on 3.3v board")
+![wiring](res/ArduinoProMini33-RF-sensor_bb-full.png?raw=true "RFM12 / RFM69CW wiring on 3.3v board")
 
 # Sensors
 
@@ -27,8 +27,6 @@ Radio module such as RFM12/RFM69CW can be used.
 http://to302.phps.kr/wordpress/?p=177
 
 ## LDR
-
-
 
 ## PIR
 
