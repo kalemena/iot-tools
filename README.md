@@ -12,15 +12,25 @@ Radio module such as RFM12/RFM69CW can be used.
 
 Once wired, it is possible to verify by uploading JeeLabs RFM12 Demo sketch to have nodes discuss together.
 
-*Important* : Enable RFM69/12 "compat" mode when using RFM69CW. 
+_Important :_ Enable RFM69/12 "compat" mode when using RFM69CW. 
 
 # Sensors
 
 ## DS18B20
 
-![wiring](res/DS18B20.png?raw=true "Wiring DS18B20")
+![wiring](res/ArduinoProMini33-sensor-DS18B20_bb.png?raw=true "Wiring DS18B20")
+
+OneWire and Dallas libraries required to read DS18B20 sensor.
+
+This is possible to wire several sensors together (not explained here).
 
 ## DHT22
+
+![wiring](res/DHT22.png?raw=true "Wiring DHT22")
+
+_Note :_ For some reasons, the jeelib driver library didn't work using above wiring. 
+
+Arduino-DHT lib needs to be used.
 
 ## SHT11
 
