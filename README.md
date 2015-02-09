@@ -26,7 +26,7 @@ This is possible to wire several sensors together (not explained here).
 
 ## DHT22
 
-![wiring](res/DHT22.png?raw=true "Wiring DHT22")
+![wiring](res/ArduinoProMini33-RF-sensor-DHT22_bb.png?raw=true "Wiring DHT22")
 
 _Note :_ For some reasons, the jeelib driver library didn't work using above wiring. 
 
