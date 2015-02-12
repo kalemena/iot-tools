@@ -34,6 +34,10 @@ Arduino-DHT lib needs to be used.
 
 ## SHT11
 
+![wiring](res/ArduinoProMini33-RF-sensor-SHT11_bb.png?raw=true "Wiring SHT11")
+
+Usage of Jeelib as driver.
+
 ## BMP85
 
 ## Soil Moisture
