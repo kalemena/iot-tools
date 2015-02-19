@@ -44,7 +44,7 @@ Usage of Jeelib as driver.
 
 http://to302.phps.kr/wordpress/?p=177
 
-## LDR
+## LDR
 
 ## PIR
 
