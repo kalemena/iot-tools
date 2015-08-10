@@ -24,13 +24,18 @@ OneWire and Dallas libraries required to read DS18B20 sensor.
 
 This is possible to wire several sensors together (not explained here).
 
+Sketches to try this in example from libraries to install:
+- ![Dallas Temperature](libs/DallasTemperature.zip "Dallas Temperature")
+- ![One Wire](libs/OneWire.zip "One Wire")
+
 ## DHT22
 
 ![wiring](res/ArduinoProMini33-RF-sensor-DHT22_bb.png?raw=true "Wiring DHT22")
 
 _Note :_ For some reasons, the jeelib driver library didn't work using above wiring. 
 
-Arduino-DHT lib needs to be used.
+Sketches to try this in example from libraries to install:
+- ![Library DHTxx](libs/arduino-DHT-master.zip "Library DHTxx")
 
 ## SHT11
 
