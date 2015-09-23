@@ -66,7 +66,7 @@ void loop() {
   Serial.println("%");
   delay(1000);
 }
-```js
+```
 
 
 ## LDR
