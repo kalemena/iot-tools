@@ -73,7 +73,7 @@ void loop() {
 
 ![wiring](res/Arduino-RF-sensor-LDR_bb.jpg?raw=true "Wiring LDR")
 
-* 60k resistor
+* 60k > 1M resistor
 
 ```js
 int LDR_Pin = A0; //analog pin 0
