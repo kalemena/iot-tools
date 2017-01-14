@@ -13,6 +13,8 @@ Resources come from external sites, sometimes with more details.
 
 * [Actor relay](actor-relay.md)
 
+* [Actor light strips](actor-lights.md)
+
 * [Interop Teleinfo](interop-teleinfo.md)
 
 
