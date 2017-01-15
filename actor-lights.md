@@ -30,7 +30,7 @@ Then just hook up data pin to one of the pin of arduino.
 
 ##### Sketches
 
-TBD
+[Test](res/WS2812/WS2812-test/WS2812-test.ino)
 
 ##### Resources
 
