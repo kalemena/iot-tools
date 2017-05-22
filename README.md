@@ -24,12 +24,12 @@ On Deek-Robot board:
 * Cut the power led
 * !!! Do not cut the regulator !!! On deek-robot board, need to unsolder the regulator Vout instead
 
-[Details here] (http://forum.mysensors.org/topic/230/power-conservation-with-battery-powered-sensors)
+[Details here](http://forum.mysensors.org/topic/230/power-conservation-with-battery-powered-sensors)
 
 
 # Libraries
 
-Here are unavoidable libraries:
+Here is unavoidable libraries:
 * [Low Power libraries + radio](https://github.com/jcw/jeelib)
 
 
@@ -52,6 +52,6 @@ Here are unavoidable libraries:
 
 * [Moteino](http://lowpowerlab.com/moteino/#specs)
 
-* [Tiny328 board] (http://solderpad.com/nathanchantrell/tiny328-wireless-arduino-clone/)
+* [Tiny328 board](http://solderpad.com/nathanchantrell/tiny328-wireless-arduino-clone/)
 
-* [Tiny328 specs] (http://nathan.chantrell.net/20130923/tiny328-mini-wireless-arduino-clone/)
+* [Tiny328 specs](http://nathan.chantrell.net/20130923/tiny328-mini-wireless-arduino-clone/)
