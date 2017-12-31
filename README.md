@@ -18,14 +18,6 @@ Resources come from external sites, sometimes with more details.
 * [Interop Teleinfo](interop-teleinfo.md)
 
 
-# Low Power
-
-On Deek-Robot board:
-* Cut the power led
-* !!! Do not cut the regulator !!! On deek-robot board, need to unsolder the regulator Vout instead
-
-[Details here](http://forum.mysensors.org/topic/230/power-conservation-with-battery-powered-sensors)
-
 
 # Libraries
 
@@ -41,7 +33,35 @@ Here is unavoidable libraries:
 * [JeeNode Room Board](http://jeelabs.net/projects/hardware/wiki/Room_Board)
 
 
-# Low-power boards
+# Low-power
+
+## Info
+
+On Deek-Robot board:
+* Cut the power led
+* !!! Do not cut the regulator !!! On deek-robot board, need to unsolder the regulator Vout instead
+
+[Details here](http://forum.mysensors.org/topic/230/power-conservation-with-battery-powered-sensors)
+
+## Measures
+
+Below are measures for:
+- cheap e-Bay arduino 3.3v clone (deek-robot)
+- radio RFM69 wired
+- using Jeelab libs. Enhanced sleep.
+- various sensors
+
+| ----- | ----- | ----- |
+| What? | Measure | Comments |
+| ----- | ----- | ----- |
+| Arduino alone | 6uA | Deek Robot with cuting led and converter |
+| DHT22 | 21.5 uA | |
+| DS12B20 | 21.9 uA | |
+| LDR | 26uA | |
+| Switch | 23.2 uA | |
+
+
+## Boards
 
 * Jeenode:
  * [Jeenode pinout](http://jeelabs.net/projects/hardware/wiki/Pinouts)
