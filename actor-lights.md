@@ -35,3 +35,5 @@ Then just hook up data pin to one of the pin of arduino.
 ##### Resources
 
 * [Adafruit_NeoPixel](https://github.com/adafruit/Adafruit_NeoPixel)
+
+* LUSTREON 50CM Aluminum Channel Holder For LED Strip Light Bar Under Cabinet Lamp
