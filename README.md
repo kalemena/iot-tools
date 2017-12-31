@@ -51,7 +51,6 @@ Below are measures for:
 - using Jeelab libs. Enhanced sleep.
 - various sensors
 
-| ----- | ----- | ----- |
 | What? | Measure | Comments |
 | ----- | ----- | ----- |
 | Arduino alone | 6uA | Deek Robot with cuting led and converter |
