@@ -63,14 +63,11 @@ Below are measures for:
 ## Boards
 
 * Jeenode:
- * [Jeenode pinout](http://jeelabs.net/projects/hardware/wiki/Pinouts)
- * [Specs](http://jeelabs.net/projects/hardware/wiki/JeeNode)
- * [Assembling](http://jeelabs.org/2010/09/26/assembling-the-jeenode-v5/)
- * [SMD kit](http://jeelabs.org/tag/jeesmd/)
- * [SMD kit spec](http://jeelabs.net/projects/hardware/wiki/SMD_Kit)
-
+  * [Jeenode pinout](http://jeelabs.net/projects/hardware/wiki/Pinouts)
+  * [Specs](http://jeelabs.net/projects/hardware/wiki/JeeNode)
+  * [Assembling](http://jeelabs.org/2010/09/26/assembling-the-jeenode-v5/)
+  * [SMD kit](http://jeelabs.org/tag/jeesmd/)
+  * [SMD kit spec](http://jeelabs.net/projects/hardware/wiki/SMD_Kit)
 * [Moteino](http://lowpowerlab.com/moteino/#specs)
-
 * [Tiny328 board](http://solderpad.com/nathanchantrell/tiny328-wireless-arduino-clone/)
-
 * [Tiny328 specs](http://nathan.chantrell.net/20130923/tiny328-mini-wireless-arduino-clone/)
