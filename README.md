@@ -38,10 +38,11 @@ Below are measures for:
 
 | What? | Measure | Comments |
 | ----- | ----- | ----- |
-| Arduino alone | 6uA | Deek Robot with cuting led and converter |
-| DHT22 | 21.5 uA | |
+| Arduino alone | 6 uA | Deek Robot with cuting led and regulator |
+| DHT22 | 17.2 uA | |
+| HTU21D | 12.8 uA | |
 | DS12B20 | 21.9 uA | |
-| LDR | 26uA | |
+| LDR | 26 uA | |
 | Switch | 23.2 uA | |
 
 # Boards links
