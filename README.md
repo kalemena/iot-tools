@@ -43,6 +43,7 @@ Below are measures for:
 | HTU21D | 12.8 uA | |
 | DS12B20 | 21.9 uA | |
 | LDR | 26 uA | |
+| TSL2561 | 17.4 uA | |
 | Switch | 23.2 uA | |
 
 # Boards links
