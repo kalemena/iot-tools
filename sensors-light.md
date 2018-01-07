@@ -2,9 +2,10 @@
 
 ## LDR
 
-![wiring](res/Arduino-RF-sensor-LDR_bb.jpg?raw=true "Wiring LDR")
+![wiring](res/Arduino-RF-sensor-LDR_bb.png?raw=true "Wiring LDR")
 
-* 60k resistor
+* 60k < resistor < 400k (the higher the less power consumption, but less precise too)
+* then callibrate to have an output between 0 and 256
 
 ```js
 int LDR_Pin = A0; //analog pin 0
@@ -13,10 +14,12 @@ void setup(){
   Serial.begin(9600);
 }
 
-void loop(){
-  int LDRReading = analogRead(LDR_Pin); 
+void loop()
+{
+  int32_t LDRReading = analogRead(LDR_Pin);
 
-  Serial.println(LDRReading);
+  int32_t LDRfinal = map(LDRReading, 200, 1024, 0, 100);
+  Serial.println(LDRfinal);
   delay(250); 
 }
 ```

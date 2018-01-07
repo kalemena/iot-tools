@@ -7,7 +7,7 @@ Resources come from external sites, sometimes with more details.
 * [Sensors Temperature](sensors-temp.md)
 * [Sensors Light](sensors-light.md)
 * [Sensors gardening](sensors-garden.md)
-* [Actor relay](actor-relay.md)
+* [Sensors switch](sensors-switch.md)
 * [Actor light strips](actor-lights.md)
 * [Interop Teleinfo](interop-teleinfo.md)
 
@@ -36,15 +36,16 @@ Below are measures for:
 - using Jeelab libs. Enhanced sleep.
 - various sensors
 
-| What? | Measure | Comments |
-| ----- | ----- | ----- |
-| Arduino alone | 6 uA | Deek Robot with cuting led and regulator |
-| DHT22 | 17.2 uA | |
-| HTU21D | 12.8 uA | |
-| DS12B20 | 21.9 uA | |
-| LDR | 26 uA | |
-| TSL2561 | 17.4 uA | |
-| Switch | 23.2 uA | |
+| What? | Measure | Diff | Comments |
+| ----- | ----- | ----- | ----- |
+| Arduino + RFM69 | 5.1 uA | NA | Deek Robot with cuting led and regulator |
+| + DHT22 | 17.2 uA | +12uA | |
+| + HTU21D | 12.8 uA | +8uA | |
+| + DS12B20 | 21.9 uA | +17uA | |
+| + LDR | 26 uA | +21uA | Using 200k as pull-down |
+| + TSL2561 | 17.4 uA | 12uA | |
+| + Soil | 5.2 uA | +0.1uA | Soil 2 - simple probes with 10k resistor pull-up |
+| + Switch | 23.2 uA | +18uA | |
 
 # Boards links
 

@@ -2,8 +2,19 @@
 
 ## Soil Moisture
 
-TBD schema
-face: A0, D0, GND, VCC
+### Schema #1 - Adafruit
+
+![Adafruit version](res/Arduino-RF-sensor-soil1_bb.png)
+
+
+### Schema #2 - simple probes (no components)
+
+![Simple probes](res/Arduino-RF-sensor-soil2_bb.png)
+
+Resistor can be 10k pull-up.
+
+### Sketch
+
 
 ```js
 int soil=0;
