@@ -43,9 +43,9 @@ Below are measures for:
 | + HTU21D | 12.8 uA | +8uA | |
 | + DS12B20 | 21.9 uA | +17uA | |
 | + LDR | 26 uA | +21uA | Using 200k as pull-down |
-| + TSL2561 | 17.4 uA | 12uA | |
+| + TSL2561 | 17.4 uA | +12uA | |
 | + Soil | 5.2 uA | +0.1uA | Soil 2 - simple probes with 10k resistor pull-up |
-| + Switch | 23.2 uA | +18uA | |
+| + Toggle | 5.2 uA | +0.1uA | Toggle with 10M pull-up resistor! |
 
 # Boards links
 
