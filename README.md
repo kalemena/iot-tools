@@ -60,3 +60,4 @@ Below are measures for:
 * [Moteino](http://lowpowerlab.com/moteino/#specs)
 * [Tiny328 board](http://solderpad.com/nathanchantrell/tiny328-wireless-arduino-clone/)
 * [Tiny328 specs](http://nathan.chantrell.net/20130923/tiny328-mini-wireless-arduino-clone/)
+* [RFM95 sensors](https://things4u.github.io/HardwareGuide/Arduino/Mini-Sensor-HTU21/mini-lowpower.html)
