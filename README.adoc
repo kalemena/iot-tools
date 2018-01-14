@@ -1,9 +1,11 @@
-Few Arduino resources needed for low power sensors building.
+This repository lists information to help hooking up sensors to arduino.
 
 Sorry if references are ommited.
 Resources come from external sites, sometimes with more details. 
 
-* [Radio RFM12](radio.md)
+Here is list things: 
+
+* <<radio.adoc>>[Radio RFM12]
 * [Sensors Temperature](sensors-temp.md)
 * [Sensors Light](sensors-light.md)
 * [Sensors gardening](sensors-garden.md)
@@ -11,14 +13,14 @@ Resources come from external sites, sometimes with more details.
 * [Actor light strips](actor-lights.md)
 * [Interop Teleinfo](interop-teleinfo.md)
 
-# Radio
+= Radio
 
 * [RFM12 board](http://hallard.me/tag/rfm69cw/)
 * [Low Power libraries + radio](https://github.com/jcw/jeelib)
 
-# Low-power
+= Low-power
 
-## Info
+== Info
 
 On Deek-Robot board:
 * Cut the power led
@@ -28,7 +30,7 @@ Links:
 * [Details here](http://forum.mysensors.org/topic/230/power-conservation-with-battery-powered-sensors)
 * [How to Run an Arduino for Years on a Battery](http://www.openhomeautomation.net/arduino-battery/)
 
-## Measures
+== Measures
 
 Below are measures for:
 - cheap e-Bay arduino 3.3v clone (deek-robot)
@@ -47,7 +49,7 @@ Below are measures for:
 | + Soil | 5.2 uA | +0.1uA | Soil 2 - simple probes with 10k resistor pull-up |
 | + Toggle | 5.2 uA | +0.1uA | Toggle with 10M pull-up resistor! |
 
-# Boards links
+= Boards links
 
 * Jeenode:
   * [Jeenode pinout](http://jeelabs.net/projects/hardware/wiki/Pinouts)
