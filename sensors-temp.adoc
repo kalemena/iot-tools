@@ -7,6 +7,7 @@ https://blog.openenergymonitor.org/2016/07/HTU21D-Temperature-Humidity-sensor/[I
 Temperature sensor.
 
 Resources:
+
 * http://www.pjrc.com/teensy/arduino_libraries/OneWire.zip[OneWire]
 * https://github.com/milesburton/Arduino-Temperature-Control-Library[Dallas]
 
@@ -17,6 +18,7 @@ OneWire and Dallas libraries required to read DS18B20 sensor.
 This is possible to wire several sensors together (not explained here).
 
 Sketches to try this in example from libraries to install:
+
 * link:libs/DallasTemperature.zip[Dallas Temperature]
 * link:libs/OneWire.zip[One Wire]
 
@@ -26,16 +28,18 @@ Sketches to try this in example from libraries to install:
 Temperature and humidity sensor.
 
 Resources:
+
 * https://github.com/markruys/arduino-DHT[DHT lib]
 
 image:res/ArduinoProMini33-RF-sensor-DHT22_bb.png[Wiring DHT22]
 
 [NOTE]
-===
+====
 For some reasons, the jeelib driver library didn't work using above wiring.
-=== 
+====
 
 Sketches to try this in example from libraries to install:
+
 - link:libs/arduino-DHT-master.zip[Library DHTxx]
 
 

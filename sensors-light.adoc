@@ -1,8 +1,8 @@
-# Sensors Light
+= Sensors Light
 
-## LDR
+== LDR
 
-![wiring](res/Arduino-RF-sensor-LDR_bb.png?raw=true "Wiring LDR")
+image:res/Arduino-RF-sensor-LDR_bb.png[Wiring LDR]
 
 * 60k < resistor < 400k (the higher the less power consumption, but less precise too)
 * then callibrate to have an output between 0 and 256
@@ -24,23 +24,17 @@ void loop()
 }
 ```
 
-
-
-## TSL2561
+== TSL2561
 
 This is standard i2c wiring.
 
-For arduino:
-- SCL : A5
-- SDA : A4
+For arduino: SCL=A5 and SDA=A4
 
-For ESP12!
-- SCL : D1
-- SDA : D2
+For ESP12!: SCL=D1 and SDA=D2
 
-[Wiring](https://learn.adafruit.com/tsl2561/wiring)
+https://learn.adafruit.com/tsl2561/wiring[Wiring]
 
-[Library](https://github.com/adafruit/TSL2561-Arduino-Library)
+https://github.com/adafruit/TSL2561-Arduino-Library[Library]
 
 
 
