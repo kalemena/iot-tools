@@ -1,11 +1,21 @@
-# RFM12/RFM69CW
+= Radio
+
+== Links
+
+* http://hallard.me/tag/rfm69cw/[RFM12 board]
+* https://github.com/jcw/jeelib[Low Power libraries + radio]
+
+== RFM12/RFM69CW
 
 Radio module such as RFM12/RFM69CW can be used.
 
-* [Wiring RFM69CW](http://openenergymonitor.org/emon/buildingblocks/rfm12b-wireless)
+* http://openenergymonitor.org/emon/buildingblocks/rfm12b-wireless[Wiring RFM69CW]
 
-![wiring](res/ArduinoProMini33-RF-sensor_bb-full.png?raw=true "RFM12 / RFM69CW wiring on 3.3v board")
+image::res/ArduinoProMini33-RF-sensor_bb-full.png[RFM12 / RFM69CW wiring on 3.3v board]
 
 Once wired, it is possible to verify by uploading JeeLabs RFM12 Demo sketch to have nodes discuss together.
 
-_Important :_ Enable RFM69/12 "compat" mode when using RFM69CW. 
+[NOTE]
+====
+Enable RFM69/12 "compat" mode when using RFM69CW.
+====
