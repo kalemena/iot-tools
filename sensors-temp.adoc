@@ -1,71 +1,69 @@
-# Sensors Temperature
+= Sensors Temperature
 
-[Interesting compare of sensors](https://blog.openenergymonitor.org/2016/07/HTU21D-Temperature-Humidity-sensor/)
+https://blog.openenergymonitor.org/2016/07/HTU21D-Temperature-Humidity-sensor/[Interesting compare of sensors]
 
-
-## DS18B20
+== DS18B20
 
 Temperature sensor.
 
 Resources:
-* [OneWire](http://www.pjrc.com/teensy/arduino_libraries/OneWire.zip)
-* [Dallas](https://github.com/milesburton/Arduino-Temperature-Control-Library)
+* http://www.pjrc.com/teensy/arduino_libraries/OneWire.zip[OneWire]
+* https://github.com/milesburton/Arduino-Temperature-Control-Library[Dallas]
 
-![wiring](res/ArduinoProMini33-sensor-DS18B20_bb.png?raw=true "Wiring DS18B20")
+image::res/ArduinoProMini33-sensor-DS18B20_bb.png[Wiring DS18B20]
 
 OneWire and Dallas libraries required to read DS18B20 sensor.
 
 This is possible to wire several sensors together (not explained here).
 
 Sketches to try this in example from libraries to install:
-- [Dallas Temperature](libs/DallasTemperature.zip "Dallas Temperature")
-- [One Wire](libs/OneWire.zip "One Wire")
+* link:libs/DallasTemperature.zip[Dallas Temperature]
+* link:libs/OneWire.zip[One Wire]
 
 
-## DHT22
+== DHT22
 
 Temperature and humidity sensor.
 
 Resources:
-* [DHT lib](https://github.com/markruys/arduino-DHT)
+* https://github.com/markruys/arduino-DHT[DHT lib]
 
-![wiring](res/ArduinoProMini33-RF-sensor-DHT22_bb.png?raw=true "Wiring DHT22")
+image:res/ArduinoProMini33-RF-sensor-DHT22_bb.png[Wiring DHT22]
 
-_Note :_ For some reasons, the jeelib driver library didn't work using above wiring. 
+[NOTE]
+===
+For some reasons, the jeelib driver library didn't work using above wiring.
+=== 
 
 Sketches to try this in example from libraries to install:
-- [Library DHTxx](libs/arduino-DHT-master.zip "Library DHTxx")
+- link:libs/arduino-DHT-master.zip[Library DHTxx]
 
 
-## SHT11
+== SHT11
 
 Temperature and humidity sensor.
 
-![wiring](res/ArduinoProMini33-RF-sensor-SHT11_bb.png?raw=true "Wiring SHT11")
+image:res/ArduinoProMini33-RF-sensor-SHT11_bb.png[Wiring SHT11]
 
 Usage of Jeelib as driver.
 
 
-## BMP85
+== BMP85
 
 Temperature and pressure sensor.
 
-:bell: TODO
+[TODO]
 
 
-## HTU21D
+== HTU21D
 
 Temperature and humidity sensor.
 
 This is standard i2c wiring.
 
-For arduino:
-- SCL : A5
-- SDA : A4
+For arduino: SCL=A5 and SDA=A4
 
-For ESP12!
-- SCL : D1
-- SDA : D2
+For ESP12: SCL=D1 and SDA=D2
 
-[HTU21D Pinouts](https://learn.adafruit.com/adafruit-htu21d-f-temperature-humidity-sensor/wiring-and-test)
+https://learn.adafruit.com/adafruit-htu21d-f-temperature-humidity-sensor/wiring-and-test[HTU21D Pinouts]
 
