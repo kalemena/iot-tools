@@ -28,13 +28,10 @@ void loop()
 
 This is standard i2c wiring.
 
-For arduino: SCL=A5 and SDA=A4
-
-For ESP12!: SCL=D1 and SDA=D2
-
-https://learn.adafruit.com/tsl2561/wiring[Wiring]
-
-https://github.com/adafruit/TSL2561-Arduino-Library[Library]
+* For arduino: SCL=A5 and SDA=A4
+* For ESP12: SCL=D1 and SDA=D2
+* https://learn.adafruit.com/tsl2561/wiring[Wiring]
+* https://github.com/adafruit/TSL2561-Arduino-Library[Library]
 
 
 

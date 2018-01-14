@@ -1,6 +1,6 @@
-## Switch
+== Switch
 
-![wiring](res/Arduino-RF-sensor-switch_bb.jpg?raw=true "Wiring Switch")
+image:res/Arduino-RF-sensor-switch_bb.jpg[Wiring Switch]
 
 * 4,7M resistor
 

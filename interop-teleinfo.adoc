@@ -1,8 +1,8 @@
-## Teleinfo (French electricity provider)
+== Teleinfo (French electricity provider)
 
-[Descriptin & wiring](http://www.planet-libre.org/index.php?post_id=11122)
+http://www.planet-libre.org/index.php?post_id=11122[Descriptin & wiring]
 
-![wiring](res/ArduinoProMini33-RF-sensor-teleinfo_bb.png?raw=true "Wiring SHT11")
+image:res/ArduinoProMini33-RF-sensor-teleinfo_bb.png[Wiring SHT11]
 
 Upload below sketch
 
