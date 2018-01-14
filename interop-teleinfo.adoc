@@ -1,4 +1,4 @@
-== Teleinfo (French electricity provider)
+== Teleinfo (French electricity provider)
 
 http://www.planet-libre.org/index.php?post_id=11122[Descriptin & wiring]
 

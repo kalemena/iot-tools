@@ -20,9 +20,9 @@ Using Arduino Pro Mini 5v as reference.
 
 As stated in NeoPixel library:
 
-[NOTE]
+[IMPORTANT]
 ====
-IMPORTANT: To reduce NeoPixel burnout risk, add 1000 uF capacitor across
+To reduce NeoPixel burnout risk, add 1000 uF capacitor across
 pixel power leads, add 300 - 500 Ohm resistor on first pixel's data input
 and minimize distance between Arduino and first pixel.  Avoid connecting
 on a live circuit...if you must, connect GND first.
@@ -37,7 +37,7 @@ For 12v strips, make sure not to burn the arduino 5v: don't hook the Vcc !
 
 ==== Sketches
 
-res/WS2812/WS2812-test/WS2812-test.ino[Test]
+link:res/WS2812/WS2812-test/WS2812-test.ino[Test]
 
 ==== Resources
 
