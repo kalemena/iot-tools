@@ -1,0 +1,6 @@
+# .gitignore
+
+libs
+pdf
+svg
+gerber

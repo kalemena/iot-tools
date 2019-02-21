@@ -12,7 +12,6 @@ Here is list things:
 * link:sensors-light.adoc[Sensors Light]
 * link:sensors-garden.adoc[Sensors gardening]
 * link:sensors-switch.adoc[Sensors switch]
-* link:actor-lights.adoc[Actor light strips]
 * link:interop-teleinfo.adoc[Interop Teleinfo]
 
 = Low-power
