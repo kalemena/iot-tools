@@ -1,0 +1,25 @@
+= Pin layout
+
+Here are few pin layouts:
+
+== Arduino Pro Mini
+
+image:Arduino-ProMini-pinout.png[Arduino Pro Mini]
+
+== Arduino Uno
+
+image:Arduino-uno-Pinout.png[Arduino Uno]
+
+== JeeLab Node
+
+image:Arduino-Jeenode-v6-pinout.png[JeeLab Node v6]
+
+== ESP 8266
+
+=== Wemos D1 mini
+
+=== Node MCU
+
+== ESP 32
+
+=== Node MCU 32S
