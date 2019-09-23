@@ -6,6 +6,10 @@ Here are few pin layouts:
 
 image:Arduino-ProMini-pinout.png[Arduino Pro Mini]
 
+== Arduino Nano
+
+image:Arduino-Nano-pins-schema.png[Arduino Nano]
+
 == Arduino Uno
 
 image:Arduino-uno-Pinout.png[Arduino Uno]
@@ -18,7 +22,11 @@ image:Arduino-Jeenode-v6-pinout.png[JeeLab Node v6]
 
 === Wemos D1 mini
 
+image:Esp12-Wemos-D1-mini.png[Wemos D1 mini]
+
 === Node MCU
+
+image:nodemcudevkit_v1-0_io.jpg[Node MCU ESP-12]
 
 == ESP 32
 
