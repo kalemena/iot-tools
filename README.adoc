@@ -1,9 +1,28 @@
+= IOT Tools
+
 :toc:
 
-This repository lists information to help hooking up sensors to arduino.
+Internet Of Things starts in general with sensors and micro-controllers.
+
+This repository lists information to help setting up and hooking up Atmega, ESP8266 or ESP32.
 
 Sorry if references are ommited.
 Resources come from external sites, sometimes with more details. 
+
+== Board Layouts
+
+There are tons of boards, and few layout can be found link:/docs/pinouts/pinouts.adoc[here]
+
+== Setups
+
+For all flavors of Atmega, just download Arduino IDE.
+
+For ESP specifics:
+
+* link:/docs/setups/setup-esp8266-arduino.adoc[Setup ESP 8266 Arduino IDE]
+* link:/docs/setups/setup-esp32-arduino.adoc[Setup ESP 32 Arduino IDE]
+
+== Using sensors
 
 Here is list things: 
 
@@ -54,14 +73,19 @@ Below are measures for:
 = Boards links
 
 * Jeenode:
-  ** http://jeelabs.net/projects/hardware/wiki/Pinouts[Jeenode pinout]
-  ** http://jeelabs.net/projects/hardware/wiki/JeeNode[Specs]
-  ** http://jeelabs.org/2010/09/26/assembling-the-jeenode-v5/[Assembling]
-  ** http://jeelabs.org/tag/jeesmd/[SMD kit]
-  ** http://jeelabs.net/projects/hardware/wiki/SMD_Kit[SMD kit spec]
-  ** http://jeelabs.net/projects/hardware/wiki/Room_Board[JeeNode Room Board]
-* http://arduino-board.com/boards/dr-pro-mini[Deek-Robot pro mini board]
-* http://lowpowerlab.com/moteino/#specs[Moteino]
-* http://solderpad.com/nathanchantrell/tiny328-wireless-arduino-clone/[Tiny328 board]
-* http://nathan.chantrell.net/20130923/tiny328-mini-wireless-arduino-clone/[Tiny328 specs]
-* https://things4u.github.io/HardwareGuide/Arduino/Mini-Sensor-HTU21/mini-lowpower.html[RFM95 sensors]
+  ** link:http://jeelabs.net/projects/hardware/wiki/Pinouts[Jeenode pinout]
+  ** link:http://jeelabs.net/projects/hardware/wiki/JeeNode[Specs]
+  ** link:http://jeelabs.org/2010/09/26/assembling-the-jeenode-v5/[Assembling]
+  ** link:http://jeelabs.org/tag/jeesmd/[SMD kit]
+  ** link:http://jeelabs.net/projects/hardware/wiki/SMD_Kit[SMD kit spec]
+  ** link:http://jeelabs.net/projects/hardware/wiki/Room_Board[JeeNode Room Board]
+* link:http://arduino-board.com/boards/dr-pro-mini[Deek-Robot pro mini board]
+* link:http://lowpowerlab.com/moteino/#specs[Moteino]
+* link:http://solderpad.com/nathanchantrell/tiny328-wireless-arduino-clone/[Tiny328 board]
+* link:http://nathan.chantrell.net/20130923/tiny328-mini-wireless-arduino-clone/[Tiny328 specs]
+* link:https://things4u.github.io/HardwareGuide/Arduino/Mini-Sensor-HTU21/mini-lowpower.html[RFM95 sensors]
+
+= Links:
+
+* link:https://github.com/suculent/arduino-docker-build[]
+* link:https://github.com/tombenke/darduino[]
