@@ -4,10 +4,10 @@
 
 Internet Of Things starts in general with sensors and micro-controllers.
 
-This repository lists information to help setting up and hooking up Atmega, ESP8266 or ESP32.
+This repository lists information to help setting up and hooking up Atmega (Arduino, Arduino Nano, Arduino Pro Mini), ESP8266 or ESP32.
 
 Sorry if references are ommited.
-Resources come from external sites, sometimes with more details. 
+Resources are also gathered from external sites, sometimes with more details. 
 
 == Board Layouts
 
@@ -21,54 +21,18 @@ For ESP specifics:
 
 * link:/docs/setups/setup-esp8266-arduino.adoc[Setup ESP 8266 Arduino IDE]
 * link:/docs/setups/setup-esp32-arduino.adoc[Setup ESP 32 Arduino IDE]
+* link:/docs/low-power/readme.adoc[Low-power tips]
 
 == Using sensors
 
 Here is list things: 
 
 * link:radio.adoc[Radio RFM12]
-* link:sensors-temp.adoc[Sensors Temperature]
+* link:/docs/sensors/th/readme.adoc[Sensors Temperature]
 * link:sensors-light.adoc[Sensors Light]
 * link:sensors-garden.adoc[Sensors gardening]
 * link:sensors-switch.adoc[Sensors switch]
 * link:interop-teleinfo.adoc[Interop Teleinfo]
-
-= Low-power
-
-== Info
-
-On Deek-Robot board:
-
-* Cut the power led
-* !!! Do not cut the regulator !!! On deek-robot board, need to unsolder the regulator Vout instead
-
-Links:
-
-* link:http://forum.mysensors.org/topic/230/power-conservation-with-battery-powered-sensors[Details here]
-* link:http://www.openhomeautomation.net/arduino-battery/[How to Run an Arduino for Years on a Battery]
-
-== Measures
-
-Below are measures for:
-- cheap e-Bay arduino 3.3v clone (deek-robot)
-- radio RFM69 wired
-- using Jeelab libs. Enhanced sleep.
-- various sensors
-
-.Measures
-|===
-| What? | Measure | Diff | Comments
-
-|Arduino + RFM69 |5.1 uA |NA |Deek Robot with cuting led and regulator
-|+ DHT22 | 17.2 uA |+12uA |
-| + HTU21D | 12.8 uA | +8uA |
-| + DS12B20 | 21.9 uA | +17uA |
-| + LDR | 26 uA | +21uA | Using 200k as pull-down
-| + TSL2561 | 17.4 uA | +12uA |
-| + Soil | 5.2 uA | +0.1uA | Soil 2 - simple probes with 10k resistor pull-up
-| + Toggle | 5.2 uA | +0.1uA | Toggle with 10M pull-up resistor!
-
-|===
 
 = Boards links
 

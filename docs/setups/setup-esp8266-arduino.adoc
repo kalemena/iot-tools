@@ -61,4 +61,4 @@ image:esp8266-led-wifi.png[NodeMCU Blink Wifi]
 
 #### Node MCU Pin Layout
 
-image:/boards/nodemcudevkit_v1-0_io.jpg[Node MCU Pin Layout]
+image:/docs/pinouts/nodemcudevkit_v1-0_io.jpg[Node MCU Pin Layout]

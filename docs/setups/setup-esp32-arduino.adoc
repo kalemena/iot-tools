@@ -1,0 +1,43 @@
+= Setup Arduino IDE for ESP32
+
+This is very similar to link:/docs/setups/setup-esp8266-arduino.adoc[ESP8266 setup].
+
+### Procedure
+
+- Import ESP32 Board into Arduino IDE by adding URL into Settings:
+  
+  https://dl.espressif.com/dl/package_esp32_index.json
+
+- Load the Libraries for ESP32 from panel Board Manager.
+
+- Load sample _hello_ app into NodeMCU-32S
+
+In Arduino IDE, select proper board, example:
+- Tools/Cards/NodeMCU 32S board
+- <correct USB device>
+
+Create sketch such as the link:/sketches/esp8266-led/esp8266-led.ino[ESP8266 LED]
+
+```js
+void setup() {
+  // initialize digital pin 2 as an output.
+  pinMode(2, OUTPUT);
+}
+
+
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(2, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);              // wait for a second
+  digitalWrite(2, LOW);    // turn the LED off by making the voltage LOW
+  delay(1000);              // wait for a second
+}
+```
+
+LED should blink as shown below:
+
+image:esp8266-led.jpg[NodeMCU Blink]
+
+= Resources
+
+link:https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/debian_ubuntu.md[Ubuntu setup]

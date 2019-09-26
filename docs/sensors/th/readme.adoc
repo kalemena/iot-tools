@@ -11,7 +11,7 @@ Resources:
 * http://www.pjrc.com/teensy/arduino_libraries/OneWire.zip[OneWire]
 * https://github.com/milesburton/Arduino-Temperature-Control-Library[Dallas]
 
-image::res/ArduinoProMini33-sensor-DS18B20_bb.png[Wiring DS18B20]
+image:/res/ArduinoProMini33-sensor-DS18B20_bb.png[Wiring DS18B20]
 
 OneWire and Dallas libraries required to read DS18B20 sensor.
 
@@ -19,8 +19,8 @@ This is possible to wire several sensors together (not explained here).
 
 Sketches to try this in example from libraries to install:
 
-* link:libs/DallasTemperature.zip[Dallas Temperature]
-* link:libs/OneWire.zip[One Wire]
+* link:/libs/DallasTemperature.zip[Dallas Temperature]
+* link:/libs/OneWire.zip[One Wire]
 
 
 == DHT22
@@ -29,9 +29,9 @@ Temperature and humidity sensor.
 
 Resources:
 
-* https://github.com/markruys/arduino-DHT[DHT lib]
+* link:https://github.com/markruys/arduino-DHT[DHT lib]
 
-image:res/ArduinoProMini33-RF-sensor-DHT22_bb.png[Wiring DHT22]
+image:/res/ArduinoProMini33-RF-sensor-DHT22_bb.png[Wiring DHT22]
 
 [NOTE]
 ====
@@ -65,9 +65,15 @@ Temperature and humidity sensor.
 
 This is standard i2c wiring.
 
-For arduino: SCL=A5 and SDA=A4
+[width="15%"]
+|=======
+|Board |SCL |SDA
 
-For ESP12: SCL=D1 and SDA=D2
+|Arduino |A5   |A4
+|ESP12   |D1   |D2
+|ESP32   |D22  |D21
+|=======
 
 https://learn.adafruit.com/adafruit-htu21d-f-temperature-humidity-sensor/wiring-and-test[HTU21D Pinouts]
 
+image:esp32-htu21d.png[ESP32 wiring example]
