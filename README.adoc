@@ -1,5 +1,12 @@
 = IOT Tools
 
+ifdef::env-github[:outfilesuffix: .adoc]
+ifdef::env-github[]
+image:https://img.shields.io/travis/kalemena/iot-tools/master.svg[Travis build status, link=https://travis-ci.org/kalemena/iot-tools]
+image:https://images.microbadger.com/badges/version/kalemena/arduino.svg[Docker Version, link=https://microbadger.com/images/kalemena/arduino]
+image:https://images.microbadger.com/badges/image/kalemena/arduino.svg[Docker Hub, link=https://hub.docker.com/r/kalemena/arduino/tags]
+endif::[]
+
 :toc:
 
 Internet Of Things starts in general with sensors and micro-controllers.

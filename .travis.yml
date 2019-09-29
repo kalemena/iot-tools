@@ -1,0 +1,30 @@
+sudo: required
+services:
+- docker
+env:
+  global:
+  - REGISTRY_USER=kalemena
+  - secure: feKZKlfkNSxJKCbpZqngHCiumJlQj9qu6eTDI3d/h0LOL7VTaicLUAX9HqS3TGpC5huYNJDiIBXQJHoMM0HzPSrUW8lB5x5FjmdNR8zAwfeU2EeOXknYC1SxyYcwL9BznnI47WdLlLX1drP0EmPFul0Sz/KWZYnDEUnqWCFnhYlfsKjVYrvAFpkS6UDbEma6thMxgN0XjKX0NtX1cRMiDz5hFd+Qt4nbr68XRyErbWCygXY8FT/LWwYTmiMEQCt0Lp8vQ8SSoZ0Df4KlByO5WuEd+BKNcVwLvexwPye9oiReDv0+RsSRlYuwIrp2L4CSOoUHthHxSSo2x4A0VJX35XXtQIAkpQi2DhHwvgfwopGDp1AyThxb1fUO4Dy3T5hDC1vLHUTdWrwCAK+mzQLH/Y6i+y670XeB4UvyHy7lnLx12ecl5PIiNYKk96f4kGM1qb7GMgKvNbAe+Xmo9YlCgE3ZIYJOJfMmIVNbTm8bjcVjY8xq9yNN/9sh9tavCG3hRP6MpxP+HIqGq4RiTQpsjV6WAZwYud1Qpo0i+cgRWgRPRD/VLQ2EWAriel7dJDxi2dcwSc7ca3sCuN5crVLvtyiQyXYdzecSdpOSyDQWAq1ErfqEDFiUcgJThzYvQcqnLfgu9PdrjmpePS5jAqSzcGmjVfx7IfSwiHs+63N5m3w=
+  matrix:
+  - IMAGE="kalemena/arduino" VERSION="1.8.10" REPO="kalemena/iot-tools"
+before_script:
+- docker pull ubuntu:18.04
+- docker pull ${IMAGE}:${VERSION} || true
+script:
+- |
+  docker build --pull --cache-from ${IMAGE}:${VERSION} \
+    -t ${IMAGE}:${VERSION} \
+    -f Dockerfile \
+    --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
+    --build-arg VCS_REF=`git rev-parse --short HEAD` \
+    --build-arg VERSION=${VERSION} .
+- docker ps -a
+- docker tag ${IMAGE}:${VERSION} ${IMAGE}:latest
+- docker images
+before_deploy:
+- docker login -u "$REGISTRY_USER" -p "$REGISTRY_PASS"
+deploy:
+  provider: script
+  script: docker push ${IMAGE}:${VERSION}; docker push ${IMAGE}:latest
+  on:
+    branch: master
