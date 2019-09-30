@@ -20,10 +20,11 @@ Once wired, it is possible to verify by uploading JeeLabs RFM12 Demo sketch to h
 Enable RFM69/12 "compat" mode when using RFM69CW.
 ====
 
+Antenna for 868MHz is 17,3 cm
+
 == Bluetooth
 
 
-http://www.martyncurrey.com/hm-10-bluetooth-4ble-modules/
-
-http://www.instructables.com/id/ESP32-BLE-Android-App-Arduino-IDE-AWESOME/
-https://www.dfrobot.com/blog-964.html?tracking=5ae996ea90d36&utm_source=DFRobot+Newsletter&utm_campaign=338e998a4e-EMAIL_CAMPAIGN_2018_05_02&utm_medium=email&utm_term=0_316955a8ff-338e998a4e-19546493
+* link:http://www.martyncurrey.com/hm-10-bluetooth-4ble-modules/[]
+* link:http://www.instructables.com/id/ESP32-BLE-Android-App-Arduino-IDE-AWESOME/[]
+* link:https://www.dfrobot.com/blog-964.html[]

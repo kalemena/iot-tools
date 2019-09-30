@@ -20,6 +20,15 @@ RUN wget -q -O- https://downloads.arduino.cc/arduino-${ARDUINO_IDE_VERSION}-linu
 ENV HOME /home/developer
 WORKDIR ${HOME}
 
+# ADD Libraries
+RUN mkdir -p ${HOME}/Arduino/libraries \
+# JeeLib
+    && wget -q https://github.com/jeelabs/jeelib/archive/master.zip -O /tmp/jeelib.zip && unzip -q /tmp/jeelib.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/jeelib.zip \
+# LowPowerLab
+    && wget -q https://github.com/LowPowerLab/RFM69/archive/master.zip -O /tmp/rfm69.zip && unzip -q /tmp/rfm69.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/rfm69.zip \
+    && wget -q https://github.com/LowPowerLab/SPIFlash/archive/master.zip -O /tmp/spiflash.zip && unzip -q /tmp/spiflash.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/spiflash.zip \
+    && wget -q https://github.com/LowPowerLab/LowPower/archive/master.zip -O /tmp/lowpower.zip && unzip -q /tmp/lowpower.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/lowpower.zip
+
 RUN export uid=1000 gid=1000 \
     && mkdir -p /home/developer \
     && mkdir -p /etc/sudoers.d \
@@ -31,12 +40,5 @@ RUN export uid=1000 gid=1000 \
     && sed "s/^dialout.*/&developer/" /etc/group -i \
     && sed "s/^root.*/&developer/" /etc/group -i
 USER developer
-
-# ADD Libraries
-# JeeLib
-RUN wget -q https://github.com/jeelabs/jeelib/archive/master.zip -O /tmp/jeelib.zip \
-    && mkdir -p ${HOME}/Arduino/libraries \
-    && unzip -q /tmp/jeelib.zip -d ${HOME}/Arduino/libraries/ \
-    && rm /tmp/jeelib.zip
 
 ENV DISPLAY :1.0
