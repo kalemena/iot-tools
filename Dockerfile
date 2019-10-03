@@ -21,15 +21,19 @@ ENV HOME /home/developer
 WORKDIR ${HOME}
 
 # ADD Libraries
-RUN mkdir -p ${HOME}/Arduino/libraries \
+RUN mkdir -p ${HOME}/Arduino/libraries
 # JeeLib
-    && wget -q https://github.com/jeelabs/jeelib/archive/master.zip -O /tmp/jeelib.zip && unzip -q /tmp/jeelib.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/jeelib.zip \
+RUN wget -q https://github.com/jeelabs/jeelib/archive/master.zip -O /tmp/jeelib.zip && unzip -q /tmp/jeelib.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/jeelib.zip
 # LowPowerLab
-    && wget -q https://github.com/LowPowerLab/RFM69/archive/master.zip -O /tmp/rfm69.zip && unzip -q /tmp/rfm69.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/rfm69.zip \
-    && wget -q https://github.com/LowPowerLab/SPIFlash/archive/master.zip -O /tmp/spiflash.zip && unzip -q /tmp/spiflash.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/spiflash.zip \
-    && wget -q https://github.com/LowPowerLab/LowPower/archive/master.zip -O /tmp/lowpower.zip && unzip -q /tmp/lowpower.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/lowpower.zip \
+RUN wget -q https://github.com/LowPowerLab/RFM69/archive/master.zip -O /tmp/rfm69.zip && unzip -q /tmp/rfm69.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/rfm69.zip
+RUN wget -q https://github.com/LowPowerLab/SPIFlash/archive/master.zip -O /tmp/spiflash.zip && unzip -q /tmp/spiflash.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/spiflash.zip
+RUN wget -q https://github.com/LowPowerLab/LowPower/archive/master.zip -O /tmp/lowpower.zip && unzip -q /tmp/lowpower.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/lowpower.zip
+# Adafruit
+RUN wget -q https://github.com/adafruit/Adafruit_Sensor/archive/master.zip -O /tmp/sensors.zip && unzip -q /tmp/sensors.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/sensors.zip
 # HTU21
-    && wget -q https://github.com/adafruit/Adafruit_HTU21DF_Library/archive/1.0.2.zip -O /tmp/htu21d.zip && unzip -q /tmp/htu21d.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/htu21d.zip
+RUN wget -q https://github.com/adafruit/Adafruit_HTU21DF_Library/archive/master.zip -O /tmp/htu21d.zip && unzip -q /tmp/htu21d.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/htu21d.zip
+# DHT22
+RUN wget -q https://github.com/adafruit/DHT-sensor-library/archive/master.zip -O /tmp/dht22.zip && unzip -q /tmp/dht22.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/dht22.zip
 
 RUN export uid=1000 gid=1000 \
     && mkdir -p /home/developer \
