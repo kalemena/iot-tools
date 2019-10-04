@@ -18,22 +18,49 @@ RUN wget -q -O- https://downloads.arduino.cc/arduino-${ARDUINO_IDE_VERSION}-linu
 
 # Setup User (http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/)
 ENV HOME /home/developer
-WORKDIR ${HOME}
 
 # ADD Libraries
 RUN mkdir -p ${HOME}/Arduino/libraries
+WORKDIR ${HOME}/Arduino/libraries
 # JeeLib
-RUN wget -q https://github.com/jeelabs/jeelib/archive/master.zip -O /tmp/jeelib.zip && unzip -q /tmp/jeelib.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/jeelib.zip
+RUN wget -q https://github.com/jeelabs/jeelib/archive/master.zip && unzip -q master.zip && rm master.zip
 # LowPowerLab
-RUN wget -q https://github.com/LowPowerLab/RFM69/archive/master.zip -O /tmp/rfm69.zip && unzip -q /tmp/rfm69.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/rfm69.zip
-RUN wget -q https://github.com/LowPowerLab/SPIFlash/archive/master.zip -O /tmp/spiflash.zip && unzip -q /tmp/spiflash.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/spiflash.zip
-RUN wget -q https://github.com/LowPowerLab/LowPower/archive/master.zip -O /tmp/lowpower.zip && unzip -q /tmp/lowpower.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/lowpower.zip
+RUN wget -q https://github.com/LowPowerLab/RFM69/archive/master.zip && unzip -q master.zip && rm master.zip
+RUN wget -q https://github.com/LowPowerLab/SPIFlash/archive/master.zip && unzip -q master.zip && rm master.zip
+RUN wget -q https://github.com/LowPowerLab/LowPower/archive/master.zip && unzip -q master.zip && rm master.zip
 # Adafruit
-RUN wget -q https://github.com/adafruit/Adafruit_Sensor/archive/master.zip -O /tmp/sensors.zip && unzip -q /tmp/sensors.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/sensors.zip
+RUN wget -q https://github.com/adafruit/Adafruit_Sensor/archive/master.zip && unzip -q master.zip && rm master.zip
 # HTU21
-RUN wget -q https://github.com/adafruit/Adafruit_HTU21DF_Library/archive/master.zip -O /tmp/htu21d.zip && unzip -q /tmp/htu21d.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/htu21d.zip
+RUN wget -q https://github.com/adafruit/Adafruit_HTU21DF_Library/archive/master.zip && unzip -q master.zip && rm master.zip
 # DHT22
-RUN wget -q https://github.com/adafruit/DHT-sensor-library/archive/master.zip -O /tmp/dht22.zip && unzip -q /tmp/dht22.zip -d ${HOME}/Arduino/libraries/ && rm /tmp/dht22.zip
+RUN wget -q https://github.com/adafruit/DHT-sensor-library/archive/master.zip && unzip -q master.zip && rm master.zip
+# BME280
+RUN wget -q https://github.com/adafruit/Adafruit_BME280_Library/archive/master.zip && unzip -q master.zip && rm master.zip
+# OneWire / DS18B20
+RUN wget -q https://github.com/PaulStoffregen/OneWire/archive/master.zip && unzip -q master.zip && rm master.zip
+RUN wget -q https://github.com/milesburton/Arduino-Temperature-Control-Library/archive/master.zip && unzip -q master.zip && rm master.zip
+# TSL2561
+RUN wget -q https://github.com/adafruit/TSL2561-Arduino-Library/archive/master.zip && unzip -q master.zip && rm master.zip
+# FastLED
+RUN wget -q https://github.com/FastLED/FastLED/archive/master.zip && unzip -q master.zip && rm master.zip
+
+# Boards
+# ESP8266
+RUN mkdir -p /usr/local/share/arduino/hardware/esp8266com \
+    && cd /usr/local/share/arduino/hardware/esp8266com \
+    && wget -q https://github.com/esp8266/Arduino/archive/master.zip && unzip -q master.zip && rm master.zip \
+    && mv Arduino-master esp8266 \
+    && cd esp8266/tools \
+    && python3 get.py
+# ESP32
+RUN mkdir -p /usr/local/share/arduino/hardware/esp32com \
+    && cd /usr/local/share/arduino/hardware/esp32com \
+    && wget -q https://github.com/espressif/arduino-esp32/archive/master.zip && unzip -q master.zip && rm master.zip \
+    && mv arduino-esp32-master esp32 \
+    && cd esp32/tools \
+    && python3 get.py
+
+WORKDIR ${HOME}
 
 RUN export uid=1000 gid=1000 \
     && mkdir -p /home/developer \
