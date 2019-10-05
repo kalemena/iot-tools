@@ -60,6 +60,12 @@ RUN mkdir -p /usr/local/share/arduino/hardware/esp32com \
     && cd esp32/tools \
     && python3 get.py
 
+# Hide Boards
+ADD [ "boards/boards-*.txt", "/tmp/" ]
+RUN cat /tmp/boards-arduino.txt >> /usr/local/share/arduino/hardware/arduino/avr/boards.txt \
+    && cat /tmp/boards-esp8266.txt >> /usr/local/share/arduino/hardware/esp8266com/esp8266/boards.txt \
+    && cat /tmp/boards-esp32.txt >> /usr/local/share/arduino/hardware/esp32com/esp32/boards.txt
+
 WORKDIR ${HOME}
 
 RUN export uid=1000 gid=1000 \
