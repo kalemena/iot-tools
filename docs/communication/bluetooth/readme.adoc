@@ -1,0 +1,5 @@
+= Bluetooth
+
+* link:http://www.martyncurrey.com/hm-10-bluetooth-4ble-modules/[]
+* link:http://www.instructables.com/id/ESP32-BLE-Android-App-Arduino-IDE-AWESOME/[]
+* link:https://www.dfrobot.com/blog-964.html[]
