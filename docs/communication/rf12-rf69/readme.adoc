@@ -4,7 +4,7 @@ NOTE: Below uses RFM12B and RFM69CW layouts which are compatible pins and at 868
 
 == Wiring
 
-image::res/ArduinoProMini33-RF-sensor_bb-full.png[RFM12 / RFM69CW wiring on 3.3v board]
+image::/res/ArduinoProMini33-RF-sensor_bb-full.png[RFM12 / RFM69CW wiring on 3.3v board]
 
 [NOTE]
 ====
