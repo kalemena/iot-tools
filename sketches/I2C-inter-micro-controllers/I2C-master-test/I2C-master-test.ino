@@ -2,7 +2,7 @@
 
 void sendAction(int speed) {
     Serial.print("Sending=");
-    Serial.println(randNumber);
+    Serial.println(speed);
     Wire.beginTransmission(9);  // transmit to device #9
     Wire.write(speed);          // sends speed
     Wire.endTransmission();     // stop transmitting
@@ -20,7 +20,6 @@ void setup() {
 void loop() //method to run the source code repeatedly
 {
   delay(2000);
-
   int randNumber = random(10, 20);
   sendAction(randNumber);
 }
