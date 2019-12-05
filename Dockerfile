@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-ARG ARDUINO_IDE_VERSION=1.8.10
+ARG VERSION=1.8.10
 
 # Pre-requisits
 RUN apt-get update \
@@ -12,9 +12,9 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 # Arduino IDE
-RUN wget -q -O- https://downloads.arduino.cc/arduino-${ARDUINO_IDE_VERSION}-linux64.tar.xz | tar xJC /usr/local/share \
- 	&& ln -s /usr/local/share/arduino-${ARDUINO_IDE_VERSION} /usr/local/share/arduino \
- 	&& ln -s /usr/local/share/arduino-${ARDUINO_IDE_VERSION}/arduino /usr/local/bin/arduino
+RUN wget -q -O- https://downloads.arduino.cc/arduino-${VERSION}-linux64.tar.xz | tar xJC /usr/local/share \
+ 	&& ln -s /usr/local/share/arduino-${VERSION} /usr/local/share/arduino \
+ 	&& ln -s /usr/local/share/arduino-${VERSION}/arduino /usr/local/bin/arduino
 
 # Setup User (http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/)
 ENV HOME /home/developer
