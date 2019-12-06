@@ -2,7 +2,7 @@
 
 ifdef::env-github[:outfilesuffix: .adoc]
 ifdef::env-github[]
-image:https://img.shields.io/travis/kalemena/iot-tools/master.svg[Travis build status, link=https://travis-ci.org/kalemena/iot-tools]
+image:https://github.com/kalemena/iot-tools/workflows/Pipeline/badge.svg[GitHub Build]
 image:https://images.microbadger.com/badges/version/kalemena/arduino.svg[Docker Version, link=https://microbadger.com/images/kalemena/arduino]
 image:https://images.microbadger.com/badges/image/kalemena/arduino.svg[Docker Hub, link=https://hub.docker.com/r/kalemena/arduino/tags]
 endif::[]
@@ -19,6 +19,12 @@ Resources are also gathered from external sites, sometimes with more details.
 == Board Layouts
 
 There are tons of boards, and few layout can be found link:/docs/pinouts/pinouts.adoc[here]
+
+== Docker image
+
+The docker image link:https://hub.docker.com/r/kalemena/arduino[kalemena/arduino] contains pre-installed Arduino IDE.
+
+The image is setup with many libraries I use, plus some boards for Arduino, ESP8266 and ESP32.
 
 == Setups
 
