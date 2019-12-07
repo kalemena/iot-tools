@@ -43,6 +43,8 @@ RUN wget -q https://github.com/milesburton/Arduino-Temperature-Control-Library/a
 RUN wget -q https://github.com/adafruit/TSL2561-Arduino-Library/archive/master.zip && unzip -q master.zip && rm master.zip
 # FastLED
 RUN wget -q https://github.com/FastLED/FastLED/archive/master.zip && unzip -q master.zip && rm master.zip
+# WebSocket
+RUN wget -q https://github.com/Links2004/arduinoWebSockets/archive/master.zip && unzip -q master.zip && rm master.zip
 
 # Boards
 # ESP8266
