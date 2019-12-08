@@ -45,6 +45,8 @@ RUN wget -q https://github.com/adafruit/TSL2561-Arduino-Library/archive/master.z
 RUN wget -q https://github.com/FastLED/FastLED/archive/master.zip && unzip -q master.zip && rm master.zip
 # WebSocket
 RUN wget -q https://github.com/Links2004/arduinoWebSockets/archive/master.zip && unzip -q master.zip && rm master.zip
+# JSON
+RUN wget -q https://github.com/bblanchon/ArduinoJson/archive/v6.13.0.zip && unzip -q v6.13.0.zip && rm v6.13.0.zip
 
 # Boards
 # ESP8266
