@@ -82,7 +82,8 @@ RUN wget -q https://github.com/milesburton/Arduino-Temperature-Control-Library/a
 # TSL2561
 RUN wget -q https://github.com/adafruit/TSL2561-Arduino-Library/archive/master.zip && unzip -q master.zip && rm master.zip
 # FastLED
-RUN wget -q https://github.com/kalemena/no-hell-lights/raw/master/libraries/FastLED-3.2.0.zip && unzip -q FastLED-3.2.0.zip && rm FastLED-3.2.0.zip
+#RUN wget -q https://github.com/kalemena/no-hell-lights/raw/master/libraries/FastLED-3.2.0.zip && unzip -q FastLED-3.2.0.zip && rm FastLED-3.2.0.zip
+RUN wget -q https://github.com/FastLED/FastLED/archive/3.3.2.zip && unzip -q 3.3.2.zip && rm 3.3.2.zip
 # WebSocket
 RUN wget -q https://github.com/Links2004/arduinoWebSockets/archive/master.zip && unzip -q master.zip && rm master.zip
 # JSON
