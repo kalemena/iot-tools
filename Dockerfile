@@ -45,6 +45,11 @@ RUN mkdir -p /usr/local/share/arduino/hardware/esp8266com \
     && mv Arduino-master esp8266 \
     && cd esp8266/tools \
     && python3 get.py
+# ESP8266 FS
+RUN mkdir -p ${HOME}/Arduino/tools \
+    && cd ${HOME}/Arduino/tools \
+    && wget -q https://github.com/esp8266/arduino-esp8266fs-plugin/releases/download/0.5.0/ESP8266FS-0.5.0.zip && unzip -q ESP8266FS-0.5.0.zip && rm ESP8266FS-0.5.0.zip
+
 # ESP32
 RUN mkdir -p /usr/local/share/arduino/hardware/esp32com \
     && cd /usr/local/share/arduino/hardware/esp32com \
