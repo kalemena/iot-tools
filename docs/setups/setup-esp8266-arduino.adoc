@@ -55,9 +55,11 @@ image:esp8266-led.jpg[NodeMCU Blink]
  - Browse to IP address logged out
  - Click on button to switch led On and Off
 
-
 image:esp8266-led-wifi.png[NodeMCU Blink Wifi]
 
+### File System
+
+See link:https://github.com/esp8266/arduino-esp8266fs-plugin[SPIFFS filesystem]
 
 ### Resources
 
