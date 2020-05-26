@@ -1,0 +1,79 @@
+= MAIX Seeed
+
+== Docs
+
+* link:https://maixduino.sipeed.com[Official Arduino Docs]
+* link:https://maixpy.sipeed.com[Official MicroPython Docs]
+* link:https://www.cnx-software.com/2019/08/21/getting-started-with-sipeed-m1-based-maixduino-board-grove-ai-hat-for-raspberry-pi/[Tutorial #1]
+
+* link:https://blog.sipeed.com/p/680.html[Example - MobileNet]
+
+== Setup
+
+link:https://maixpy.sipeed.com/en/get_started/serial_tools.html[]
+
+.Install Minicom & Find device USBx (FIRST USB device which just arrived, USB2 below !)
+[source,bash]
+----
+$ sudo apt install minicom
+...
+$ dmesg | grep ttyUSB
+...
+[2292984.660033] usb 3-3.2: FTDI USB Serial Device converter now attached to ttyUSB2
+[2292984.660415] usb 3-3.2: FTDI USB Serial Device converter now attached to ttyUSB3
+----
+
+.Configure Minicom (Ctrl-A + o)
+[source,bash]
+----
+$ minicom -D /dev/ttyUSB2 /dev/ttyUSB2
+# Ctrl-A + o ... and setup elements as seen in cat below (menu 'port', and menu 'screen')
+# Then menu Save to ttyUSB2 which creates below file
+...
+$ cat ~/.minirc.ttyUSB2
+# Fichier généré automatiquement - utilisez le menu de configuration de
+# minicom pour changer les paramètres.
+pu port             /dev/ttyUSB2
+pu baudrate         115200
+pu bits             8
+pu parity           N
+pu stopbits         1
+pu backspace        DEL
+pu rtscts           No
+pu linewrap         Yes
+----
+
+.Run Minicom
+[source,bash]
+----
+$ minicom -D /dev/ttyUSB2 /dev/ttyUSB2
+----
+
+TIP: Ctrl-A + x to exit !
+
+.Connect to AIoT
+[source,bash]
+----
+>>> help()
+Welcome to MicroPython on the Sipeed Maix!
+For generic online docs please visit https://maixpy.sipeed.com 
+
+Official website : http://www.sipeed.com 
+
+Control commands:                                                      
+  CTRL-A        -- on a blank line, enter raw REPL mode                
+  CTRL-B        -- on a blank line, enter normal REPL mode             
+  CTRL-C        -- interrupt a running program                         
+  CTRL-D        -- on a blank line, do a soft reset of the board       
+  CTRL-E        -- on a blank line, enter paste mode
+
+For further help on a specific object, type help(obj)
+For a list of available modules, type help('modules')
+>>> 
+----
+
+.Uprade firmware
+[source,bash]
+----
+$ wget -r --no-parent https://dl.sipeed.com/MAIX/MaixPy/release/master/maixpy_v0.5.0_9_g8eba07d/
+----
