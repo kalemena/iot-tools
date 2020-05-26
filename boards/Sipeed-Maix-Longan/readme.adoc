@@ -1,0 +1,5 @@
+
+* SiPeed Longan
+** link:http://longan.sipeed.com/en/get_started/blink.html[]
+** link:http://www.fabienm.eu/wordpress/?p=1336[]
+** link:https://www.mikrozone.sk/pluginy/content/content.php?content.148[Longan Example]
