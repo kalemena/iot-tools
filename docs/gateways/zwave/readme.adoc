@@ -1,0 +1,43 @@
+= Z-Wave Gateway
+
+== Product
+
+* link:https://aeotec.com/z-wave-usb-stick/[Z-Stick Gen 5]
+
+=== Procesures
+
+Here are procedures to setup Z-Wave network:
+
+.Include
+* Z-Stick gen5 click 1s -> blue slow blink continuously
+* Click "sync" on GreenWave plug -> Stick shows blue long, then blue slow blink continuously
+* done
+
+.Exclude
+* Z-Stick gen5 click 3s -> orange fast blink continuously
+* Click "sync" on GreenWave plug -> Stick shows blue long, then orange fast blink continuously
+* done
+
+== Libraries
+
+=== Python 
+
+link:https://github.com/OpenZWave/python-openzwave[]
+
+[source,bash]
+====
+$ sudo apt-get install --force-yes -y make libudev-dev g++ libyaml-dev
+$ pip3 install python_openzwave
+$ pip3 install urwid
+
+# Check
+$ pyozw_check -i -d /dev/ttyACM0
+$ pyozw_check -l -d /dev/ttyACM0 -t 60
+
+# Browse and set Switch
+$ pyozw_shell -d /dev/ttyACM0
+$$ cd nodes
+$$ cd 5
+$$ cd User
+$$ set Switch to True 
+====
