@@ -1,10 +1,11 @@
 = Z-Wave Gateway
 
-== Product
+== Products
 
 * link:https://aeotec.com/z-wave-usb-stick/[Z-Stick Gen 5]
+* link:https://products.z-wavealliance.org/products/21?selectedFrequencyId=1[GreenWave PowerNode NS310-F]
 
-=== Procesures
+=== Procedures
 
 Here are procedures to setup Z-Wave network:
 
@@ -41,3 +42,14 @@ $$ cd 5
 $$ cd User
 $$ set Switch to True 
 ====
+
+=== Controller
+
+link:https://github.com/ruimarinho/docker-openzwave[Docker Controller Panel]
+
+[source,bash]
+====
+$ docker run --rm -it -p 8090:8090 --device=/dev/ttyACM0 ruimarinho/openzwave
+====
+
+Browse to link:http://localhost:8090[] and switch on/off things from UI.
