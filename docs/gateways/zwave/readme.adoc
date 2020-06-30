@@ -26,7 +26,7 @@ Here are procedures to setup Z-Wave network:
 link:https://github.com/OpenZWave/python-openzwave[]
 
 [source,bash]
-====
+----
 $ sudo apt-get install --force-yes -y make libudev-dev g++ libyaml-dev
 $ pip3 install python_openzwave
 $ pip3 install urwid
@@ -41,15 +41,54 @@ $$ cd nodes
 $$ cd 5
 $$ cd User
 $$ set Switch to True 
-====
+----
 
-=== Controller
+=== Control Panel
 
 link:https://github.com/ruimarinho/docker-openzwave[Docker Controller Panel]
 
 [source,bash]
-====
+----
 $ docker run --rm -it -p 8090:8090 --device=/dev/ttyACM0 ruimarinho/openzwave
-====
+----
 
 Browse to link:http://localhost:8090[] and switch on/off things from UI.
+
+=== Node JS - open-zwave
+
+link:https://github.com/OpenZWave/node-openzwave-shared[]
+
+.Install
+[source,bash]
+----
+$ git clone https://github.com/OpenZWave/node-openzwave-shared.git
+$ cd node-openzwave-shared
+$ sudo apt-get install libopenzwave-share
+----
+
+.Usage
+[source,bash]
+----
+$ vi test2.js
+
+# edit to ensure usage below
+>> var ZWave = require('openzwave-shared');
+$ node
+> .load test2.js
+
+# the 1st node is the USB controller stick
+> console.log(nodes[1])
+{ manufacturer: 'Aeotec',
+  manufacturerid: '0x0086',
+  product: 'Z-Stick Gen5',
+  producttype: '0x0001',
+  productid: '0x005a',
+  type: 'Static PC Controller',
+  name: '',
+  loc: '',
+  classes: { '32': { '0': [Object] } },
+  ready: true }
+
+# if Zwave Node #3 is a binary switch, to turn it on and off, use command class 37
+> zwave.setValue(6, 37,  1,  0,  true);  // node 3: turn on
+----
