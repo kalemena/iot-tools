@@ -63,10 +63,11 @@ link:https://github.com/OpenZWave/node-openzwave-shared[]
 ----
 $ git clone https://github.com/OpenZWave/node-openzwave-shared.git
 $ cd node-openzwave-shared
-$ sudo apt-get install libopenzwave-share
+$ sudo apt-get install openzwave
+$ npm install libopenzwave-share
 ----
 
-.Usage
+.Usage from link:https://github.com/OpenZWave/node-openzwave-shared/blob/master/README-api.md[]
 [source,bash]
 ----
 $ vi test2.js
