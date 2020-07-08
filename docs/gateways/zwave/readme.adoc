@@ -93,3 +93,14 @@ $ node
 # if Zwave Node #3 is a binary switch, to turn it on and off, use command class 37
 > zwave.setValue(6, 37,  1,  0,  true);  // node 3: turn on
 ----
+
+=== Tuning
+
+link:https://aeotec.freshdesk.com/support/solutions/articles/6000171881-how-to-disable-led-on-z-stick-gen5-[Blink LED disable]
+
+[source,bash]
+----
+$ sudo apt-get install cu
+$ echo -e '\x01\x08\x00\xF2\x51\x01\x00\x05\x01\x51'|cu -l /dev/ttyZWave -s 115200
+----
+
