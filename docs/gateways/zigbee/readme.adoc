@@ -9,3 +9,28 @@
 * link:https://github.com/marthoc/docker-deconz[Docker Deconz]
 * link:https://flows.nodered.org/node/node-red-contrib-deconz[NodeRed deconz]
 
+== Usage
+
+.Enable dialout
+[source,bash]
+----
+$ sudo usermod -a -G dialout $USER
+----
+
+.Run as docker container
+[source,bash]
+----
+$ docker run -d \
+    --name=deconz \
+    -p 8080:8080 \
+    -p 8443:8443 \
+    --restart=always \
+    -v /etc/localtime:/etc/localtime:ro \
+    -v /opt/deconz:/root/.local/share/dresden-elektronik/deCONZ \
+    -e DECONZ_WEB_PORT=8080 \
+    -e DECONZ_WS_PORT=8443 \
+    -e DECONZ_DEVICE=/dev/ttyZigbee \
+    --device=/dev/ttyZigbee \
+    marthoc/deconz
+----
+
