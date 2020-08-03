@@ -4,5 +4,8 @@
 
 * link:https://phoscon.de/en/conbee2[ConBee II]
 
+== Software
 
+* link:https://github.com/marthoc/docker-deconz[Docker Deconz]
+* link:https://flows.nodered.org/node/node-red-contrib-deconz[NodeRed deconz]
 
