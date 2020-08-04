@@ -8,6 +8,7 @@
 
 * link:https://github.com/marthoc/docker-deconz[Docker Deconz]
 * link:https://flows.nodered.org/node/node-red-contrib-deconz[NodeRed deconz]
+* link:http://dresden-elektronik.github.io/deconz-rest-doc[ConBee II API doc]
 
 == Usage
 
