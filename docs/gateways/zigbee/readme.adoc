@@ -8,7 +8,7 @@
 
 * link:https://github.com/marthoc/docker-deconz[Docker Deconz]
 * link:https://flows.nodered.org/node/node-red-contrib-deconz[NodeRed deconz]
-* link:http://dresden-elektronik.github.io/deconz-rest-doc[ConBee II API doc]
+* link:http://dresden-elektronik.github.io/deconz-rest-doc[Deconz API doc]
 
 == Usage
 
@@ -33,5 +33,15 @@ $ docker run -d \
     -e DECONZ_DEVICE=/dev/ttyZigbee \
     --device=/dev/ttyZigbee \
     marthoc/deconz
+----
+
+== Deconz API
+
+.Get API token (pre-requisit: browse to Hamburger menu -> Gateway -> Advanced -> Click ‘Authenticate app’)
+[source,bash]
+----
+$ curl -d '{ "devicetype": "Node-RED"}' -H "Content-Type: application/json" -X POST http://192.168.1.46:40450/api
+...
+# Token is returned
 ----
 
