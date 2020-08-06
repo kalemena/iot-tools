@@ -48,6 +48,6 @@ $ curl -d '{ "devicetype": "Node-RED"}' -H "Content-Type: application/json" -X P
 .List sensors
 [source,bash]
 ----
-$ curl -H "Content-Type: application/json" -X POST http://192.168.1.46:40450/api/XXAAXX/sensors
+$ curl -H "Content-Type: application/json" http://192.168.1.46:40450/api/XXAAXX/sensors
 ...
 ----
