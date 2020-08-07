@@ -35,6 +35,11 @@ $ docker run -d \
     marthoc/deconz
 ----
 
+[source,yaml]
+----
+
+----
+
 == Deconz API
 
 From link:http://dresden-elektronik.github.io/deconz-rest-doc[Official Deconz API doc]
@@ -52,4 +57,10 @@ $ curl -d '{ "devicetype": "Node-RED"}' -H "Content-Type: application/json" -X P
 ----
 $ curl -H "Content-Type: application/json" http://192.168.1.46:40450/api/XXAAXX/sensors | jq .
 ...
+----
+
+.WebSowket
+[source,bash]
+----
+$ curl -H "Content-Type: application/json" http://192.168.1.46:40450/api/9598E1143E/config
 ----
