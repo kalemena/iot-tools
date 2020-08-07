@@ -62,5 +62,31 @@ $ curl -H "Content-Type: application/json" http://192.168.1.46:40450/api/XXAAXX/
 .WebSowket
 [source,bash]
 ----
-$ curl -H "Content-Type: application/json" http://192.168.1.46:40450/api/9598E1143E/config
+$ curl -H "Content-Type: application/json" http://192.168.1.46:40450/api/XXAAXX/config | jq .
+
+{
+  "UTC": "2020-08-23T18:31:17",
+  "apiversion": "1.16.0",
+  "backup": {
+    "errorcode": 0,
+    "status": "idle"
+  },
+  "bridgeid": "XOXOXOXOXO",
+  "datastoreversion": "93",
+  "devicename": "RaspBee",
+  "dhcp": true,
+...
+  "uuid": "606b08d1-5f14-4032-86cc-xxxxxx",
+  "websocketnotifyall": true,
+  "websocketport": 40460,
+  "whitelist": {
+    "XOXOXOXOXO": {
+      "create date": "2020-08-22T18:40:34",
+      "last use date": "2020-08-22T18:40:34",
+      "name": "Node-RED"
+    },
+ ...
+  },
+  "zigbeechannel": 15
+}
 ----
