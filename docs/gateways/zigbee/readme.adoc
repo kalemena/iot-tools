@@ -10,6 +10,36 @@
 * link:https://flows.nodered.org/node/node-red-contrib-deconz[NodeRed deconz]
 * link:http://dresden-elektronik.github.io/deconz-rest-doc[Deconz API doc]
 
+== Firmware
+
+* link:https://github.com/dresden-elektronik/deconz-rest-plugin/issues/2493[Tips]
+
+
+**  Unplug the ConBee II
+**  Start the above command (with -t parameter)
+**  Plugin the ConBee II again
+
+[source,bash]
+----
+$ sudo GCFFlasher_internal -d /dev/ttyACM2 -t 60 -f deCONZ_ConBeeII_0x26580700.bin.GCF 
+GCFFlasher V3_13 (c) dresden elektronik ingenieurtechnik gmbh
+Reboot device /dev/ttyACM2 (ConBee II)
+R21B18 Bootloader
+Vers: 2.07
+build: Jun 17 2019
+flashing 160930 bytes: |============error: timeout flashing firmware after 3008 ms
+Reboot device /dev/ttyACM2 (ConBee II)
+Reboot device /dev/ttyACM2 (ConBee II)
+Reboot device /dev/ttyACM2 (ConBee II)
+R21B18 Bootloader
+Vers: 2.07
+build: Jun 17 2019
+flashing 160930 bytes: |==============================|
+verify: .
+SUCCESS
+Wait 10 seconds application starts
+----
+
 == Usage
 
 .Enable dialout
@@ -58,6 +88,14 @@ $ curl -d '{ "devicetype": "Node-RED"}' -H "Content-Type: application/json" -X P
 $ curl -H "Content-Type: application/json" http://192.168.1.46:40450/api/XXAAXX/sensors | jq .
 ...
 ----
+
+.Touchlink
+[source,bash]
+----
+$ curl -H "Content-Type: application/json" -X POST http://192.168.1.46:40450/api/9598E1143E/touchlink/scan
+----
+
+== Deconz WebSocket API
 
 .WebSocket configuration
 [source,bash]
