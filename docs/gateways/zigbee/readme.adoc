@@ -94,6 +94,10 @@ services:
 
 .Browse to link:http://localhost:40450[]
 
+==== Hidden menu
+
+Browse to Configuration => Gateway, then Click on Advanced with pressing Shift+Alt
+
 == Deconz API
 
 From link:http://dresden-elektronik.github.io/deconz-rest-doc[Official Deconz API doc]
