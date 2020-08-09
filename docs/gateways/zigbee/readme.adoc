@@ -3,6 +3,7 @@
 == Products
 
 * link:https://phoscon.de/en/conbee2[ConBee II]
+* link:https://phoscon.de/en/app/doc[Official doc]
 
 == Software
 
