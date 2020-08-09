@@ -12,8 +12,8 @@
 
 == Firmware
 
+* link:http://deconz.dresden-elektronik.de/deconz-firmware/?C=M;O=D[Firmware page]
 * link:https://github.com/dresden-elektronik/deconz-rest-plugin/issues/2493[Tips]
-
 
 **  Unplug the ConBee II
 **  Start the above command (with -t parameter)
@@ -42,7 +42,7 @@ Wait 10 seconds application starts
 
 == Usage
 
-=== Running deCONZ
+=== Running deCONZ as docker
 
 .Enable dialout
 [source,bash]
@@ -94,7 +94,12 @@ services:
 
 .Browse to link:http://localhost:40450[]
 
-==== Hidden menu
+=== Running as native
+
+.Default credentials
+delight/delight
+
+=== Tips
 
 Browse to Configuration => Gateway, then Click on Advanced with pressing Shift+Alt
 
