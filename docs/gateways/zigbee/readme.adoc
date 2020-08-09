@@ -177,3 +177,9 @@ ws.onmessage = function(msg) {
     console.log(JSON.parse(msg.data));
 }
 ----
+
+
+= References
+
+.Custom ZigBee projects
+* link:https://github.com/formtapez/ZigUP/[ZigUP]
