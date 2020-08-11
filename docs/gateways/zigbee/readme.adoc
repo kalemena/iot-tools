@@ -2,6 +2,10 @@
 
 == Products
 
+.ZigBee Products
+* link:https://zigbeealliance.org/fr/zigbee_products/[ZigBee Alliance]
+
+.Gateway
 * link:https://phoscon.de/en/conbee2[ConBee II]
 * link:https://phoscon.de/en/app/doc[Official doc]
 
