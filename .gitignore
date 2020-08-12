@@ -4,3 +4,5 @@ libs
 pdf
 svg
 gerber
+
+node_modules
