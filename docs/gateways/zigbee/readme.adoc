@@ -49,6 +49,8 @@ Wait 10 seconds application starts
 
 === Running deCONZ as docker
 
+image:screenshot-zigbee-deconz.png[]
+
 .Enable dialout
 [source,bash]
 ----
