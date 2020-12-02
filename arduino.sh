@@ -17,6 +17,6 @@ xhost +local:
 docker run -it --rm \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -v ${WORKSPACE}:/home/developer/workspace \
-    --device /dev/ttyUSB3:/dev/ttyUSB3 \
+    --device /dev/ttyUSB2:/dev/ttyUSB2 \
     -e DISPLAY=unix${DISPLAY} \
-    kalemena/arduino:1.8.10 arduino
+    kalemena/arduino:1.8.13 arduino

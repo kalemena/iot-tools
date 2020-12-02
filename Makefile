@@ -4,7 +4,7 @@ DEVICES := /dev/ttyUSB3
 all: build
 
 build:
-	docker pull ubuntu:18.04
+	docker pull ubuntu:20.04
 	docker build -t kalemena/arduino:${VERSION} .
 
 arduino:

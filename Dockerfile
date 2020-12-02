@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE
