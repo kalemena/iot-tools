@@ -5,7 +5,7 @@ VERSION=${VERSION:-latest}
 
 # PREPARE
 docker -v
-docker pull centos:7
+docker pull ubuntu:20.04
 docker pull ${IMAGE}:${VERSION} || true
 
 # BUILD
@@ -22,8 +22,8 @@ docker ps -a
 docker tag ${IMAGE}:${VERSION} ${IMAGE}:latest
 docker images
 
-# PUSH
-docker login -u "${{ secrets.DOCKER_USERNAME }}" -p "${{ secrets.DOCKER_PASSWORD }}"
-docker push ${IMAGE}:${VERSION}
-docker push ${IMAGE}:latest
-docker logout
+# # PUSH
+# docker login -u "${{ secrets.DOCKER_USERNAME }}" -p "${{ secrets.DOCKER_PASSWORD }}"
+# docker push ${IMAGE}:${VERSION}
+# docker push ${IMAGE}:latest
+# docker logout
