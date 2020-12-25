@@ -1,4 +1,5 @@
 = ZigBee Gateway
+:hardbreaks:
 
 == Products
 
@@ -184,8 +185,17 @@ ws.onmessage = function(msg) {
 }
 ----
 
-
 = References
 
 .Custom ZigBee projects
 * link:https://github.com/formtapez/ZigUP/[ZigUP]
+
+To detect and assign from ConBee II web UI:
+
+.IKEA devices
+* Tradfri Light bulb: 
+Reset and re-assign controller by light-on, then 6x light-off/on and stay on the 6th time. Bulb blinks.
+* Tradfri Dimmer switch:
+Click 4x times on reset button + light blinks
+* Tradfri Remote switch:
+Click 4x times on reset button + light blinks
