@@ -185,7 +185,7 @@ ws.onmessage = function(msg) {
 }
 ----
 
-= References
+== References
 
 .Custom ZigBee projects
 * link:https://github.com/formtapez/ZigUP/[ZigUP]

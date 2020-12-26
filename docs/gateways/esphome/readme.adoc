@@ -1,0 +1,16 @@
+= ESPHome
+:hardbreaks:
+
+link:https://github.com/esphome/esphome[ESP Home]
+
+== Hacks
+
+=== Xiaomi Temp sensors
+
+These are bluetooth TH sensors which can be flashed and centralized through ESPHome gateways:
+
+* link:https://github.com/atc1441/ATC_MiThermometer[ATC Mi Thermometer]
+
+== Links
+
+* link:https://www.scrample.xyz/iot-simple-et-efficace-avec-esphome/[Tutorial Basic]
