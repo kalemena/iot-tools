@@ -199,3 +199,9 @@ Reset and re-assign controller by light-on, then 6x light-off/on and stay on the
 Click 4x times on reset button + light blinks
 * Tradfri Remote switch:
 Click 4x times on reset button + light blinks
+* Tradfri outlet:
+Hold paper clip for 5s to enter registration mode.
+
+.Other links:
+* link:https://presentationdeconz.wordpress.com/procedure-appairage-des-appareils-zigbee/[ConBee II Register devices]
+
