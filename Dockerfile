@@ -23,6 +23,7 @@ RUN apt-get -y update \
         wget unzip \
         openjdk-8-jre \
         python3 python3-pip \
+        git \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -40,16 +41,30 @@ RUN pip3 --no-cache-dir install esptool \
 
 # Boards
 # ESP8266
+# RUN mkdir -p /usr/local/share/arduino/hardware/esp8266com \
+#     && cd /usr/local/share/arduino/hardware/esp8266com \
+#     && wget -q https://github.com/esp8266/Arduino/releases/download/2.7.4/esp8266-2.7.4.zip && unzip -q esp8266-2.7.4.zip && rm esp8266-2.7.4.zip \
+#     && mv esp8266-2.7.4 esp8266 \   
+#     && cd esp8266/tools \
+#     && python3 get.py
+
 RUN mkdir -p /usr/local/share/arduino/hardware/esp8266com \
     && cd /usr/local/share/arduino/hardware/esp8266com \
-    && wget -q https://github.com/esp8266/Arduino/archive/master.zip && unzip -q master.zip && rm master.zip \
-    && mv Arduino-master esp8266 \
-    && cd esp8266/tools \
-    && python3 get.py
+    && git clone https://github.com/esp8266/Arduino.git esp8266 \
+    && cd esp8266 \
+    && git submodule update --init \
+    && cd tools \
+    && python3 get.py \
+# cleanup
+    && find /usr/local/share/arduino/hardware/esp8266com \( -name ".git" -o -name ".gitignore" -o -name ".gitmodules" -o -name ".gitattributes" \) -exec rm -rf -- {} +
+
 # ESP8266 FS
 RUN mkdir -p ${HOME}/Arduino/tools \
     && cd ${HOME}/Arduino/tools \
     && wget -q https://github.com/esp8266/arduino-esp8266fs-plugin/releases/download/0.5.0/ESP8266FS-0.5.0.zip && unzip -q ESP8266FS-0.5.0.zip && rm ESP8266FS-0.5.0.zip
+RUN mkdir -p ${HOME}/Arduino/tools \
+    && cd ${HOME}/Arduino/tools \
+    && wget -q https://github.com/earlephilhower/arduino-esp8266littlefs-plugin/releases/download/2.6.0/ESP8266LittleFS-2.6.0.zip && unzip -q ESP8266LittleFS-2.6.0.zip && rm ESP8266LittleFS-2.6.0.zip
 
 # ESP32
 RUN mkdir -p /usr/local/share/arduino/hardware/esp32com \
@@ -109,6 +124,7 @@ RUN export uid=1000 gid=1000 \
     && echo "developer ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/developer \
     && chmod 0440 /etc/sudoers.d/developer \
     && chown ${uid}:${gid} -R /home/developer \
+    && chown ${uid}:${gid} -R /usr/local/share/arduino \
     && sed "s/^dialout.*/&developer/" /etc/group -i \
     && sed "s/^root.*/&developer/" /etc/group -i
 USER developer
