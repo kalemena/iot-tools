@@ -95,6 +95,7 @@ RUN wget -q https://github.com/LowPowerLab/SPIFlash/archive/master.zip && unzip 
 RUN wget -q https://github.com/LowPowerLab/LowPower/archive/master.zip && unzip -q master.zip && rm master.zip
 # Adafruit
 RUN wget -q https://github.com/adafruit/Adafruit_Sensor/archive/master.zip && unzip -q master.zip && rm master.zip
+RUN wget -q https://github.com/adafruit/Adafruit_BusIO/archive/master.zip && unzip -q master.zip && rm master.zip
 # HTU21
 RUN wget -q https://github.com/adafruit/Adafruit_HTU21DF_Library/archive/master.zip && unzip -q master.zip && rm master.zip
 # DHT22
