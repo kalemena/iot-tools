@@ -1,8 +1,40 @@
 = Lego
 
+== Python programming
+
+This is few resources to get started with python for Lego Boost
+
+link:https://github.com/undera/pylgbst[]
+
+.Example moving things
+[source,bash]
+----
+from pylgbst.hub import MoveHub
+import time
+
+hub = MoveHub()
+
+for device in hub.peripherals:
+    print(device)
+
+hub.motor_A.timed(0.5, 0.8)
+hub.motor_A.timed(0.5, -0.8)
+
+hub.motor_B.angled(90, 0.8)
+hub.motor_B.angled(-90, 0.8)
+
+hub.motor_AB.timed(1.5, 0.8, -0.8)
+hub.motor_AB.angled(90, 0.8, -0.8)
+
+hub.motor_external.start_speed(0.2)
+time.sleep(2)
+hub.motor_external.stop()
+----
+
+== Links
+
 link:https://robotics.benedettelli.com/lego-boost-17101-building-instructions/[]
 
 link:https://picaxe.com/lego-boost/[]
 
-link:https://github.com/undera/pylgbst[]
 link:https://github.com/ttu/lego-boost-app[]
