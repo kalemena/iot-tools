@@ -6,6 +6,15 @@ This is few resources to get started with python for Lego Boost
 
 link:https://github.com/undera/pylgbst[]
 
+TIP: the only pre-requisite is to get a BLED112 Bluetooth dongle.
+
+.Setup
+[source, bash]
+----
+$ sudo pip3 install pygatt
+$ sudo pip3 install -U pylgbst
+----
+
 .Example moving things
 [source,bash]
 ----
