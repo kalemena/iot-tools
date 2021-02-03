@@ -1,5 +1,9 @@
 = Lego
 
+== ESP32 programming
+
+* link:https://github.com/corneliusmunz/legoino[Legoino]
+
 == Python programming
 
 This is few resources to get started with python for Lego Boost
@@ -39,6 +43,9 @@ hub.motor_external.start_speed(0.2)
 time.sleep(2)
 hub.motor_external.stop()
 ----
+
+* link:https://github.com/undera/pylgbst/blob/master/docs/VisionSensor.md[Vision]
+
 
 == Links
 
