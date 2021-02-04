@@ -1,8 +1,20 @@
 = Setup Arduino IDE for ESP32
+:hardbreaks:
 
 This is very similar to link:/docs/setups/setup-esp8266-arduino.adoc[ESP8266 setup].
 
-### Procedure
+== Hardware
+
+These work good:
+
+- Lolin 32S
+
+- Wemos 32 (clone of Wemos D1 Mini but with ESP32 instead of ESP8266)
+link:https://github.com/r0oland/ESP32_mini_KiCad_Library[Board details]
+
+- TTGO (the one which has a camera)
+
+== Procedure
 
 - Import ESP32 Board into Arduino IDE by adding URL into Settings:
   
@@ -18,12 +30,12 @@ In Arduino IDE, select proper board, example:
 
 Create sketch such as the link:/sketches/esp8266-led/esp8266-led.ino[ESP8266 LED]
 
-```js
+[source,js]
+----
 void setup() {
   // initialize digital pin 2 as an output.
   pinMode(2, OUTPUT);
 }
-
 
 // the loop function runs over and over again forever
 void loop() {
@@ -32,12 +44,14 @@ void loop() {
   digitalWrite(2, LOW);    // turn the LED off by making the voltage LOW
   delay(1000);              // wait for a second
 }
-```
+----
 
 LED should blink as shown below:
 
 image:esp8266-led.jpg[NodeMCU Blink]
 
-= Resources
+== Resources
 
-link:https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/debian_ubuntu.md[Ubuntu setup]
+* link:https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/debian_ubuntu.md[Ubuntu setup]
+
+* link:
