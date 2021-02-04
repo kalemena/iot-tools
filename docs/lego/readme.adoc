@@ -1,8 +1,14 @@
 = Lego
+:hardbreaks:
 
 == ESP32 programming
 
 * link:https://github.com/corneliusmunz/legoino[Legoino]
+
+The only thing to do is import Legoino lib from ArduinoIDE.
+Then setup your ESP32 board and port, and upload example.
+
+Example at link:/sketches/lego-boost[Lego Boost]
 
 == Python programming
 
