@@ -62,6 +62,7 @@ RUN mkdir -p /usr/local/share/arduino/hardware/esp8266com \
 RUN mkdir -p ${HOME}/Arduino/tools \
     && cd ${HOME}/Arduino/tools \
     && wget -q https://github.com/esp8266/arduino-esp8266fs-plugin/releases/download/0.5.0/ESP8266FS-0.5.0.zip && unzip -q ESP8266FS-0.5.0.zip && rm ESP8266FS-0.5.0.zip
+# ESP8266 Little FS
 RUN mkdir -p ${HOME}/Arduino/tools \
     && cd ${HOME}/Arduino/tools \
     && wget -q https://github.com/earlephilhower/arduino-esp8266littlefs-plugin/releases/download/2.6.0/ESP8266LittleFS-2.6.0.zip && unzip -q ESP8266LittleFS-2.6.0.zip && rm ESP8266LittleFS-2.6.0.zip
@@ -114,6 +115,8 @@ RUN wget -q https://github.com/FastLED/FastLED/archive/3.3.2.zip && unzip -q 3.3
 RUN wget -q https://github.com/Links2004/arduinoWebSockets/archive/master.zip && unzip -q master.zip && rm master.zip
 # JSON
 RUN wget -q https://github.com/bblanchon/ArduinoJson/releases/download/v5.13.5/ArduinoJson-v5.13.5.zip && unzip -q ArduinoJson-v5.13.5.zip && rm ArduinoJson-v5.13.5.zip
+# Teleinfo
+RUN wget -q https://github.com/hallard/LibTeleinfo/archive/v1.1.2.zip && unzip -q v1.1.2.zip && rm v1.1.2.zip && mv LibTeleinfo-1.1.2 LibTeleinfo
 
 WORKDIR ${HOME}
 
