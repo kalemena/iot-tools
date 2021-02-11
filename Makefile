@@ -1,5 +1,5 @@
 VERSION := "1.8.13"
-DEVICES := /dev/ttyUSB3
+DEVICES := /dev/ttyUSB2
 
 all: build
 
