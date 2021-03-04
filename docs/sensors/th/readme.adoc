@@ -1,6 +1,6 @@
 = Sensors Temperature
 
-https://blog.openenergymonitor.org/2016/07/HTU21D-Temperature-Humidity-sensor/[Interesting compare of sensors]
+link:https://blog.openenergymonitor.org/2016/07/HTU21D-Temperature-Humidity-sensor/[Interesting compare of sensors]
 
 == DS18B20
 
@@ -8,8 +8,8 @@ Temperature sensor.
 
 Resources:
 
-* http://www.pjrc.com/teensy/arduino_libraries/OneWire.zip[OneWire]
-* https://github.com/milesburton/Arduino-Temperature-Control-Library[Dallas]
+* link:http://www.pjrc.com/teensy/arduino_libraries/OneWire.zip[OneWire]
+* link:https://github.com/milesburton/Arduino-Temperature-Control-Library[Dallas]
 
 image:/res/ArduinoProMini33-sensor-DS18B20_bb.png[Wiring DS18B20]
 
