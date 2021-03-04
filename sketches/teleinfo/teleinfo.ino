@@ -1,7 +1,7 @@
 #include <SoftwareSerial.h>
 
-SoftwareSerial teleinfo(14, 15);
-//SoftwareSerial teleinfo(2,3);
+SoftwareSerial teleinfo(14, 15);  // ESP32
+//SoftwareSerial teleinfo(2,3);   // Arduino 
 
 void setup() {
   Serial.begin(1200);     // opens serial port, sets data rate to 1200 bps

@@ -18,7 +18,8 @@ Central board:
 * Optocoupler: SFH6206
 * 4.7k resistor
 
-link:res/ArduinoProMini33-RF-sensor-teleinfo_bb.png?raw=true[Parts]
+.Arduino wiring
+image:res/ArduinoProMini33-RF-sensor-teleinfo_bb.png?raw=true[Parts]
 
 == Sketch
 
@@ -38,6 +39,12 @@ void loop() {
     Serial.write(cptSerial.read() & 0x7F);
 }
 ----
+
+Examples:
+
+* link:/sketches/teleinfo[Teleinfo Arduino]
+* link:/sketches/teleinfo-arduino-serial[Teleinfo Arduino using LibTeleinfo]
+* link:/sketches/teleinfo-esp32-serial[Teleinfo ESP32 using LibTeleinfo]
 
 == Installation
 
