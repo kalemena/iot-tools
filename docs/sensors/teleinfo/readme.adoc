@@ -1,0 +1,77 @@
+= Teleinfo
+:toc:
+:hardbreak:
+
+== Summary
+
+In France, few components can be used to extract Main Home power consumption.
+It is especially useful to have information such as consumption by time periods where periods can be high or low cost hours.
+
+== Hardware
+
+Central board:
+
+* Micro-Controller
+** Arduino Nano 5v
+** or ESP8266
+** or ESP32
+* Optocoupler: SFH6206
+* 4.7k resistor
+
+link:res/ArduinoProMini33-RF-sensor-teleinfo_bb.png?raw=true[Parts]
+
+== Sketch
+
+[source,C]
+----
+#include <SoftwareSerial.h>
+
+SoftwareSerial cptSerial(2, 3);
+
+void setup() {
+  Serial.begin(1200);     // opens serial port, sets data rate to 1200 bps
+  cptSerial.begin(1200);
+}
+
+void loop() {
+  if (cptSerial.available())
+    Serial.write(cptSerial.read() & 0x7F);
+}
+----
+
+== Installation
+
+Once wired to computer, find correct USB tty number (dmesg | grep tty), then execute commands:
+
+[source,bash]
+----
+$ stty -F /dev/ttyUSB0 1200 sane evenp parenb cs7 -crtscts
+$ cat /dev/ttyUSB0
+----
+
+Then other library can be used to parse and digest the teleinfo data that looks like below:
+
+[source,bash]
+----
+ADCO 02092xxxxxx @
+OPTARIF HC.. <
+ISOUSC 45 ?
+HCHC 010956910 %
+HCHP 016779643 >
+PTEC HP..
+IINST 021 Z
+IMAX 047 J
+PAPP 04860 3
+HHPHC A ,
+MOTDETAT 000000 B
+----
+
+== Resources
+
+* link:http://www.planet-libre.org/index.php?post_id=11122[Descriptin & wiring]
+* link:http://www.domotique-info.fr/2014/05/recuperer-teleinformation-arduino/[Descriptin & wiring]
+* link:https://github.com/lhuet/teleinfo-node[NodeJS teleinfo]
+* link:http://www.frinux.fr/2015/01/25/afficher-et-analyser-les-donnees-teleinfo-du-compteur-edf-avec-raspberry-pi-et-nodejs/[Sample app teleinfo]
+* link:https://github.com/lhuet/teleinfo-app[Sample app teleinfo]
+
+* link:http://hallard.me/pitinfov12-light/[Téléinfo]

@@ -45,9 +45,9 @@ Here is list things:
 * link:sensors-light.adoc[Sensors Light]
 * link:sensors-garden.adoc[Sensors gardening]
 * link:sensors-switch.adoc[Sensors switch]
-* link:interop-teleinfo.adoc[Interop Teleinfo]
+* link:/docs/sensors/teleinfo[Sensors Teleinfo]
 
-= Boards links
+== Boards links
 
 * Jeenode:
   ** link:http://jeelabs.net/projects/hardware/wiki/Pinouts[Jeenode pinout]
@@ -62,7 +62,7 @@ Here is list things:
 * link:http://nathan.chantrell.net/20130923/tiny328-mini-wireless-arduino-clone/[Tiny328 specs]
 * link:https://things4u.github.io/HardwareGuide/Arduino/Mini-Sensor-HTU21/mini-lowpower.html[RFM95 sensors]
 
-= Links:
+== Links:
 
 * link:https://www.ardumotive.com[Ardumotive]
 * link:https://www.hackster.io/boisse-martin/making-a-cheap-aquarium-parameters-controller-c4f420[Hack-war-yum]
