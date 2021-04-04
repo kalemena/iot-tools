@@ -2,12 +2,11 @@
 
 == Soil Moisture
 
-==== Schema #1 - Adafruit
+=== Schema #1 - Adafruit
 
 image:res/Arduino-RF-sensor-soil1_bb.png[Adafruit version]
 
-
-==== Schema #2 - simple probes (no components)
+=== Schema #2 - simple probes (no components)
 
 image:res/Arduino-RF-sensor-soil2_bb.png[Simple probes]
 
