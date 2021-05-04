@@ -1,4 +1,5 @@
 = IOT Tools
+:hardbreaks:
 
 ifdef::env-github[:outfilesuffix: .adoc]
 ifdef::env-github[]
@@ -36,11 +37,16 @@ For ESP specifics:
 * link:/docs/setups/setup-esp32-arduino.adoc[Setup ESP 32 Arduino IDE]
 * link:/docs/low-power/readme.adoc[Low-power tips]
 
-== Using sensors
+== Using IoT
 
 Here is list things: 
 
-* link:radio.adoc[Radio RFM12]
+* Communication
+** link:/docs/communication/bluetooth/readme.adoc[Bluetooth]
+** link:/docs/communication/can/readme.adoc[CAN]
+** link:docs/communication/i2c/readme.adoc[I2C]
+** link:docs/communication/rf12-rf69/readme.adoc[RFM12 and RFM69]
+
 * link:/docs/sensors/th/readme.adoc[Sensors Temperature]
 * link:sensors-light.adoc[Sensors Light]
 * link:sensors-garden.adoc[Sensors gardening]
