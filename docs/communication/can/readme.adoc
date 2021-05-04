@@ -1,0 +1,65 @@
+= Working with CAN bus
+:hardbreaks:
+
+== Code
+
+[source,C]
+----
+#include <SPI.h>
+#include "mcp_can.h"
+
+INT32U canId = 0x000;
+
+unsigned char len = 0;
+unsigned char buf[8];
+char str[20];
+
+void setup()
+{
+    Serial.begin(38400);
+
+START_INIT:
+
+    if(CAN_OK == CAN.begin(CAN_125KBPS))
+    {
+        Serial.println("Initialized successfully");
+    }
+    else
+    {
+        Serial.println("Initializing is failed");
+        Serial.println("Reloading...");
+        delay(100);
+        goto START_INIT;
+    }
+}
+
+
+void loop()
+{
+    if(CAN_MSGAVAIL == CAN.checkReceive()) 
+    {
+        CAN.readMsgBuf(&len, buf);
+        canId = CAN.getCanId();
+        Serial.print("<");Serial.print(canId);Serial.print(",");
+        for(int i = 0; i<len; i++)
+        {
+            Serial.print(buf[i]);Serial.print(",");
+        }
+        Serial.print(">");
+        Serial.println();
+    }
+}
+----
+
+== Resources
+
+* link:http://www.14core.com/wiring-the-mcp2515-controller-area-network-can-bus-diagnostics[]
+* link:http://www.14core.com/wp-content/uploads/2015/12/MCPCAN-library.zip[CAN lib]
+
+* link:http://www.14core.com/wiring-the-mcp2515-controller-area-network-can-bus-diagnostics/[All in one example and source code]
+
+* link:https://forum.arduino.cc/index.php?topic=434951.0[]
+* link:http://howtomechatronics.com/tutorials/arduino/how-to-configure-pair-two-hc-05-bluetooth-module-master-slave-commands/[]
+* link:https://alselectro.wordpress.com/2014/10/21/bluetooth-hc05-how-to-pair-two-modules/[Pairing 2x Bluetooth devices]
+
+
