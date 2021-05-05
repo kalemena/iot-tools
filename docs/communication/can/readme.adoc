@@ -1,5 +1,4 @@
 = Working with CAN bus
-:hardbreaks:
 
 == Code
 
