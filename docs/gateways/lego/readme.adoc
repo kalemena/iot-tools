@@ -52,11 +52,8 @@ hub.motor_external.stop()
 
 * link:https://github.com/undera/pylgbst/blob/master/docs/VisionSensor.md[Vision]
 
-
 == Links
 
-link:https://robotics.benedettelli.com/lego-boost-17101-building-instructions/[]
-
-link:https://picaxe.com/lego-boost/[]
-
-link:https://github.com/ttu/lego-boost-app[]
+* link:https://robotics.benedettelli.com/lego-boost-17101-building-instructions/[]
+* link:https://picaxe.com/lego-boost/[]
+* link:https://github.com/ttu/lego-boost-app[]
