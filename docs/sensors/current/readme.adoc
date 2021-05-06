@@ -1,0 +1,11 @@
+= Current sensors
+:hardbreaks:
+
+Multiple sensor exists:
+
+* INA219
+* 
+
+== Links
+
+* link:https://projetsdiy.fr/capteur-ina219-mesurer-puissance-dun-panneau-solaire-batterie-arduino-esp8266/[INA219]
