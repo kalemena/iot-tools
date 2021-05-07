@@ -10,6 +10,10 @@
 * link:https://phoscon.de/en/conbee2[ConBee II]
 * link:https://phoscon.de/en/app/doc[Official doc]
 
+.Recommended
+* link:https://www.phoscon.de/en/conbee2/software#phoscon-app[Hue Essentials]
+* link:https://community.jeedom.com/t/tuto-groupes-et-binding-avec-phoscon-ou-hue-essentials-deconz/45108[Tutorial Bind ZigBee]
+
 == Software
 
 * link:https://github.com/marthoc/docker-deconz[Docker Deconz]
@@ -22,12 +26,12 @@
 * link:https://github.com/dresden-elektronik/deconz-rest-plugin/issues/2493[Tips]
 
 **  Unplug the ConBee II
-**  Start the above command (with -t parameter)
+**  Start the command (with -t parameter)
 **  Plugin the ConBee II again
 
 [source,bash]
 ----
-$ sudo GCFFlasher_internal -d /dev/ttyACM2 -t 60 -f deCONZ_ConBeeII_0x26580700.bin.GCF 
+$ sudo GCFFlasher_internal -d /dev/ttyACM2 -t 60 -R 10 -f deCONZ_ConBeeII_0x26580700.bin.GCF 
 GCFFlasher V3_13 (c) dresden elektronik ingenieurtechnik gmbh
 Reboot device /dev/ttyACM2 (ConBee II)
 R21B18 Bootloader
