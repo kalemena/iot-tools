@@ -15,7 +15,7 @@ jobs:
         IMAGE: "kalemena/arduino"
         VERSION: "1.8.14"
       run: |
-        sh .github/workflows/build.sh
+        sh .github/workflows/build-arduino-ide.sh
         # PUSH
         docker login -u "${{ secrets.DOCKER_USERNAME }}" -p "${{ secrets.DOCKER_PASSWORD }}"
         docker push ${IMAGE}:${VERSION}
