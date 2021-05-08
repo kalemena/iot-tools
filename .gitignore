@@ -6,3 +6,10 @@ svg
 gerber
 
 node_modules
+
+# Docs
+*.private
+build
+.asciidoctor
+**/assets/*.png
+assets-*
