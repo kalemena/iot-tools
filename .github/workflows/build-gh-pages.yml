@@ -1,0 +1,19 @@
+name: Pipeline GitHubPages
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build HTML doc
+      run: |
+        make doc.publishToHTML
+        mv ./build/adoc/html/_IOT-Book.html ./build/adoc/html/index.html
+    - name: Publish as gh-pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build/adoc/html
+    

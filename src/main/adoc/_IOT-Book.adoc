@@ -1,0 +1,35 @@
+:author: Kalemena
+:library: Asciidoctor
+:encoding: utf-8
+:idprefix:
+:numbered:
+:rootdir: /project/src/main/adoc
+:imagesdir: {rootdir}/images
+:giturl: https://github.com/kalemena/iot-tools/tree/master
+:binariesdir: https://github.com/kalemena/iot-tools/raw/master/src/main/adoc/binaries
+:assetsdir: https://github.com/kalemena/iot-tools/raw/master/src/main/adoc/assets
+//:toc: left
+:toclevels: 5
+//:toc-placement: left
+:css-signature: demo
+:doctype: book
+:icons: font
+:icon-set: octicon
+//:stylesheet: {rootdir}/themes/asciidoctor.css
+:title-page: IoT-Tools
+:title-logo-image: {rootdir}/images/favicon.png
+//:favicon: {rootdir}/images/favicon.png
+//:front-cover-image: image:/docs/images/favicon.png[]
+:pagenums:
+
+:description: IoT-Tools Project - Book
+
+:toc:
+
+//image:{rootdir}/images/favicon.png[Syrup,50,50]
+
+= IoT-Tools Project
+
+ifdef::backend-pdf[]
+IMPORTANT: This is an automatically generated document written using AsciiDoc.
+endif::[]
