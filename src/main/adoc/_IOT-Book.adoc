@@ -28,8 +28,13 @@
 
 //image:{rootdir}/images/favicon.png[Syrup,50,50]
 
-= IoT-Tools Project
+// = IoT-Tools Project
 
 ifdef::backend-pdf[]
 IMPORTANT: This is an automatically generated document written using AsciiDoc.
 endif::[]
+
+// :leveloffset: +1
+
+include::00-index.adoc[General Info]
+

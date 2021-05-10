@@ -16,7 +16,7 @@ build:
 arduino:
 	bash ./arduino.sh ${DEVICES}
 
-########################
+###########################
 # BUILDING & PUBLISHING DOC
 
 # Builds PDF book
