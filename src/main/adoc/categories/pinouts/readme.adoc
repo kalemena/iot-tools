@@ -1,0 +1,50 @@
+= Boards layout
+:toc: macro
+:hardbreaks:
+
+ifdef::env-github[]
+:binariesdir: /project/src/main/adoc/binaries
+:giturl: 
+:imagesdir: /project/src/main/adoc/images
+//:sectlinks:
+//:sectnums:
+// Admonitions
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifndef::env-github[]
+:imagesdir: /project/src/main/adoc/categories/pinouts/
+endif::[]
+
+There are tons of boards, and this repo lists only few layouts.
+
+== Arduino
+
+.Arduino Pro Mini
+image:pinout-Arduino-ProMini.png[Arduino Pro Mini]
+
+.Arduino Nano
+image:pinout-Arduino-Nano.png[Arduino Nano]
+
+.Arduino Uno
+image:pinout-Arduino-uno.png[Arduino Uno]
+
+.JeeLab Node
+image:pinout-Arduino-Jeenode-v6.png[JeeLab Node v6]
+
+== ESP 8266
+
+.Wemos D1 mini
+image:pinout-Esp12-Wemos-D1-mini.png[Wemos D1 mini]
+
+.Node MCU
+image:pinout-nodemcudevkit_v1.jpg[NodeMCU ESP12]
+
+== ESP 32
+
+.Node MCU 32S
+image:pinout-esp32-nodemcu.jpg[NodeMCU ESP32]

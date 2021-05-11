@@ -1,0 +1,50 @@
+= IoT-Tools project 
+:toc: macro
+:hardbreaks:
+
+ifdef::env-github[]
+:binariesdir: /project/src/main/adoc/binaries
+:giturl: 
+:imagesdir: /project/src/main/adoc/images
+//:sectlinks:
+//:sectnums:
+// Admonitions
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+image:https://github.com/kalemena/iot-tools/workflows/Pipeline/badge.svg[GitHub Build] image:https://images.microbadger.com/badges/version/kalemena/arduino.svg[Docker Version, link=https://microbadger.com/images/kalemena/arduino] image:https://images.microbadger.com/badges/image/kalemena/arduino.svg[Docker Hub, link=https://hub.docker.com/r/kalemena/arduino/tags]
+
+toc::[]
+
+Internet Of Things starts in general with sensors and micro-controllers.
+
+This repository lists information to help setting up and hooking up Atmega (Arduino, Arduino Nano, Arduino Pro Mini), ESP8266 or ESP32.
+
+Sorry if references are ommited.
+Resources are also gathered from external sites, sometimes with more details. 
+
+//ifdef::env-github,confluencePublisherVersion[]
+
+<<<
+
+ifdef::env-github[]
+== Board Layouts
+
+There are tons of boards, and this repo lists only few layouts.
+
+See link:{giturl}/src/main/adoc/pinouts/readme.adoc[here]
+endif::[]
+
+ifndef::env-github[]
+
+:leveloffset: +1
+
+include::categories/pinouts/readme.adoc[here]
+
+:leveloffset: -1
+
+endif::[]
