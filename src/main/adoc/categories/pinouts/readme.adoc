@@ -48,3 +48,6 @@ image:pinout-nodemcudevkit_v1.jpg[NodeMCU ESP12]
 
 .Node MCU 32S
 image:pinout-esp32-nodemcu.jpg[NodeMCU ESP32]
+
+.ESP32 Wemos-clone
+image:pinout-esp32-wemos-clone.png[ESP32 Wemos-clone]
