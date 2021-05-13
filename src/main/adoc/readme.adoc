@@ -31,14 +31,26 @@ Resources are also gathered from external sites, sometimes with more details.
 
 <<<
 
+== Docker image
+
+The docker image link:https://hub.docker.com/r/kalemena/arduino[kalemena/arduino] contains pre-installed Arduino IDE.
+
+The image is setup with many libraries, plus subset of Arduino-compatible boards, including ESP8266 and ESP32.
+
+<<<
+
+// ==== Boards Layout
+
+// GitHub-display
 ifdef::env-github[]
 == Board Layouts
 
 There are tons of boards, and this repo lists only few layouts.
+See link:/src/main/adoc/pinouts/readme.adoc[here]
 
-See link:{giturl}/src/main/adoc/pinouts/readme.adoc[here]
 endif::[]
 
+// non-GitHub
 ifndef::env-github[]
 
 :leveloffset: +1
@@ -46,5 +58,35 @@ ifndef::env-github[]
 include::categories/pinouts/readme.adoc[here]
 
 :leveloffset: -1
+
+endif::[]
+
+// Setups
+
+== Manual Setup
+
+For all flavors of Atmega, just download Arduino IDE.
+
+ifdef::env-github[]
+
+For ESP specifics:
+
+* link:/src/main/adoc/categories/setups/setup-esp8266-arduino.adoc[Setup ESP 8266 Arduino IDE]
+* link:/src/main/adoc/categories/setups/setup-esp32-arduino.adoc[Setup ESP 32 Arduino IDE]
+* link:/src/main/adoc/categories/low-power/readme.adoc[Low-power tips]
+
+endif::[]
+
+ifndef::env-github[]
+
+:leveloffset: +2
+
+include::categories/setups/setup-esp8266-arduino.adoc[Setup ESP 8266 Arduino IDE]
+
+include::categories/setups/setup-esp32-arduino.adoc[Setup ESP 32 Arduino IDE]
+
+include::categories/low-power/readme.adoc[Low-power tips]
+
+:leveloffset: -2
 
 endif::[]

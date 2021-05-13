@@ -1,7 +1,26 @@
 = Setup Arduino IDE for ESP32
+:toc: macro
 :hardbreaks:
 
-This is very similar to link:/docs/setups/setup-esp8266-arduino.adoc[ESP8266 setup].
+ifdef::env-github[]
+:binariesdir: /project/src/main/adoc/binaries
+:giturl: 
+:imagesdir: /project/src/main/adoc/images
+//:sectlinks:
+//:sectnums:
+// Admonitions
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifndef::env-github[]
+:imagesdir: /project/src/main/adoc/categories/setups/
+endif::[]
+
+This is very similar to link:setup-esp8266-arduino.adoc[ESP8266 setup].
 
 == Hardware
 
@@ -28,7 +47,7 @@ In Arduino IDE, select proper board, example:
 - Tools/Cards/NodeMCU 32S board
 - <correct USB device>
 
-Create sketch such as the link:/sketches/esp8266-led/esp8266-led.ino[ESP8266 LED]
+Create sketch such as the link:/src/main/sketches/esp8266-led/esp8266-led.ino[ESP8266 LED]
 
 [source,js]
 ----
@@ -53,5 +72,3 @@ image:esp8266-led.jpg[NodeMCU Blink]
 == Resources
 
 * link:https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/debian_ubuntu.md[Ubuntu setup]
-
-* link:
