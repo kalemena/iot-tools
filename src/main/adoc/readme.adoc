@@ -104,6 +104,8 @@ Here is list things:
 ** link:/src/main/adoc/categories/communication/i2c/readme.adoc[I2C]
 ** link:/src/main/adoc/categories/communication/rf12-rf69/readme.adoc[RFM12 and RFM69]
 
+* Motors
+** link:/src/main/adoc/categories/devices/servo/readme.adoc[Servo Motor]
 
 endif::[]
 
