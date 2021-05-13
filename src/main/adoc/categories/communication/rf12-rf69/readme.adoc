@@ -1,10 +1,32 @@
 = RFM12/RFM69CW
+:toc: macro
+:hardbreaks:
+
+:imagesdir: /project/src/main/adoc/images
+
+ifdef::env-github[]
+:binariesdir: /project/src/main/adoc/binaries
+:giturl: 
+:imagesdir: /project/src/main/adoc/images
+//:sectlinks:
+//:sectnums:
+// Admonitions
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifndef::env-github[]
+:imagesdirlocal: /project/src/main/adoc/categories/communication/rf12-rf69/
+endif::[]
 
 NOTE: Below uses RFM12B and RFM69CW layouts which are compatible pins and at 868MHz.
 
 == Wiring
 
-image::/res/ArduinoProMini33-RF-sensor_bb-full.png[RFM12 / RFM69CW wiring on 3.3v board]
+image::ArduinoProMini33-RF-sensor_bb-full.png[RFM12 / RFM69CW wiring on 3.3v board]
 
 [NOTE]
 ====
@@ -23,12 +45,12 @@ Antenna length:
 
 Setup emitter and receiver as seen at:
 
-* link:/sketches/radio-rf69-send/radio-rf69-send.ino[]
-* link:/sketches/radio-rf69-recv/radio-rf69-recv.ino[]
+* link:/src/main/sketches/radio-rf69-send/radio-rf69-send.ino[]
+* link:/src/main/sketches/radio-rf69-recv/radio-rf69-recv.ino[]
 
 Console example result:
 
-image:rf69-lowpowerlab-test.png[]
+image:{imagesdirlocal}rf69-lowpowerlab-test.png[]
 
 == Links
 

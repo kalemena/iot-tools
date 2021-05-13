@@ -42,9 +42,9 @@ void loop() {
 
 Examples:
 
-* link:/sketches/teleinfo[Teleinfo Arduino]
-* link:/sketches/teleinfo-arduino-serial[Teleinfo Arduino using LibTeleinfo]
-* link:/sketches/teleinfo-esp32-serial[Teleinfo ESP32 using LibTeleinfo]
+* link:/src/main/sketches/teleinfo[Teleinfo Arduino]
+* link:/src/main/sketches/teleinfo-arduino-serial[Teleinfo Arduino using LibTeleinfo]
+* link:/src/main/sketches/teleinfo-esp32-serial[Teleinfo ESP32 using LibTeleinfo]
 
 == Installation
 

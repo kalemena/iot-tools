@@ -1,4 +1,24 @@
 = I2C Connections
+:toc: macro
+:hardbreaks:
+
+ifdef::env-github[]
+:binariesdir: /project/src/main/adoc/binaries
+:giturl: 
+:imagesdir: /project/src/main/adoc/images
+//:sectlinks:
+//:sectnums:
+// Admonitions
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifndef::env-github[]
+:imagesdir: /project/src/main/adoc/categories/communication/i2c/
+endif::[]
 
 This is common pattern for communications between micro-controllers.
 
@@ -17,7 +37,7 @@ This works similarly between other 5v components:
 
 Note: ESP8266 and ESP32 boards such as Wemos or NodeMCU seem to be using 5v level.
 
-Basic Sketch can be found at link:/sketches/I2C-inter-micro-controllers[I2C Master and Slave]
+Basic Sketch can be found at link:/src/main/sketches/I2C-inter-micro-controllers[I2C Master and Slave]
 
 Usage is simply:
 

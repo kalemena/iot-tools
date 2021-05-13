@@ -85,8 +85,73 @@ include::categories/setups/setup-esp8266-arduino.adoc[Setup ESP 8266 Arduino IDE
 
 include::categories/setups/setup-esp32-arduino.adoc[Setup ESP 32 Arduino IDE]
 
+:leveloffset: -2
+
+endif::[]
+
+ifdef::env-github[]
+
+== Using IoT Arduino-based
+
+Here is list things: 
+
+* Low-power
+** link:/src/main/adoc/categories/low-power/readme.adoc[Low-power tips]
+
+* Communication
+** link:/src/main/adoc/categories/communication/bluetooth/readme.adoc[Bluetooth]
+** link:/src/main/adoc/categories/communication/can/readme.adoc[CAN]
+** link:/src/main/adoc/categories/communication/i2c/readme.adoc[I2C]
+** link:/src/main/adoc/categories/communication/rf12-rf69/readme.adoc[RFM12 and RFM69]
+
+
+endif::[]
+
+ifndef::env-github[]
+
+== Coding - Low-Power
+
+:leveloffset: +2
+
 include::categories/low-power/readme.adoc[Low-power tips]
 
 :leveloffset: -2
 
+== Coding - Communication
+
+:leveloffset: +2
+
+include::categories/communication/bluetooth/readme.adoc[Bluetooth]
+
+include::categories/communication/i2c/readme.adoc[I2C]
+
+include::categories/communication/rf12-rf69/readme.adoc[RFM12 and RFM69]
+
+include::categories/communication/can/readme.adoc[CAN]
+
+:leveloffset: -2
+
 endif::[]
+
+== Boards links
+
+* Jeenode:
+  ** link:http://jeelabs.net/projects/hardware/wiki/Pinouts[Jeenode pinout]
+  ** link:http://jeelabs.net/projects/hardware/wiki/JeeNode[Specs]
+  ** link:http://jeelabs.org/2010/09/26/assembling-the-jeenode-v5/[Assembling]
+  ** link:http://jeelabs.org/tag/jeesmd/[SMD kit]
+  ** link:http://jeelabs.net/projects/hardware/wiki/SMD_Kit[SMD kit spec]
+  ** link:http://jeelabs.net/projects/hardware/wiki/Room_Board[JeeNode Room Board]
+* link:http://arduino-board.com/boards/dr-pro-mini[Deek-Robot pro mini board]
+* link:http://lowpowerlab.com/moteino/#specs[Moteino]
+* link:http://solderpad.com/nathanchantrell/tiny328-wireless-arduino-clone/[Tiny328 board]
+* link:http://nathan.chantrell.net/20130923/tiny328-mini-wireless-arduino-clone/[Tiny328 specs]
+* link:https://things4u.github.io/HardwareGuide/Arduino/Mini-Sensor-HTU21/mini-lowpower.html[RFM95 sensors]
+
+== Links:
+
+* link:https://www.ardumotive.com[Ardumotive]
+* link:https://www.hackster.io/boisse-martin/making-a-cheap-aquarium-parameters-controller-c4f420[Hack-war-yum]
+* link:https://github.com/suculent/arduino-docker-build[]
+* link:https://github.com/tombenke/darduino[]
+

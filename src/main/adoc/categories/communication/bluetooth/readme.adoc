@@ -1,5 +1,22 @@
 = Bluetooth
+:toc: macro
+:hardbreaks:
+
+ifdef::env-github[]
+:binariesdir: /project/src/main/adoc/binaries
+:giturl: 
+:imagesdir: /project/src/main/adoc/images
+//:sectlinks:
+//:sectnums:
+// Admonitions
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
 
 * link:http://www.martyncurrey.com/hm-10-bluetooth-4ble-modules/[]
 * link:http://www.instructables.com/id/ESP32-BLE-Android-App-Arduino-IDE-AWESOME/[]
 * link:https://www.dfrobot.com/blog-964.html[]
+

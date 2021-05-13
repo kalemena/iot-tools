@@ -43,7 +43,7 @@ In Arduino IDE, select proper board, example:
 - CPU 160 MHz
 - <correct USB device>
 
-Create sketch such as the link:/sketches/esp8266-led/esp8266-led.ino[ESP8266 LED]
+Create sketch such as the link:/src/main/sketches/esp8266-led/esp8266-led.ino[ESP8266 LED]
 
 [source,C]
 ----
