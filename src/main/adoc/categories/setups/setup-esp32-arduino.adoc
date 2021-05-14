@@ -47,7 +47,7 @@ In Arduino IDE, select proper board, example:
 - Tools/Cards/NodeMCU 32S board
 - <correct USB device>
 
-Create sketch such as the link:/src/main/sketches/esp8266-led/esp8266-led.ino[ESP8266 LED]
+Create sketch such as the link:{giturl}/src/main/sketches/esp8266-led/esp8266-led.ino[ESP8266 LED]
 
 [source,js]
 ----

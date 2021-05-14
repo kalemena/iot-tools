@@ -23,8 +23,8 @@ Antenna length:
 
 Setup emitter and receiver as seen at:
 
-* link:/src/main/sketches/radio-rf69-send/radio-rf69-send.ino[]
-* link:/src/main/sketches/radio-rf69-recv/radio-rf69-recv.ino[]
+* link:{giturl}/src/main/sketches/radio-rf69-send/radio-rf69-send.ino[]
+* link:{giturl}/src/main/sketches/radio-rf69-recv/radio-rf69-recv.ino[]
 
 Console example result:
 
