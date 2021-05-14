@@ -1,4 +1,4 @@
-= CurrentCost
+= Gateways - CurrentCost
 :toc: 
 :hardbreaks:
 
@@ -8,7 +8,7 @@ Additional plugable sensor can be used to monitor more devices.
 
 == Schema
 
-image:./res/Schema.jpg?raw=true[Schema overview]
+image:schema-currentcost.jpg[Schema overview]
 
 == How-To
 

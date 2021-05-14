@@ -1,1 +1,6 @@
-http://faire-ca-soi-meme.fr/domotique/2019/09/19/anemometre-a-ultrasons-vitesse-et-direction-du-vent/
+= Sensors - Wind
+:hardbreaks:
+
+== Links
+
+* link:http://faire-ca-soi-meme.fr/domotique/2019/09/19/anemometre-a-ultrasons-vitesse-et-direction-du-vent/[Faire soi-même à ultrasons]

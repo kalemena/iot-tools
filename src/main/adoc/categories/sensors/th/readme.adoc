@@ -1,4 +1,5 @@
-= Sensors Temperature
+= Sensors - Temperature
+:hardbreaks:
 
 link:https://blog.openenergymonitor.org/2016/07/HTU21D-Temperature-Humidity-sensor/[Interesting compare of sensors]
 
@@ -11,7 +12,7 @@ Resources:
 * link:http://www.pjrc.com/teensy/arduino_libraries/OneWire.zip[OneWire]
 * link:https://github.com/milesburton/Arduino-Temperature-Control-Library[Dallas]
 
-image:/res/ArduinoProMini33-sensor-DS18B20_bb.png[Wiring DS18B20]
+image:ArduinoProMini33-sensor-DS18B20_bb.png[Wiring DS18B20]
 
 OneWire and Dallas libraries required to read DS18B20 sensor.
 
@@ -31,7 +32,7 @@ Resources:
 
 * link:https://github.com/markruys/arduino-DHT[DHT lib]
 
-image:/res/ArduinoProMini33-RF-sensor-DHT22_bb.png[Wiring DHT22]
+image:ArduinoProMini33-RF-sensor-DHT22_bb.png[Wiring DHT22]
 
 [NOTE]
 ====
@@ -47,7 +48,7 @@ Sketches to try this in example from libraries to install:
 
 Temperature and humidity sensor.
 
-image:res/ArduinoProMini33-RF-sensor-SHT11_bb.png[Wiring SHT11]
+image:ArduinoProMini33-RF-sensor-SHT11_bb.png[Wiring SHT11]
 
 Usage of Jeelib as driver.
 

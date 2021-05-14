@@ -1,24 +1,4 @@
-= I2C Connections
-:toc: macro
-:hardbreaks:
-
-ifdef::env-github[]
-:binariesdir: /project/src/main/adoc/binaries
-:giturl: 
-:imagesdir: /project/src/main/adoc/images
-//:sectlinks:
-//:sectnums:
-// Admonitions
-:tip-caption: :bulb:
-:note-caption: :information_source:
-:important-caption: :heavy_exclamation_mark:
-:caution-caption: :fire:
-:warning-caption: :warning:
-endif::[]
-
-ifndef::env-github[]
-:imagesdir: /project/src/main/adoc/categories/communication/i2c/
-endif::[]
+= Radio - I2C Connections
 
 This is common pattern for communications between micro-controllers.
 

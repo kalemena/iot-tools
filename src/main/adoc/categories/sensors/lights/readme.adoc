@@ -1,9 +1,9 @@
-= Sensors Light
+= Sensors - Light
 :hardbreaks:
 
 == LDR
 
-image:res/Arduino-RF-sensor-LDR_bb.png[Wiring LDR]
+image:Arduino-RF-sensor-LDR_bb.png[Wiring LDR]
 
 * 60k < resistor < 400k (the higher the less power consumption, but less precise too)
 * then callibrate to have an output between 0 and 256

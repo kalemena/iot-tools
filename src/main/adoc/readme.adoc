@@ -63,39 +63,17 @@ endif::[]
 
 // Setups
 
-== Manual Setup
+== Guides
 
 For all flavors of Atmega, just download Arduino IDE.
 
 ifdef::env-github[]
 
-For ESP specifics:
+* Setup
+** link:/src/main/adoc/categories/setups/setup-esp8266-arduino.adoc[Setup ESP 8266 Arduino IDE]
+** link:/src/main/adoc/categories/setups/setup-esp32-arduino.adoc[Setup ESP 32 Arduino IDE]
 
-* link:/src/main/adoc/categories/setups/setup-esp8266-arduino.adoc[Setup ESP 8266 Arduino IDE]
-* link:/src/main/adoc/categories/setups/setup-esp32-arduino.adoc[Setup ESP 32 Arduino IDE]
-* link:/src/main/adoc/categories/low-power/readme.adoc[Low-power tips]
-
-endif::[]
-
-ifndef::env-github[]
-
-:leveloffset: +2
-
-include::categories/setups/setup-esp8266-arduino.adoc[Setup ESP 8266 Arduino IDE]
-
-include::categories/setups/setup-esp32-arduino.adoc[Setup ESP 32 Arduino IDE]
-
-:leveloffset: -2
-
-endif::[]
-
-ifdef::env-github[]
-
-== Using IoT Arduino-based
-
-Here is list things: 
-
-* Low-power
+* Low-Power
 ** link:/src/main/adoc/categories/low-power/readme.adoc[Low-power tips]
 
 * Communication
@@ -104,32 +82,83 @@ Here is list things:
 ** link:/src/main/adoc/categories/communication/i2c/readme.adoc[I2C]
 ** link:/src/main/adoc/categories/communication/rf12-rf69/readme.adoc[RFM12 and RFM69]
 
-* Motors
+* Devices
 ** link:/src/main/adoc/categories/devices/servo/readme.adoc[Servo Motor]
+
+* Sensors
+** link:/src/main/adoc/categories/sensors/current/readme.adoc[Sensors Current]
+** link:/src/main/adoc/categories/sensors/ligths/readme.adoc[Sensors Ligths]
+** link:/src/main/adoc/categories/sensors/onoff/readme.adoc[Sensors On/Off]
+** link:/src/main/adoc/categories/sensors/soil/readme.adoc[Sensors Soil]
+** link:/src/main/adoc/categories/sensors/teleinfo/readme.adoc[Sensors Téléinfo]
+** link:/src/main/adoc/categories/sensors/th/readme.adoc[Sensors Temperature and Humidity]
+** link:/src/main/adoc/categories/sensors/wind/readme.adoc[Sensors Wind]
+
+* Gateways (no Arduino-based)
+** link:/src/main/adoc/categories/gateways/currentcost/readme.adoc[Current Cost]
+** link:/src/main/adoc/categories/gateways/esphome/readme.adoc[ESP Home]
+** link:/src/main/adoc/categories/gateways/lego/readme.adoc[Lego]
+** link:/src/main/adoc/categories/gateways/rfxtrx433/readme.adoc[RfxTrx433]
+** link:/src/main/adoc/categories/gateways/zigbee/readme.adoc[ZigBee]
+** link:/src/main/adoc/categories/gateways/zwave/readme.adoc[ZWave]
 
 endif::[]
 
 ifndef::env-github[]
 
-== Coding - Low-Power
-
 :leveloffset: +2
 
-include::categories/low-power/readme.adoc[Low-power tips]
+include::categories/setups/setup-esp8266-arduino.adoc[Setup - ESP 8266 Arduino IDE]
 
-:leveloffset: -2
+include::categories/setups/setup-esp32-arduino.adoc[Setup - ESP 32 Arduino IDE]
 
-== Coding - Communication
+include::categories/low-power/readme.adoc[System - Low-power]
 
-:leveloffset: +2
+include::categories/communication/bluetooth/readme.adoc[Com - Bluetooth]
 
-include::categories/communication/bluetooth/readme.adoc[Bluetooth]
+include::categories/communication/can/readme.adoc[Com - CAN]
 
-include::categories/communication/i2c/readme.adoc[I2C]
+:imagesdir: /project/src/main/adoc/categories/communication/i2c/
+include::categories/communication/i2c/readme.adoc[Com - I2C]
 
-include::categories/communication/rf12-rf69/readme.adoc[RFM12 and RFM69]
+:imagesdir: /project/src/main/adoc/categories/communication/rf12-rf69/
+include::categories/communication/rf12-rf69/readme.adoc[Com - RFM12 and RFM69]
 
-include::categories/communication/can/readme.adoc[CAN]
+include::categories/devices/servo/readme.adoc[Devices - Servo Motor]
+
+include::categories/sensors/current/readme.adoc[Sensors - Current]
+
+:imagesdir: /project/src/main/adoc/categories/sensors/lights/
+include::categories/sensors/lights/readme.adoc[Sensors - Ligths]
+
+:imagesdir: /project/src/main/adoc/categories/sensors/onoff/
+include::categories/sensors/onoff/readme.adoc[Sensors - On/Off]
+
+:imagesdir: /project/src/main/adoc/categories/sensors/soil/
+include::categories/sensors/soil/readme.adoc[Sensors - Soil]
+
+:imagesdir: /project/src/main/adoc/categories/sensors/teleinfo/
+include::categories/sensors/teleinfo/readme.adoc[Sensors - Téléinfo]
+
+:imagesdir: /project/src/main/adoc/categories/sensors/th/
+include::categories/sensors/th/readme.adoc[Sensors - Temperature and Humidity]
+
+include::categories/sensors/wind/readme.adoc[Sensors - Wind]
+
+:imagesdir: /project/src/main/adoc/categories/gateways/currentcost/
+include::categories/gateways/currentcost/readme.adoc[Gateways - Current Cost]
+
+include::categories/gateways/esphome/readme.adoc[Gateways - ESP Home]
+
+include::categories/gateways/lego/readme.adoc[Gateways - Lego]
+
+:imagesdir: /project/src/main/adoc/categories/gateways/rfxtrx433/
+include::categories/gateways/rfxtrx433/readme.adoc[Gateways - RfxTrx433]
+
+:imagesdir: /project/src/main/adoc/categories/gateways/zigbee/
+include::categories/gateways/zigbee/readme.adoc[Gateways - ZigBee]
+
+include::categories/gateways/zwave/readme.adoc[Gateways - ZWave]
 
 :leveloffset: -2
 
@@ -150,7 +179,7 @@ endif::[]
 * link:http://nathan.chantrell.net/20130923/tiny328-mini-wireless-arduino-clone/[Tiny328 specs]
 * link:https://things4u.github.io/HardwareGuide/Arduino/Mini-Sensor-HTU21/mini-lowpower.html[RFM95 sensors]
 
-== Links:
+== Links
 
 * link:https://www.ardumotive.com[Ardumotive]
 * link:https://www.hackster.io/boisse-martin/making-a-cheap-aquarium-parameters-controller-c4f420[Hack-war-yum]

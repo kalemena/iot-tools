@@ -1,24 +1,5 @@
-= Low-power
-:toc: macro
+= Tips - Low-power
 :hardbreaks:
-
-ifdef::env-github[]
-:binariesdir: /project/src/main/adoc/binaries
-:giturl: 
-:imagesdir: /project/src/main/adoc/images
-//:sectlinks:
-//:sectnums:
-// Admonitions
-:tip-caption: :bulb:
-:note-caption: :information_source:
-:important-caption: :heavy_exclamation_mark:
-:caution-caption: :fire:
-:warning-caption: :warning:
-endif::[]
-
-ifndef::env-github[]
-:imagesdir: /project/src/main/adoc/categories/low-power/
-endif::[]
 
 == Info
 
@@ -46,7 +27,7 @@ Below are measures for:
 | What? | Measure | Diff | Comments
 
 |Arduino + RFM69 |5.1 uA |NA |Deek Robot with cuting led and regulator
-|+ DHT22 | 17.2 uA |+12uA |
+| + DHT22 | 17.2 uA |+12uA |
 | + HTU21D | 12.8 uA | +8uA |
 | + DS12B20 | 21.9 uA | +17uA |
 | + LDR | 26 uA | +21uA | Using 200k as pull-down

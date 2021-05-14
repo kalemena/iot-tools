@@ -1,4 +1,4 @@
-= ESPHome
+= Gateways - ESPHome
 :hardbreaks:
 
 link:https://github.com/esphome/esphome[ESP Home]

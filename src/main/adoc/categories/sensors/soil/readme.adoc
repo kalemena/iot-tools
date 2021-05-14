@@ -1,14 +1,14 @@
-= Sensors Garden
+= Sensors - Soil
 
 == Soil Moisture
 
 === Schema #1 - Adafruit
 
-image:res/Arduino-RF-sensor-soil1_bb.png[Adafruit version]
+image:Arduino-RF-sensor-soil1_bb.png[Adafruit version]
 
 === Schema #2 - simple probes (no components)
 
-image:res/Arduino-RF-sensor-soil2_bb.png[Simple probes]
+image:Arduino-RF-sensor-soil2_bb.png[Simple probes]
 
 Resistor can be 10k pull-up.
 

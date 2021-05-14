@@ -1,4 +1,4 @@
-= Lego
+= Gateways - Lego
 :hardbreaks:
 
 == ESP32 programming

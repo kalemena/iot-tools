@@ -1,26 +1,4 @@
-= RFM12/RFM69CW
-:toc: macro
-:hardbreaks:
-
-:imagesdir: /project/src/main/adoc/images
-
-ifdef::env-github[]
-:binariesdir: /project/src/main/adoc/binaries
-:giturl: 
-:imagesdir: /project/src/main/adoc/images
-//:sectlinks:
-//:sectnums:
-// Admonitions
-:tip-caption: :bulb:
-:note-caption: :information_source:
-:important-caption: :heavy_exclamation_mark:
-:caution-caption: :fire:
-:warning-caption: :warning:
-endif::[]
-
-ifndef::env-github[]
-:imagesdirlocal: /project/src/main/adoc/categories/communication/rf12-rf69/
-endif::[]
+= Radio - RFM12/RFM69CW
 
 NOTE: Below uses RFM12B and RFM69CW layouts which are compatible pins and at 868MHz.
 
@@ -50,7 +28,7 @@ Setup emitter and receiver as seen at:
 
 Console example result:
 
-image:{imagesdirlocal}rf69-lowpowerlab-test.png[]
+image:rf69-lowpowerlab-test.png[]
 
 == Links
 

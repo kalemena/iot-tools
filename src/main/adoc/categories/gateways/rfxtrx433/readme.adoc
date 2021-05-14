@@ -1,4 +1,4 @@
-= RfxTrx 433
+= Gateways - RfxTrx 433
 
 RFXtrx433 is used to monitor and act on various proprietary systems such as:
 
@@ -9,7 +9,7 @@ Listens on RfxTrx433 using nodejs and publishes to MQTT (mosquitto).
 
 == Hardware
 
-image:res/rfxtrx433-schema.jpg?raw=true[Hardware overview]
+image:rfxtrx433-schema.jpg[Hardware overview]
 
 == Hardware
 

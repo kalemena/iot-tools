@@ -1,10 +1,9 @@
-= Current sensors
+= Sensors - Current
 :hardbreaks:
 
 Multiple sensor exists:
 
 * INA219
-* 
 
 == Links
 

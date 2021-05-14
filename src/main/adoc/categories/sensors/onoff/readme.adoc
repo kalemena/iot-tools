@@ -1,6 +1,7 @@
-== Switch
+= Sensors - OnOff Switch
+:hardbreaks:
 
-image:res/Arduino-RF-sensor-switch_bb.jpg[Wiring Switch]
+image:Arduino-RF-sensor-switch_bb.jpg[Wiring Switch]
 
 * 4,7M resistor
 
