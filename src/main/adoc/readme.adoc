@@ -46,7 +46,7 @@ ifdef::env-github[]
 == Board Layouts
 
 There are tons of boards, and this repo lists only few layouts.
-See link:/src/main/adoc/pinouts/readme.adoc[here]
+See link:/src/main/adoc/categories/pinouts/readme.adoc[here]
 
 endif::[]
 
