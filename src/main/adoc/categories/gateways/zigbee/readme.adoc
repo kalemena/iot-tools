@@ -221,6 +221,21 @@ Hold paper clip for 5s to enter registration mode.
 .Tuya Zigbee
 * 3 Gang Portable Remote:
 Open the remote, click 5s on reset button
+* Curtain Gang: 
+Touch 5s the *pause* button to put in register. link:https://github.com/dresden-elektronik/deconz-rest-plugin/issues/3939#issuecomment-756901149[Calibration tips]
+
+image:tuya-gang-curtain.jpg[]
+
+[source,bash]
+----
+- First ensure you curtain is fully closed.
+- Set the calibration to "start" and click Write. Now you are in Calibration mode.
+- Above, click on the Exec button in the function Up / Open. In the calibration mode the 30 secondes duration is disable.
+- Once your curtain is fully open click on the "Exec" button in the function "Stop"
+- Click on the Exec button in the function Down / Close
+- Once your curtain is fully closed click on the "Exec" button in the function "Stop"
+- Set the calibration to "end" and click Write
+----
 
 .Other links:
 * link:https://presentationdeconz.wordpress.com/procedure-appairage-des-appareils-zigbee/[ConBee II Register devices]
