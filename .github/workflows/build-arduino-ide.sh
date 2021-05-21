@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 IMAGE=${IMAGE:-kalemena/arduino}
 VERSION=${VERSION:-1.8.15}
@@ -13,13 +13,18 @@ echo IMAGE   = ${IMAGE}
 echo VERSION = ${VERSION}
 
 # BUILD
+echo "Building ${IMAGE}:${VERSION} ..."
+
+cd src/main/docker
+pwd
+ls -la
+
 docker build --pull --cache-from ${IMAGE}:${VERSION} \
     -t ${IMAGE}:${VERSION} \
-    -f ./src/main/docker/Dockerfile \
+    -f Dockerfile \
     --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
     --build-arg VCS_REF=`git rev-parse --short HEAD` \
-    --build-arg VERSION=${VERSION} \
-    ./src/main/docker
+    --build-arg VERSION=${VERSION} .
 
 # CHECK
 docker ps -a
