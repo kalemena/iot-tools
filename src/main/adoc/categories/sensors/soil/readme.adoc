@@ -14,7 +14,8 @@ Resistor can be 10k pull-up.
 
 === Sketch
 
-```js
+[source,js]
+----
 int soil=0;
 
 void setup() {
@@ -30,4 +31,4 @@ void loop() {
   Serial.println("%");
   delay(1000);
 }
-```
+----

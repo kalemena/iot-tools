@@ -5,7 +5,8 @@ image:Arduino-RF-sensor-switch_bb.jpg[Wiring Switch]
 
 * 4,7M resistor
 
-```js
+[source,js]
+----
 int TOGGLE_1_PORT = 7;
 
 void setup(){
@@ -19,4 +20,4 @@ void loop(){
   Serial.println(toggleState);
   delay(250); 
 }
-```
+----

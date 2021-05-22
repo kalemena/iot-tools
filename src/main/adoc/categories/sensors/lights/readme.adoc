@@ -8,7 +8,8 @@ image:Arduino-RF-sensor-LDR_bb.png[Wiring LDR]
 * 60k < resistor < 400k (the higher the less power consumption, but less precise too)
 * then callibrate to have an output between 0 and 256
 
-```js
+[source,js]
+----
 int LDR_Pin = A0; //analog pin 0
 
 void setup(){
@@ -23,7 +24,7 @@ void loop()
   Serial.println(LDRfinal);
   delay(250); 
 }
-```
+----
 
 == TSL2561
 
