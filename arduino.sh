@@ -2,6 +2,7 @@
 # PARAMETERS
 WORKSPACE=${WORKSPACE:-$HOME/workspace}
 DEVICES=${DEVICES:-$1}
+VERSION=${VERSION:-1.8.15}
 
 # METHODS
 DEVICES_CMD=""
@@ -19,4 +20,4 @@ docker run -it --rm \
     -v ${WORKSPACE}:/home/developer/workspace \
     --device /dev/ttyUSB2:/dev/ttyUSB2 \
     -e DISPLAY=unix${DISPLAY} \
-    kalemena/arduino:1.8.13 arduino
+    kalemena/arduino:${VERSION} arduino
