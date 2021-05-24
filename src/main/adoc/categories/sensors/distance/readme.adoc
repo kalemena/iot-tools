@@ -1,0 +1,18 @@
+= Distance sensors
+
+== JSN-SR04T
+
+* link:https://www.makerguides.com/jsn-sr04t-arduino-tutorial/[JSN-SR04T]
+
+* link:/src/main/sketches/sketch-jsn-sr04t-01/sketch-jsn-sr04t-01.ino[Example code]
+
+.JSN-SR04T Connections
+[width="15%"]
+|=======
+| JSN-SR04T | Arduino
+| 5 V	| 5 V
+| Trig  | Pin 2
+| Echo	| Pin 3
+| GND   | GND
+|=======
+
