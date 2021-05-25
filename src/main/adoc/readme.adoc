@@ -128,6 +128,8 @@ include::categories/devices/servo/readme.adoc[Devices - Servo Motor]
 
 include::categories/sensors/current/readme.adoc[Sensors - Current]
 
+include::categories/sensors/distance/readme.adoc[Sensors - Distance]
+
 :imagesdir: /project/src/main/adoc/categories/sensors/lights/
 include::categories/sensors/lights/readme.adoc[Sensors - Ligths]
 
