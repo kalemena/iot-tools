@@ -1,0 +1,6 @@
+= Devices - Physics
+
+== Link
+
+.Spectrometer
+link:https://www.instructables.com/DIY-Low-Cost-Spectrometer[]
