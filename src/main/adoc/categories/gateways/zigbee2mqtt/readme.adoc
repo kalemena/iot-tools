@@ -1,3 +1,16 @@
 = What is this example?
 :hardbreaks:
 
+
+== Commands
+
+.Find devices
+[source,bash]
+----
+$ ls -l /dev/serial/by-id
+...
+usb-dresden_elektronik_ingenieurtechnik_GmbH_ConBee_II_DE2213620-if00 -> ../../ttyACM1
+----
+
+
+
