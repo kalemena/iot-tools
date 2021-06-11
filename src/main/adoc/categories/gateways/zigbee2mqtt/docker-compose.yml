@@ -9,6 +9,8 @@ services:
   zigbee2mqtt:
     image: koenkk/zigbee2mqtt
     restart: always
+    ports:
+      - "8181:8181"
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ./data:/app/data
