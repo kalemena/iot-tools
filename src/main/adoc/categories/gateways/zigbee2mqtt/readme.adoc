@@ -1,6 +1,9 @@
 = What is this example?
 :hardbreaks:
 
+== Setup
+
+Web UI is setup to open on port 8181.
 
 == Commands
 
