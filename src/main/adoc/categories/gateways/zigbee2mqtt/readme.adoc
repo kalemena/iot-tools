@@ -1,6 +1,10 @@
 = What is this example?
 :hardbreaks:
 
+link:https://www.zigbee2mqtt.io[Zigbee2MQTT] support wide range of devices and is very active and stable.
+
+See link:https://github.com/Koenkk/zigbee2mqtt[Zigbee2mqtt on GitHub]
+
 == Setup
 
 Web UI is setup to open on port 8181.
