@@ -213,8 +213,8 @@ To put the ZigBee device in detect mode and assign from ConBee II web UI:
 Reset and re-assign controller by light-on, then 6x light-off/on and stay on the 6th time. Bulb blinks.
 * Tradfri Dimmer switch:
 Click 4x times on reset button + light blinks
-* Tradfri Remote switch:
-Click 4x times on reset button + light blinks
+* Tradfri Remote ON/OFF switch:
+Open device (screw), Click 4x times on reset button + light blinks
 * Tradfri outlet:
 Hold paper clip for 5s to enter registration mode.
 
