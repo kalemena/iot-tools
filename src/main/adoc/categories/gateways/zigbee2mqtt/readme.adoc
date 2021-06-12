@@ -7,7 +7,7 @@ See link:https://github.com/Koenkk/zigbee2mqtt[Zigbee2mqtt on GitHub]
 
 == Setup
 
-Web UI is setup to open on port 8181.
+In this setup, Web UI is setup to open on port 8181.
 
 == Commands
 
