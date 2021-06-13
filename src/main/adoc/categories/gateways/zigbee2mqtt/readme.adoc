@@ -35,4 +35,30 @@ frontend:
   port: 8181
 ----
 
+== Environment
+
+.Build the few dependencies:
+[source,bash]
+----
+$ docker-compose build
+----
+
+.Start the flow:
+[source,bash]
+----
+$ docker-compose up -d
+----
+
+.Stop everything:
+[source,bash]
+----
+$ docker-compose stop
+----
+
+.Cleanup everything (including database):
+[source,bash]
+----
+$ docker-compose down -v
+----
+
 
