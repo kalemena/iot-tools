@@ -29,18 +29,13 @@
 **  Start the command (with -t parameter)
 **  Plugin the ConBee II again
 
+.Find devices
 [source,bash]
 ----
-$ sudo GCFFlasher_internal -d /dev/ttyACM2 -t 60 -R 10 -f deCONZ_ConBeeII_0x26580700.bin.GCF 
-GCFFlasher V3_13 (c) dresden elektronik ingenieurtechnik gmbh
-Reboot device /dev/ttyACM2 (ConBee II)
-R21B18 Bootloader
-Vers: 2.07
-build: Jun 17 2019
-flashing 160930 bytes: |============error: timeout flashing firmware after 3008 ms
-Reboot device /dev/ttyACM2 (ConBee II)
-Reboot device /dev/ttyACM2 (ConBee II)
-Reboot device /dev/ttyACM2 (ConBee II)
+$ ls -l /dev/serial/by-id
+...
+usb-dresden_elektronik_ingenieurtechnik_GmbH_ConBee_II_DE2213620-if00 -> ../../ttyACM1
+----
 R21B18 Bootloader
 Vers: 2.07
 build: Jun 17 2019
