@@ -36,13 +36,26 @@ $ ls -l /dev/serial/by-id
 ...
 usb-dresden_elektronik_ingenieurtechnik_GmbH_ConBee_II_DE2213620-if00 -> ../../ttyACM1
 ----
+
+Notes:
+- previous OK firmware: 0x26580700
+- currently used: 0x266b0700
+
+.Flash
+[source,bash]
+----
+$ docker run -it --rm --entrypoint "/bin/bash" --privileged --cap-add=ALL -v $(pwd):/firmware -v /dev:/dev -v /lib/modules:/lib/modules -v /sys:/sys marthoc/deconz
+root@69a522554758:/# /usr/bin/GCFFlasher_internal -d /dev/ttyACM0 -t 60 -R 10 -f /firmware/deCONZ_ConBeeII_0x266b0700.bin.GCF
+GCFFlasher V3_17 (c) dresden elektronik ingenieurtechnik gmbh
+Reboot device /dev/serial/by-id/usb-dresden_elektronik_ingenieurtechnik_GmbH_ConBee_II_DE2213620-if00 (ConBee II)
+deCONZ firmware version 26580700
 R21B18 Bootloader
 Vers: 2.07
 build: Jun 17 2019
-flashing 160930 bytes: |==============================|
+flashing 164377 bytes: |==============================|
 verify: .
 SUCCESS
-Wait 10 seconds application starts
+Wait 10 seconds until application starts
 ----
 
 == Usage
