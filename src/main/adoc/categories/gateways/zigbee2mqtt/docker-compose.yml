@@ -16,7 +16,7 @@ services:
       - ./data:/app/data
       - /run/udev:/run/udev:ro
     devices:
-      - /dev/ttyACM1:/dev/ttyACM1
+      - /dev/ttyACM0:/dev/ttyACM0
     privileged: true
     environment:
       - TZ=Europe/Paris
