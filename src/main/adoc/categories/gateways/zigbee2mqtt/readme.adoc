@@ -65,4 +65,11 @@ $ docker-compose stop
 $ docker-compose down -v
 ----
 
+== Tips
+
+.Bind devices together
+* link:https://urgn.tech/ikea-tradfri-zigbee2mqtt-binding/[Example with IKEA]
+
+
+
 
