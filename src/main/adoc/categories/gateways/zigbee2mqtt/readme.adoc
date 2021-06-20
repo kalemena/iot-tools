@@ -33,7 +33,11 @@ serial:
   adapter: deconz
 frontend:
   port: 8181
+advanced:
+  log_level: debug
 ----
+
+TIP: link:https://www.zigbee2mqtt.io/information/debug.html[Debug logs]
 
 == Environment
 
