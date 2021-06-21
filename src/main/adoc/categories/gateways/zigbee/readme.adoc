@@ -216,6 +216,11 @@ ws.onmessage = function(msg) {
 
 To put the ZigBee device in detect mode and assign from ConBee II web UI:
 
+.Xiaomi Aquara
+* Magic Cube:
+Hold reset for 3s
+* Temp/Humi/Pressure device:
+Hold reset until led light and blink
 .IKEA devices
 * Tradfri Light bulb: 
 Reset and re-assign controller by light-on, then 6x light-off/on and stay on the 6th time. Bulb blinks.
