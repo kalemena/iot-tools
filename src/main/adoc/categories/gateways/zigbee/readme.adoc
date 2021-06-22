@@ -229,7 +229,7 @@ When light up, shutdown, 3s, light up, 3s ... 3x time and keep up the last round
 .IKEA devices
 * Tradfri Light bulb: 
 Reset and re-assign controller by light-on, then 6x light-off/on and stay on the 6th time. Bulb blinks.
-* Tradfri Dimmer switch:
+* link:https://www.zigbee2mqtt.io/devices/E1524_E1810.html[Tradfri Dimmer switch]:
 Click 4x times on reset button + light blinks
 * Tradfri Remote ON/OFF switch:
 Open device (screw), Click 4x times on reset button + light blinks
