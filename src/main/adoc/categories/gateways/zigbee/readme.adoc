@@ -223,6 +223,8 @@ Hold reset for 3s
 Hold reset until led light and blink
 
 .Lidl
+* link:https://www.zigbee2mqtt.io/devices/HG06337.html[Lidl 220v plug]
+Hold button for 5s until power light blinks
 * link:https://www.zigbee2mqtt.io/devices/HG06106C.html[Livarno Color Light Bulb]
 When light up, shutdown, 3s, light up, 3s ... 3x time and keep up the last round, light should blink slowly
 
