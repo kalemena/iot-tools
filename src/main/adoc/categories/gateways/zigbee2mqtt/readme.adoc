@@ -85,6 +85,8 @@ Client mosq-u8viz9P6tZmib57Rfp sending DISCONNECT
 / # osquitto_pub -d -m '{"state": "CLOSE"}' -t 'zigbee2mqtt/V01~Hall/set'
 ...
 
+/ # mosquitto_pub -d -m '{"position": "0"}' -t 'zigbee2mqtt/V01~Hall/set'
+/ # mosquitto_pub -d -m '{"position": "100"}' -t 'zigbee2mqtt/V01~Hall/set'
 ----
 
 == Devices
