@@ -70,6 +70,22 @@ $ docker-compose down -v
 .Bind devices together
 * link:https://urgn.tech/ikea-tradfri-zigbee2mqtt-binding/[Example with IKEA]
 
+.Working directly with MQTT (based on TS130F doc)
+[source,bash]
+----
+$ docker exec -it node-red-contrib-zigbee2mqtt_mqtt_1 sh
+/ # mosquitto_pub -d -m '{"state": "OPEN"}' -t 'zigbee2mqtt/V01~Hall/set'
+Client mosq-u8viz9P6tZmib57Rfp sending CONNECT
+Client mosq-u8viz9P6tZmib57Rfp received CONNACK (0)
+Client mosq-u8viz9P6tZmib57Rfp sending PUBLISH (d0, q0, r0, m1, 'zigbee2mqtt/V01~Hall/set', ... (17 bytes))
+Client mosq-u8viz9P6tZmib57Rfp sending DISCONNECT
+
+/ # mosquitto_pub -d -m '{"state": "STOP"}' -t 'zigbee2mqtt/V01~Hall/set'
+...
+/ # osquitto_pub -d -m '{"state": "CLOSE"}' -t 'zigbee2mqtt/V01~Hall/set'
+...
+
+----
 
 == Devices
 
