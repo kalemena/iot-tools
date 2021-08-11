@@ -217,10 +217,12 @@ ws.onmessage = function(msg) {
 To put the ZigBee device in detect mode and assign from ConBee II web UI:
 
 .Xiaomi Aquara
-* Magic Cube:
+* link:https://www.zigbee2mqtt.io/devices/MFKZQ01LM.html[Magic Cube]
 Hold reset for 3s
-* Temp/Humi/Pressure device:
+* link:https://www.zigbee2mqtt.io/devices/WSDCGQ11LM.html[Temp/Humi/Pressure device]
 Hold reset until led light and blink
+* link:https://www.zigbee2mqtt.io/devices/MCCGQ11LM.html[Door sensor]
+Hold reset for about 5s
 
 .Lidl
 * link:https://www.zigbee2mqtt.io/devices/HG06337.html[Lidl 220v plug]
