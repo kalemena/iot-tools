@@ -95,3 +95,6 @@ Client mosq-u8viz9P6tZmib57Rfp sending DISCONNECT
 * link:https://www.zigbee2mqtt.io/devices/TS130F.html[Tuya - Shutters]
 * link:https://www.zigbee2mqtt.io/devices/HG06337.html[Lidl 220v plug]
 * link:https://www.zigbee2mqtt.io/devices/HG06106C.html[Livarno Color Light Bulb]
+* link:https://www.zigbee2mqtt.io/devices/MCCGQ11LM.html[Xiaomi Door sensor]
+* link:https://www.zigbee2mqtt.io/devices/WSDCGQ11LM.html[Xiaomi Temp/Humi/Pressure device]
+* link:https://www.zigbee2mqtt.io/devices/MFKZQ01LM.html[Xiaomi Magic Cube]
