@@ -13,7 +13,7 @@ jobs:
     - name: Build Docker Image
       env:
         IMAGE: "kalemena/arduino"
-        VERSION: "1.8.15"
+        VERSION: "1.8.16"
       run: |
         # PREPARE
         docker -v

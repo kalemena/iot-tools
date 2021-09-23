@@ -3,7 +3,7 @@ FROM ubuntu:20.04
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE
 ARG VCS_REF
-ARG VERSION=1.8.15
+ARG VERSION=1.8.16
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="Kalemena Arduino Tools" \
       org.label-schema.description="Kalemena Arduino Tools" \
