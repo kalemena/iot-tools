@@ -3,8 +3,8 @@
 ifdef::env-github[:outfilesuffix: .adoc]
 ifdef::env-github[]
 image:https://github.com/kalemena/iot-tools/workflows/Pipeline/badge.svg[GitHub Build] 
-image:https://images.microbadger.com/badges/version/kalemena/arduino.svg[Docker Version, link=https://microbadger.com/images/kalemena/arduino] 
-image:https://images.microbadger.com/badges/image/kalemena/arduino.svg[Docker Hub, link=https://hub.docker.com/r/kalemena/arduino/tags]
+image:https://img.shields.io/docker/v/kalemena/arduino.svg?sort=date[Docker Version, link=https://hub.docker.com/r/kalemena/arduino/tags] 
+image:https://img.shields.io/docker/pulls/kalemena/arduino.svg[Docker Hub, link=https://hub.docker.com/r/kalemena/arduino/tags]
 endif::[]
 
 Internet Of Things starts in general with sensors and micro-controllers.
