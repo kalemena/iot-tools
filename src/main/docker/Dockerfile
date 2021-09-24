@@ -118,7 +118,7 @@ RUN wget -q https://github.com/Links2004/arduinoWebSockets/archive/master.zip &&
 # JSON
 RUN wget -q https://github.com/bblanchon/ArduinoJson/releases/download/v6.18.0/ArduinoJson-v6.18.0.zip && unzip -q ArduinoJson-v6.18.0.zip && rm ArduinoJson-v6.18.0.zip
 # Teleinfo
-RUN wget -q https://github.com/hallard/LibTeleinfo/archive/v1.1.2.zip && unzip -q v1.1.2.zip && rm v1.1.2.zip && mv LibTeleinfo-1.1.2 LibTeleinfo
+RUN wget -q https://github.com/hallard/LibTeleinfo/archive/v1.1.4.zip && unzip -q v1.1.4.zip && rm v1.1.4.zip && mv LibTeleinfo-1.1.4 LibTeleinfo
 
 WORKDIR ${HOME}
 
