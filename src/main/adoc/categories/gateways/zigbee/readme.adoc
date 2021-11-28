@@ -142,7 +142,7 @@ From link:http://dresden-elektronik.github.io/deconz-rest-doc[Official Deconz AP
 .Get API token (pre-requisit: browse to Hamburger menu -> Gateway -> Advanced -> Click ‘Authenticate app’)
 [source,bash]
 ----
-$ curl -d '{ "devicetype": "Node-RED"}' -H "Content-Type: application/json" -X POST http://192.168.1.46:40450/api
+$ curl -d '{ "devicetype": "Node-RED"}' -H "Content-Type: application/json" -X POST http://deconz-server:40450/api
 ...
 # Token is returned
 ----
@@ -150,14 +150,14 @@ $ curl -d '{ "devicetype": "Node-RED"}' -H "Content-Type: application/json" -X P
 .List sensors
 [source,bash]
 ----
-$ curl -H "Content-Type: application/json" http://192.168.1.46:40450/api/XXAAXX/sensors | jq .
+$ curl -H "Content-Type: application/json" http://deconz-server:40450/api/XXAAXX/sensors | jq .
 ...
 ----
 
 .Touchlink
 [source,bash]
 ----
-$ curl -H "Content-Type: application/json" -X POST http://192.168.1.46:40450/api/9598E1143E/touchlink/scan
+$ curl -H "Content-Type: application/json" -X POST http://deconz-server:40450/api/9598E1143E/touchlink/scan
 ----
 
 == Deconz WebSocket API
@@ -165,7 +165,7 @@ $ curl -H "Content-Type: application/json" -X POST http://192.168.1.46:40450/api
 .WebSocket configuration
 [source,bash]
 ----
-$ curl -H "Content-Type: application/json" http://192.168.1.46:40450/api/XXAAXX/config | jq .
+$ curl -H "Content-Type: application/json" http://deconz-server:40450/api/XXAAXX/config | jq .
 
 {
   "UTC": "2020-08-23T18:31:17",
@@ -199,7 +199,7 @@ $ curl -H "Content-Type: application/json" http://192.168.1.46:40450/api/XXAAXX/
 ----
 const WebSocket = require('ws');
 
-const host = '192.168.1.46';
+const host = 'deconz-server';
 const port = 40460;
 
 const ws = new WebSocket('ws://' + host + ':' + port);
