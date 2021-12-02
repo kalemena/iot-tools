@@ -21,11 +21,11 @@ arduino:
 
 # Builds PDF book
 doc.publishToPDF: 
-	source docPublishingScripts.sh && publishPDF
+	source .github/docPublishingScripts.sh && publishPDF
 
 # Builds PDF book
 doc.publishToHTML: 
-	source docPublishingScripts.sh && publishHTML
+	source .github/docPublishingScripts.sh && publishHTML
 
 # Clean caches
 doc.clean:

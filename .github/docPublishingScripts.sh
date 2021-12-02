@@ -29,11 +29,14 @@ buildAssets()
     # Mingrammer will be generated in below folder
     mkdir -p ${PATH_PROJECT}/build/adoc/assets
 
-    docker run ${DOCKER_USERID_ARG} --rm \
-        -v ${PATH_PROJECT}:/project \
-        -w /project/src/main/adoc/assets \
-        kalemena/mingrammer-diagrams:latest bash \
-            -c 'for FILE in *.py; do python ${FILE}; done && pwd && ls -la && mv *.png /project/src/main/adoc/images/'
+    if [ -e ${PATH_PROJECT}/build/adoc/assets/*.py ]; then
+        docker run ${DOCKER_USERID_ARG} --rm \
+            -v ${PATH_PROJECT}:/project \
+            -w /project/src/main/adoc/assets \
+            kalemena/mingrammer-diagrams:latest bash \
+                -c 'for FILE in *.py; do python ${FILE}; done && pwd && ls -la && mv *.png /project/src/main/adoc/images/'
+    fi
+
     echo "===="
 }
 
@@ -57,7 +60,7 @@ publishPDF()
 
     REVISION=${REVISION:-latest}
 
-    for FILE in ${PATH_PROJECT}/src/main/adoc/_*-Book.adoc; do 
+    for FILE in ${PATH_PROJECT}/src/main/adoc/_*Book.adoc; do 
         echo "===="
         FILENAME=$(/usr/bin/basename "${FILE}")
         echo "Publishing to PDF ... ${FILENAME}"
@@ -87,7 +90,7 @@ publishHTML()
 
     REVISION=${REVISION:-latest}
 
-    for FILE in ${PATH_PROJECT}/src/main/adoc/_*-Book.adoc; do 
+    for FILE in ${PATH_PROJECT}/src/main/adoc/_*Book.adoc; do 
         echo "===="
         FILENAME=$(/usr/bin/basename "${FILE}")
         echo "Publishing to HTML ... ${FILENAME}"
@@ -115,6 +118,6 @@ publishHTML()
     # cp ${PATH_PROJECT}/src/main/adoc/themes/*.css ${PATH_PROJECT}/build/adoc/themes/
 
     cp ${PATH_PROJECT}/src/main/adoc/images/favicon.png ${PATH_PROJECT}/build/adoc/html/images/
-    mv ${PATH_PROJECT}/src/main/adoc/_*-Book.html ${PATH_PROJECT}/build/adoc/html/
+    mv ${PATH_PROJECT}/src/main/adoc/_*Book.html ${PATH_PROJECT}/build/adoc/html/
     touch ${PATH_PROJECT}/build/adoc/html/.nojekyll
 }

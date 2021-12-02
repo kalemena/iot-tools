@@ -126,7 +126,7 @@ include::categories/communication/rf12-rf69/readme.adoc[Com - RFM12 and RFM69]
 
 include::categories/devices/servo/readme.adoc[Devices - Servo Motor]
 
-include::categories/devices/physics/readme.adoc[Physics]
+// include::categories/devices/physics/readme.adoc[Physics]
 
 include::categories/sensors/current/readme.adoc[Sensors - Current]
 
