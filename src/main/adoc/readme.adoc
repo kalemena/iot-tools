@@ -149,6 +149,8 @@ include::categories/sensors/th/readme.adoc[Sensors - Temperature and Humidity]
 
 include::categories/sensors/wind/readme.adoc[Sensors - Wind]
 
+include::categories/sensors/air/readme.adoc[Sensors - Air]
+
 :imagesdir: /project/src/main/adoc/categories/gateways/currentcost/
 include::categories/gateways/currentcost/readme.adoc[Gateways - Current Cost]
 
