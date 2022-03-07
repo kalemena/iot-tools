@@ -2,7 +2,7 @@
 # PARAMETERS
 WORKSPACE=${WORKSPACE:-$HOME/workspace}
 DEVICES=${DEVICES:-$1}
-VERSION=${VERSION:-1.8.15}
+VERSION=${VERSION:-1.8.19}
 
 # METHODS
 DEVICES_CMD=""
@@ -18,6 +18,6 @@ xhost +local:
 docker run -it --rm \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -v ${WORKSPACE}:/home/developer/workspace \
-    --device /dev/ttyUSB2:/dev/ttyUSB2 \
+    --device /dev/ttyUSB0:/dev/ttyUSB0 \
     -e DISPLAY=unix${DISPLAY} \
     kalemena/arduino:${VERSION} arduino
