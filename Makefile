@@ -1,4 +1,4 @@
-VERSION := "1.8.16"
+VERSION := "1.8.19"
 DEVICES := /dev/ttyUSB2
 
 THIS_FILE := $(lastword $(MAKEFILE_LIST))

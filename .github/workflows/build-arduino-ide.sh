@@ -1,7 +1,7 @@
 #!/bin/bash
 
 IMAGE=${IMAGE:-kalemena/arduino}
-VERSION=${VERSION:-1.8.16}
+VERSION=${VERSION:-1.8.19}
 
 # PREPARE
 docker -v
