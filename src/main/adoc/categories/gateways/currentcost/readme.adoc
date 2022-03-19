@@ -45,3 +45,5 @@ $ node pub-current-cost.js
 
 * link:http://www.currentcost.com/product-envir.html[CurrentCost EnviR]
 * link:http://www.currentcost.com/cc128/xml.htm[CurrentCost XML Schema]
+* link:https://subversion.nexusuk.org/projects/currentcost/[]
+* link:https://blog.nexusuk.org/2017/10/esp8266-currentcost-wifi-gateway.html[]
