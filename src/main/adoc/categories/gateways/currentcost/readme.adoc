@@ -40,3 +40,8 @@ $ npm install xml2js
 $ npm install mqtt
 $ node pub-current-cost.js
 ----
+
+== Links
+
+* link:http://www.currentcost.com/product-envir.html[CurrentCost EnviR]
+* link:http://www.currentcost.com/cc128/xml.htm[CurrentCost XML Schema]
