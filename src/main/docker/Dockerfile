@@ -22,7 +22,7 @@ RUN apt-get -y update \
 	&& apt-get -y install \
         software-properties-common \
         wget unzip \
-        openjdk-8-jre \
+        openjdk-11-jre \
         python3 python3-pip \
         git \
     && apt-get clean \
