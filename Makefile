@@ -1,6 +1,5 @@
 VERSION := "1.8.19"
 DEVICES := /dev/ttyUSB0
-IMAGE_FROM := ubuntu:22.04
 
 THIS_FILE := $(lastword $(MAKEFILE_LIST))
 
@@ -11,7 +10,6 @@ SHELL := /bin/bash
 all: build
 
 build:
-	docker pull $(IMAGE_FROM)
 	docker build -t kalemena/arduino:${VERSION} src/main/docker/
 
 arduino:
