@@ -1,5 +1,4 @@
-ARG IMAGE_FROM=ubuntu:22.04
-FROM ${IMAGE_FROM}
+FROM ubuntu:22.04
 
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE
