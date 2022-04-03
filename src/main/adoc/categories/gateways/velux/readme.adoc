@@ -1,0 +1,17 @@
+= Gateways - Velux
+:hardbreaks:
+
+There are Tahoma or other proprietary gateways.
+
+However there seem to be simple-enough RF433-based alternatives.
+
+
+
+
+== References
+
+* link:https://pushstack.wordpress.com/somfy-rts-protocol/[Somfy Protocol decode]
+* link:https://www.romainpiquard.fr/article-133-controler-ses-volets-somfy-avec-un-arduino.php[Building doc]
+* link:https://github.com/Nickduino/Somfy_Remote[Arduino-based Remote]
+* link:https://github.com/DCotterill/Somfy_Remote/[Fork using D1 mini]
+* link:https://www.youtube.com/watch?v=9RhHrYqp9FU[ESP + RF433]

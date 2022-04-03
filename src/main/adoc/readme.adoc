@@ -99,6 +99,7 @@ ifdef::env-github[]
 ** link:/src/main/adoc/categories/gateways/esphome/readme.adoc[ESP Home]
 ** link:/src/main/adoc/categories/gateways/lego/readme.adoc[Lego]
 ** link:/src/main/adoc/categories/gateways/rfxtrx433/readme.adoc[RfxTrx433]
+** link:/src/main/adoc/categories/gateways/velux/readme.adoc[Velux]
 ** link:/src/main/adoc/categories/gateways/zigbee/readme.adoc[ZigBee]
 ** link:/src/main/adoc/categories/gateways/zwave/readme.adoc[ZWave]
 
