@@ -15,3 +15,5 @@ However there seem to be simple-enough RF433-based alternatives.
 * link:https://github.com/Nickduino/Somfy_Remote[Arduino-based Remote]
 * link:https://github.com/DCotterill/Somfy_Remote/[Fork using D1 mini]
 * link:https://www.youtube.com/watch?v=9RhHrYqp9FU[ESP + RF433]
+* link:https://github.com/dmslabsbr/esphome-somfy[ESPHome version]
+* link:https://github.com/Tahitibob35/roller-shutter[Another version]
