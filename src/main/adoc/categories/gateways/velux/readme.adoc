@@ -11,9 +11,12 @@ However there seem to be simple-enough RF433-based alternatives.
 == References
 
 * link:https://pushstack.wordpress.com/somfy-rts-protocol/[Somfy Protocol decode]
-* link:https://www.romainpiquard.fr/article-133-controler-ses-volets-somfy-avec-un-arduino.php[Building doc]
-* link:https://github.com/Nickduino/Somfy_Remote[Arduino-based Remote]
-* link:https://github.com/DCotterill/Somfy_Remote/[Fork using D1 mini]
-* link:https://www.youtube.com/watch?v=9RhHrYqp9FU[ESP + RF433]
-* link:https://github.com/dmslabsbr/esphome-somfy[ESPHome version]
-* link:https://github.com/Tahitibob35/roller-shutter[Another version]
+* link:https://www.arduino.cc/reference/en/libraries/somfy_remote_lib/[Somfy Arduino library]
+
+* Projects
+** link:https://www.romainpiquard.fr/article-133-controler-ses-volets-somfy-avec-un-arduino.php[Building doc]
+** link:https://github.com/Nickduino/Somfy_Remote[Arduino-based Remote]
+** link:https://github.com/DCotterill/Somfy_Remote/[Fork using D1 mini]
+** link:https://www.youtube.com/watch?v=9RhHrYqp9FU[ESP + RF433]
+** link:https://github.com/dmslabsbr/esphome-somfy[ESPHome version]
+** link:https://github.com/Tahitibob35/roller-shutter[Another version]
