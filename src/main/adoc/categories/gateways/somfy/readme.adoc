@@ -1,4 +1,4 @@
-= Gateways - Velux
+= Gateways - Somfy
 :hardbreaks:
 
 There are Tahoma or other proprietary gateways.
@@ -7,11 +7,11 @@ However there seem to be simple-enough RF433-based alternatives.
 
 
 
-
 == References
 
 * link:https://pushstack.wordpress.com/somfy-rts-protocol/[Somfy Protocol decode]
 * link:https://www.arduino.cc/reference/en/libraries/somfy_remote_lib/[Somfy Arduino library]
+* link:https://registry.platformio.org/libraries/einfacharne/Somfy_Remote[CC1101 based Somfy remote]
 
 * Projects
 ** link:https://www.romainpiquard.fr/article-133-controler-ses-volets-somfy-avec-un-arduino.php[Building doc]

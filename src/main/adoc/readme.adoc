@@ -98,8 +98,8 @@ ifdef::env-github[]
 ** link:/src/main/adoc/categories/gateways/currentcost/readme.adoc[Current Cost]
 ** link:/src/main/adoc/categories/gateways/esphome/readme.adoc[ESP Home]
 ** link:/src/main/adoc/categories/gateways/lego/readme.adoc[Lego]
+** link:/src/main/adoc/categories/gateways/somfy/readme.adoc[Somfy]
 ** link:/src/main/adoc/categories/gateways/rfxtrx433/readme.adoc[RfxTrx433]
-** link:/src/main/adoc/categories/gateways/velux/readme.adoc[Velux]
 ** link:/src/main/adoc/categories/gateways/zigbee/readme.adoc[ZigBee]
 ** link:/src/main/adoc/categories/gateways/zwave/readme.adoc[ZWave]
 
@@ -158,6 +158,8 @@ include::categories/gateways/currentcost/readme.adoc[Gateways - Current Cost]
 include::categories/gateways/esphome/readme.adoc[Gateways - ESP Home]
 
 include::categories/gateways/lego/readme.adoc[Gateways - Lego]
+
+include::categories/gateways/somfy/readme.adoc[Gateways - Somfy]
 
 :imagesdir: /project/src/main/adoc/categories/gateways/rfxtrx433/
 include::categories/gateways/rfxtrx433/readme.adoc[Gateways - RfxTrx433]
