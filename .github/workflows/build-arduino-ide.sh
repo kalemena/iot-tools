@@ -2,10 +2,11 @@
 
 IMAGE=${IMAGE:-kalemena/arduino}
 VERSION=${VERSION:-1.8.19}
+IMAGE_FROM=${IMAGE_FROM:-ubuntu:22.04}
 
 # PREPARE
 docker -v
-docker pull ubuntu:20.04
+docker pull ${IMAGE_FROM}
 docker pull ${IMAGE}:${VERSION} || true
 
 # INFO
@@ -20,6 +21,7 @@ pwd
 ls -la
 
 docker build --pull --cache-from ${IMAGE}:${VERSION} \
+    -t ${IMAGE_FROM}:${IMAGE_FROM} \
     -t ${IMAGE}:${VERSION} \
     -f Dockerfile \
     --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \

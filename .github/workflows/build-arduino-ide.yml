@@ -12,12 +12,13 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build Docker Image
       env:
+        IMAGE_FROM: "ubuntu:22.04"
         IMAGE: "kalemena/arduino"
         VERSION: "1.8.19"
       run: |
         # PREPARE
         docker -v
-        docker pull ubuntu:20.04
+        docker pull {IMAGE_FROM}
         docker pull ${IMAGE}:latest || true
 
         # BUILD
