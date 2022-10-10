@@ -89,6 +89,21 @@ Client mosq-u8viz9P6tZmib57Rfp sending DISCONNECT
 / # mosquitto_pub -d -m '{"position": "100"}' -t 'zigbee2mqtt/V01~Hall/set'
 ----
 
+.Learn about devices (Which is Router? Which is EndDevice?)
+[source,bash]
+----
+/ # Example logs
+Zigbee2MQTT:info  2022-09-17 15:19:44: Currently 41 devices are joined:
+Zigbee2MQTT:info  2022-09-17 15:19:44: R0... (0x...): E1743 - IKEA TRADFRI ON/OFF switch (EndDevice)
+Zigbee2MQTT:info  2022-09-17 15:19:44: P0... (0x...): E1603/E1702/E1708 - IKEA TRADFRI control outlet (Router)
+Zigbee2MQTT:info  2022-09-17 15:19:44: R0... (0x...): TS0043 - TuYa Wireless switch with 3 buttons (EndDevice)
+Zigbee2MQTT:info  2022-09-17 15:19:44: R0... (0x...): TS0043 - TuYa Wireless switch with 3 buttons (EndDevice)
+Zigbee2MQTT:info  2022-09-17 15:19:44: R0... (0x...): TS0044 - TuYa Wireless switch with 4 buttons (EndDevice)
+Zigbee2MQTT:info  2022-09-17 15:19:44: S0... (0x...): WSDCGQ11LM - Xiaomi Aqara temperature, humidity and pressure sensor (EndDevice)
+Zigbee2MQTT:info  2022-09-17 15:19:44: R0... (0x...): E1524/E1810 - IKEA TRADFRI remote control (EndDevice)
+...
+----
+
 == Devices
 
 * link:https://www.zigbee2mqtt.io/devices/AB3257001NJ.html[OSRAM LEDVANCE+]
