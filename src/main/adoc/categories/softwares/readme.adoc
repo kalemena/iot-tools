@@ -1,0 +1,6 @@
+= Softwares
+
+== Fritzing
+
+Super easy for integration of boards with sensors and few basic components.
+Allows to layout breadboard, with colored wires, that one can understand and follow, prior to create schematic and PCB for printing.
