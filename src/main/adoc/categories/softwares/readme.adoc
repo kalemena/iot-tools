@@ -4,3 +4,9 @@
 
 Super easy for integration of boards with sensors and few basic components.
 Allows to layout breadboard, with colored wires, that one can understand and follow, prior to create schematic and PCB for printing.
+
+== Kicad
+
+KiCad is advanced, although not as complex to catch as professional tools.
+
+* link:https://docs.kicad.org/5.1/fr/getting_started_in_kicad/getting_started_in_kicad.html[KiCad documentation]
