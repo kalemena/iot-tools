@@ -73,6 +73,9 @@ ifdef::env-github[]
 ** link:/src/main/adoc/categories/setups/setup-esp8266-arduino.adoc[Setup ESP 8266 Arduino IDE]
 ** link:/src/main/adoc/categories/setups/setup-esp32-arduino.adoc[Setup ESP 32 Arduino IDE]
 
+* Software
+** link:/src/main/adoc/categories/softwares/readme.adoc.adoc[Softwares to design circuits on PCBs]
+
 * Low-Power
 ** link:/src/main/adoc/categories/low-power/readme.adoc[Low-power tips]
 
@@ -112,6 +115,8 @@ ifndef::env-github[]
 include::categories/setups/setup-esp8266-arduino.adoc[Setup - ESP 8266 Arduino IDE]
 
 include::categories/setups/setup-esp32-arduino.adoc[Setup - ESP 32 Arduino IDE]
+
+include::categories/softwares/readme.adoc[Softwares to design circuits on PCBs]
 
 include::categories/low-power/readme.adoc[System - Low-power]
 
