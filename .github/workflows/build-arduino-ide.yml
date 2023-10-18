@@ -9,11 +9,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    
     - uses: actions/checkout@v1
+
     - name: Build Docker Image
       env:
         IMAGE: "kalemena/arduino"
         VERSION: "1.8.19"
+        
       run: |
         # PREPARE
         docker -v
