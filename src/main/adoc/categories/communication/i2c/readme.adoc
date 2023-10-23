@@ -2,6 +2,10 @@
 
 This is common pattern for communications between micro-controllers.
 
+== Links
+
+* link:https://randomnerdtutorials.com/esp32-i2c-communication-arduino-ide/[I2C tutorial]
+
 == ESP8266 to Arduino Nano
 
 image:ESP8266-to-Arduino-Nano-5v.png[ESP8266 to Nano]
