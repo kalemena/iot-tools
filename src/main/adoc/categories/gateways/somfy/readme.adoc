@@ -11,7 +11,13 @@ However there seem to be simple-enough RF433-based alternatives.
 
 * link:https://pushstack.wordpress.com/somfy-rts-protocol/[Somfy Protocol decode]
 * link:https://www.arduino.cc/reference/en/libraries/somfy_remote_lib/[Somfy Arduino library]
-* link:https://registry.platformio.org/libraries/einfacharne/Somfy_Remote[CC1101 based Somfy remote]
+
+* CC1101
+** link:https://github.com/rstrouse/ESPSomfy-RTS[ESP Somfy RTS]
+** link:https://www.ebyte.com/en/downpdf.aspx?id=165[E7-M1101D doc]
+** link:https://registry.platformio.org/libraries/einfacharne/Somfy_Remote[CC1101 based Somfy remote]
+*** link:https://github.com/LSatan/SmartRC-CC1101-Driver-Lib/blob/master/img/Nano_CC1101.png[Wiring CC1101 - warning: pins are different from E7-M1101D]
+** link:https://www.die-welt.net/2021/06/controlling-somfy-roller-shutters-using-an-esp32-and-esphome/[ESPHome build]
 
 * Projects
 ** link:https://www.romainpiquard.fr/article-133-controler-ses-volets-somfy-avec-un-arduino.php[Building doc]
