@@ -11,3 +11,8 @@ Allows to layout breadboard, with colored wires, that one can understand and fol
 KiCad is advanced, although not as complex to catch as professional tools.
 
 * link:https://docs.kicad.org/5.1/fr/getting_started_in_kicad/getting_started_in_kicad.html[KiCad documentation]
+
+== Arduino IDE
+
+Arduino IDE setup is described at link:/src/main/adoc/categories/setups[Setup Arduino IDE]
+

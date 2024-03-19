@@ -96,7 +96,7 @@ $ node
 
 === Tuning
 
-link:https://aeotec.freshdesk.com/support/solutions/articles/6000171881-how-to-disable-led-on-z-stick-gen5-[Blink LED disable]
+link:https://aeotec.freshdesk.com/support/solutions/articles/6000171881-how-to-disable-led-on-z-stick-gen5-[Z-Stick Gen 5 - Disable anoying blink LED]
 
 [source,bash]
 ----

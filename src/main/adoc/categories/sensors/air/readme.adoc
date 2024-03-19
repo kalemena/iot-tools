@@ -7,3 +7,4 @@
 == Links
 
 * link:https://www.instructables.com/Miniature-CO2-Monitor-With-Alarm/[CO2]
+* link:https://www.instructables.com/OLED-RGB-CO2-Monitor[OLED CO2]
