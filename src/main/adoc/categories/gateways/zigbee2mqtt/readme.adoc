@@ -116,3 +116,5 @@ Zigbee2MQTT:info  2022-09-17 15:19:44: R0... (0x...): E1524/E1810 - IKEA TRADFRI
 * link:https://www.zigbee2mqtt.io/devices/MCCGQ11LM.html[Xiaomi Door sensor]
 * link:https://www.zigbee2mqtt.io/devices/WSDCGQ11LM.html[Xiaomi Temp/Humi/Pressure device]
 * link:https://www.zigbee2mqtt.io/devices/MFKZQ01LM.html[Xiaomi Magic Cube]
+* link:https://www.zigbee2mqtt.io/devices/GX02.html[GiEX - Water Valve]
+
