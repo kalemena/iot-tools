@@ -118,3 +118,8 @@ Zigbee2MQTT:info  2022-09-17 15:19:44: R0... (0x...): E1524/E1810 - IKEA TRADFRI
 * link:https://www.zigbee2mqtt.io/devices/MFKZQ01LM.html[Xiaomi Magic Cube]
 * link:https://www.zigbee2mqtt.io/devices/GX02.html[GiEX - Water Valve]
 
+== Unsupported devices
+
+TIP: link:https://www.zigbee2mqtt.io/advanced/support-new-devices/01_support_new_devices.html[]
+
+
