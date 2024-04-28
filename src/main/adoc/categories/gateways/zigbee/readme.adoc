@@ -267,3 +267,7 @@ image:tuya-gang-curtain.jpg[]
 .Specifications
 * link:https://zigbeealliance.org/wp-content/uploads/2019/12/07-5123-06-zigbee-cluster-library-specification.pdf[Zigbee Cluster Library Specification]
 * link:https://csa-iot.org/wp-content/uploads/2022/01/docs-05-3474-22-0csg-zigbee-specification-1.pdf[Zigbee specification]
+
+.Programming
+* link:https://github.com/espressif/esp-zigbee-sdk[Zigbee library from espressif]
+* link:https://docs.espressif.com/projects/esp-zigbee-sdk/en/latest/esp32/introduction.html[ESP Zigbee SDK documentation]
