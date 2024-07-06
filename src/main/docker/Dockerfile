@@ -33,7 +33,7 @@ RUN wget -q -O- https://downloads.arduino.cc/arduino-${VERSION}-linux64.tar.xz |
  	&& ln -s /usr/local/share/arduino-${VERSION}/arduino /usr/local/bin/arduino
 
 # Setup User (http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/)
-ENV HOME /home/developer
+ENV HOME=/home/developer
 
 # Flash Tools
 RUN pip3 --no-cache-dir install esptool \
@@ -135,4 +135,4 @@ RUN export uid=1000 gid=1000 \
     && sed "s/^root.*/&developer/" /etc/group -i
 USER developer
 
-ENV DISPLAY :1.0
+ENV DISPLAY=:1.0
