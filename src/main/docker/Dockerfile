@@ -119,6 +119,8 @@ RUN wget -q https://github.com/Links2004/arduinoWebSockets/archive/master.zip &&
 RUN wget -q https://github.com/bblanchon/ArduinoJson/releases/download/v6.19.3/ArduinoJson-v6.19.3.zip && unzip -q ArduinoJson-v6.19.3.zip && rm ArduinoJson-v6.19.3.zip
 # Teleinfo
 RUN wget -q https://github.com/hallard/LibTeleinfo/archive/v1.1.4.zip && unzip -q v1.1.4.zip && rm v1.1.4.zip && mv LibTeleinfo-1.1.4 LibTeleinfo
+# Stepper
+RUN wget -q http://www.airspayce.com/mikem/arduino/AccelStepper/AccelStepper-1.64.zip && unzip -q AccelStepper-1.64.zip && rm AccelStepper-1.64.zip
 
 WORKDIR ${HOME}
 
