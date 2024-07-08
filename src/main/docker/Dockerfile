@@ -77,7 +77,7 @@ RUN mkdir -p /usr/local/share/arduino/hardware/esp32com \
 # ESP32 FS
 RUN mkdir -p ${HOME}/Arduino/tools \
     && cd ${HOME}/Arduino/tools \
-    && wget -q https://github.com/me-no-dev/arduino-esp32fs-plugin/releases/download/1.0/ESP32FS-1.0.zip && unzip -q ESP32FS-1.0.zip && rm ESP32FS-1.0.zip
+    && wget -q https://github.com/me-no-dev/arduino-esp32fs-plugin/releases/download/1.1/ESP32FS-1.1.zip && unzip -q ESP32FS-1.1.zip && rm ESP32FS-1.1.zip
 
 # Hide Boards
 ADD [ "boards/boards-*.txt", "/tmp/" ]
