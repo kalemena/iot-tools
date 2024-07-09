@@ -98,7 +98,7 @@ RUN wget -q https://github.com/LowPowerLab/LowPower/archive/master.zip && unzip 
 RUN wget -q https://github.com/adafruit/Adafruit_Sensor/archive/master.zip && unzip -q master.zip && rm master.zip
 RUN wget -q https://github.com/adafruit/Adafruit_BusIO/archive/master.zip && unzip -q master.zip && rm master.zip
 # INA219 (current sensor)
-RUN wget -q https://github.com/adafruit/Adafruit_INA219/archive/refs/tags/1.2.0.zip && unzip -q 1.2.0.zip && rm 1.2.0.zip
+RUN wget -q https://github.com/adafruit/Adafruit_INA219/archive/refs/tags/1.2.3.zip && unzip -q 1.2.3.zip && rm 1.2.3.zip
 # HTU21
 RUN wget -q https://github.com/adafruit/Adafruit_HTU21DF_Library/archive/master.zip && unzip -q master.zip && rm master.zip
 # DHT22
