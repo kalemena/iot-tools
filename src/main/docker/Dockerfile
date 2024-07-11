@@ -116,7 +116,7 @@ RUN wget -q https://github.com/FastLED/FastLED/archive/3.7.8.zip && unzip -q 3.7
 # WebSocket
 RUN wget -q https://github.com/Links2004/arduinoWebSockets/archive/master.zip && unzip -q master.zip && rm master.zip
 # JSON
-RUN wget -q https://github.com/bblanchon/ArduinoJson/releases/download/v6.19.3/ArduinoJson-v6.19.3.zip && unzip -q ArduinoJson-v6.19.3.zip && rm ArduinoJson-v6.19.3.zip
+RUN mkdir -p ArduinoJson && cd ArduinoJson && wget -q https://github.com/bblanchon/ArduinoJson/releases/download/v6.19.3/ArduinoJson-v6.19.3.zip && unzip -q ArduinoJson-v6.19.3.zip && rm ArduinoJson-v6.19.3.zip
 # Teleinfo
 RUN wget -q https://github.com/hallard/LibTeleinfo/archive/v1.1.4.zip && unzip -q v1.1.4.zip && rm v1.1.4.zip && mv LibTeleinfo-1.1.4 LibTeleinfo
 # Stepper
