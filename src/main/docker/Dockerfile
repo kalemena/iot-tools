@@ -95,6 +95,7 @@ RUN wget -q https://github.com/LowPowerLab/RFM69/archive/master.zip && unzip -q 
 RUN wget -q https://github.com/LowPowerLab/SPIFlash/archive/master.zip && unzip -q master.zip && rm master.zip
 RUN wget -q https://github.com/LowPowerLab/LowPower/archive/master.zip && unzip -q master.zip && rm master.zip
 # Adafruit
+RUN wget -q https://github.com/adafruit/Adafruit_CircuitPlayground/archive/master.zip && unzip -q master.zip && rm master.zip
 RUN wget -q https://github.com/adafruit/Adafruit_Sensor/archive/master.zip && unzip -q master.zip && rm master.zip
 RUN wget -q https://github.com/adafruit/Adafruit_BusIO/archive/master.zip && unzip -q master.zip && rm master.zip
 # INA219 (current sensor)
