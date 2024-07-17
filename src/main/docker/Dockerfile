@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE
@@ -36,7 +36,7 @@ RUN wget -q -O- https://downloads.arduino.cc/arduino-${VERSION}-linux64.tar.xz |
 ENV HOME=/home/developer
 
 # Flash Tools
-RUN pip3 --no-cache-dir install esptool \
+RUN pip3 --no-cache-dir install esptool --break-system-packages \
     && ln -s /usr/bin/python3 /usr/bin/python
 
 # Boards
