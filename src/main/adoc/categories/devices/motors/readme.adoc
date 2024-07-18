@@ -1,0 +1,31 @@
+= Devices - Motors
+
+== Notes
+
+Most Servo motors can rotate only 90°.
+Some, like FS90R, can rotate continuously with 360°. 
+However 360° seems cannot be precise because command are only about forward/stop/backward, versus other servo which have commands 0° to 90°.
+
+== Example
+
+.Basic Code
+[source,c]
+----
+#include <Servo.h>
+
+Servo myservo;
+
+void setup() {
+  myservo.attach(D6);
+}
+
+void loop() {
+  myservo.write(45); // Rotate at 45°
+}
+----
+
+== Links
+
+* link:https://github.com/kalemena/drone-car/blob/master/src/00-discover-servos/servo/servo.ino[My Code in Car usage]
+* link:http://www.wikidebrouillard.org/wiki/Item:Servomoteur[]
+* link:https://randomnerdtutorials.com/esp8266-nodemcu-stepper-motor-28byj-48-uln2003/[ESP 8266 + Stepper motor]
