@@ -1,11 +1,16 @@
 = Gateways - Somfy
 :hardbreaks:
 
+Two models:
+
+- RTS
+- IOHomeControl
+
+IMPORTANT: RTS has many open projects. Not IOHomeControl.
+
+.RTS
 There are Tahoma or other proprietary gateways.
-
 However there seem to be simple-enough RF433-based alternatives.
-
-
 
 == References
 
