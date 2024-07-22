@@ -55,8 +55,6 @@ RUN mkdir -p ${HOME}/Arduino/tools \
 ADD [ "boards-*.txt", "/tmp/" ]
 RUN cat /tmp/boards-esp8266.txt >> /usr/local/share/arduino/hardware/esp8266com/esp8266/boards.txt
 
-# ADD Libraries
-
 RUN export uid=1000 gid=1000 \
     && chown ${uid}:${gid} -R /home/developer \
     && chown ${uid}:${gid} -R /usr/local/share/arduino*
