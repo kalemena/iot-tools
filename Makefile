@@ -1,5 +1,5 @@
 VERSION := 1.8.19
-DEVICES := /dev/ttyUSB0
+DEVICE := /dev/ttyUSB1
 
 DOCKER_BUILD_OPTS := --pull
 BUILD_DATE := `date -u +"%Y-%m-%dT%H:%M:%SZ"`
@@ -34,7 +34,7 @@ build-%:
 # make aruidno-esp8266
 # make arduino-esp32
 arduino-%:
-	bash ./arduino.sh $* ${DEVICES}
+	bash ./arduino.sh $* ${DEVICE}
 
 ###########################
 # BUILDING & PUBLISHING DOC
