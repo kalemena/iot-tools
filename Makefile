@@ -14,7 +14,7 @@ SHELL := /bin/bash
 
 all: build
 
-build: build-atmega build-esp32 build-esp8266
+build: build-atmega build-esp8266 build-esp32
 	@echo DONE building images
 
 # make build-atmega
@@ -30,8 +30,17 @@ build-%:
 		src/main/docker/boards/$*
 	docker tag ${IMAGE}:${VERSION}-$*-${TAG_DATE} ${IMAGE}:${VERSION}-$*-latest
 
+push: push-atmega push-esp8266 push-esp32
+
+# make push-atmega
+# make push-esp8266
+# make push-esp32
+push-%:
+	docker push ${IMAGE}:${VERSION}-$*-${TAG_DATE}
+    docker push ${IMAGE}:${VERSION}-$*-latest
+	
 # make arduino-atmega
-# make aruidno-esp8266
+# make arduino-esp8266
 # make arduino-esp32
 arduino-%:
 	bash ./arduino.sh $* ${DEVICE}
