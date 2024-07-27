@@ -13,11 +13,6 @@ jobs:
     - uses: actions/checkout@v1
 
     - name: Build Docker Image
-      env:
-        IMAGE: "kalemena/arduino"
-        VERSION: "1.8.19"
-        DOCKER_BUILD_OPTS: "--pull --cache-from ${IMAGE}:${VERSION}-atmega"
-        
       run: |
         # PREPARE
         docker -v

@@ -1,10 +1,11 @@
+IMAGE := kalemena/arduino
 VERSION := 1.8.19
 DEVICE := /dev/ttyUSB1
 
-DOCKER_BUILD_OPTS := --pull
 BUILD_DATE := `date -u +"%Y-%m-%dT%H:%M:%SZ"`
 TAG_DATE := `date -u +"%Y-%m-%d"`
 VCS_REF := `git rev-parse --short HEAD`
+DOCKER_BUILD_OPTS := --pull --cache-from ${IMAGE}:${VERSION}-atmega-latest
 
 THIS_FILE := $(lastword $(MAKEFILE_LIST))
 
