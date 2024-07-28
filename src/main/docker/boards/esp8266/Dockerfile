@@ -3,7 +3,7 @@ ARG BUILD_DATE
 ARG VCS_REF
 ARG VERSION=1.8.19
 
-FROM kalemena/arduino:${VERSION}-atmega
+FROM kalemena/arduino:${VERSION}-atmega-latest
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="Kalemena IoT Tools - Arduino IDE for ESP8266" \
