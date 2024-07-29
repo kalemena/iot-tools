@@ -16,6 +16,7 @@ jobs:
       run: |
         # PREPARE
         docker -v
+        docker pull ubuntu:24.04
 
         # Building
         make build

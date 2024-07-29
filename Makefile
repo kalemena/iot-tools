@@ -2,10 +2,10 @@ IMAGE := kalemena/arduino
 VERSION := 1.8.19
 DEVICE := /dev/ttyUSB1
 
-BUILD_DATE := `date -u +"%Y-%m-%dT%H:%M:%SZ"`
-TAG_DATE := `date -u +"%Y-%m-%d"`
-VCS_REF := `git rev-parse --short HEAD`
-DOCKER_BUILD_OPTS := --pull --cache-from ${IMAGE}:${VERSION}-atmega-latest
+BUILD_DATE := $(shell date -u +"%Y-%m-%dT%H:%M:%SZ")
+TAG_DATE := $(shell date -u +"%Y-%m-%d")
+VCS_REF := $(shell git rev-parse --short HEAD)
+DOCKER_BUILD_OPTS := --cache-from ${IMAGE}:${VERSION}-atmega-latest
 
 THIS_FILE := $(lastword $(MAKEFILE_LIST))
 
@@ -22,15 +22,15 @@ build: build-atmega build-esp8266 build-esp32
 # make build-esp8266
 # make build-esp32
 build-%: 
-	@echo "Building docker image ${VERSION}-$*"
+	@echo "Building docker image ${IMAGE}:${VERSION}-$*"
 	docker build ${DOCKER_BUILD_OPTS} \
-		--build-arg BUILD_DATE=${BUILD_DATE} \
-        --build-arg VCS_REF=${VCS_REF} \
-        --build-arg VERSION=${VERSION} \
+		--build-arg BUILD_DATE=$(BUILD_DATE) \
+		--build-arg VCS_REF=${VCS_REF} \
+		--build-arg VERSION=${VERSION} \
 		-t kalemena/arduino:${VERSION}-$*-${TAG_DATE} \
 		src/main/docker/boards/$*
 	docker tag ${IMAGE}:${VERSION}-$*-${TAG_DATE} ${IMAGE}:${VERSION}-$*-latest
-
+	
 push: push-atmega push-esp8266 push-esp32
 
 # make push-atmega
@@ -38,7 +38,7 @@ push: push-atmega push-esp8266 push-esp32
 # make push-esp32
 push-%:
 	docker push ${IMAGE}:${VERSION}-$*-${TAG_DATE}
-    docker push ${IMAGE}:${VERSION}-$*-latest
+	docker push ${IMAGE}:${VERSION}-$*-latest
 	
 # make arduino-atmega
 # make arduino-esp8266
