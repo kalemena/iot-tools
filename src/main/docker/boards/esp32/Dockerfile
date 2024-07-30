@@ -1,9 +1,10 @@
+ARG VERSION=1.8.19
+FROM kalemena/arduino:${VERSION}-atmega-latest
+
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE
 ARG VCS_REF
-ARG VERSION=1.8.19
-
-FROM kalemena/arduino:${VERSION}-atmega-latest
+ARG VERSION
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="Kalemena IoT Tools - Arduino IDE for ESP32" \
@@ -12,7 +13,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.vcs-url="https://github.com/kalemena/iot-tools" \
       org.label-schema.vendor="Kalemena" \
-      org.label-schema.version=$VERSION-esp32 \
+      org.label-schema.version=${VERSION}-esp32 \
       org.label-schema.schema-version="1.0"
 
 ENV DEBIAN_FRONTEND=noninteractive
