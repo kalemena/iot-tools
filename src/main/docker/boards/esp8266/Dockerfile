@@ -24,6 +24,8 @@ USER root
 RUN pip3 --no-cache-dir install esptool --break-system-packages \
     && ln -s /usr/bin/python3 /usr/bin/python
 
+USER developer
+
 # Boards
 # ESP8266
 # RUN mkdir -p /usr/local/share/arduino/hardware/esp8266com \
@@ -56,9 +58,4 @@ RUN mkdir -p ${HOME}/Arduino/tools \
 ADD [ "boards-*.txt", "/tmp/" ]
 RUN cat /tmp/boards-esp8266.txt >> /usr/local/share/arduino/hardware/esp8266com/esp8266/boards.txt
 
-RUN export uid=1000 gid=1000 \
-    && chown ${uid}:${gid} -R /home/developer \
-    && chown ${uid}:${gid} -R /usr/local/share/arduino*
-
-USER developer
 WORKDIR ${HOME}
