@@ -41,7 +41,7 @@ ENV HOME=/home/developer
 
 # Hide Boards
 ADD [ "boards-*.txt", "/tmp/" ]
-RUN cat /tmp/boards-arduino.txt >> /usr/local/share/arduino/hardware/arduino/avr/boards.txt
+RUN cat /tmp/boards-atmega.txt >> /usr/local/share/arduino/hardware/arduino/avr/boards.txt
 
 RUN export uid=1000 gid=1000 \
     && mkdir -p ${HOME}/Arduino/libraries \
