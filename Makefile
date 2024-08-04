@@ -28,7 +28,7 @@ build-%:
 		--build-arg VCS_REF=${VCS_REF} \
 		--build-arg VERSION=${VERSION} \
 		-t kalemena/arduino:${VERSION}-$*-${TAG_DATE} \
-		src/main/docker/boards/$*
+		src/main/docker/arduino-ide-1.x/$*
 	docker tag ${IMAGE}:${VERSION}-$*-${TAG_DATE} ${IMAGE}:${VERSION}-$*-latest
 	
 push: push-atmega push-esp8266 push-esp32
