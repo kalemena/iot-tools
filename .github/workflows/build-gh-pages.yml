@@ -18,7 +18,7 @@ jobs:
         make doc.publishToHTML
         mv ./build/adoc/html/_IOT-Book.html ./build/adoc/html/index.html
     - name: Publish as gh-pages
-      uses: peaceiris/actions-gh-pages@v3
+      uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build/adoc/html
