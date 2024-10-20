@@ -239,6 +239,10 @@ Click 4x times on reset button + light blinks
 Open device (screw), Click 4x times on reset button + light blinks
 * link:https://www.zigbee2mqtt.io/devices/E1603_E1702_E1708.html[Tradfri outlet]
 Hold paper clip for 5s to enter registration mode.
+* link:https://www.zigbee2mqtt.io/devices/E2201.html[RODRET wireless dimmer/power switch]
+Press the pair button (found under the back cover next to the battery) 4 times in a row, wait for light to re-turn and blink.
+* link:https://www.zigbee2mqtt.io/devices/E2013.html[PARASOLL door/window sensor]
+Press the link button 4 times.
 
 .Tuya Zigbee
 * 3 Gang Portable Remote:
