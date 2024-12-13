@@ -244,6 +244,9 @@ Press the pair button (found under the back cover next to the battery) 4 times i
 * link:https://www.zigbee2mqtt.io/devices/E2013.html[PARASOLL door/window sensor]
 Press the link button 4 times.
 
+.SONOFF
+* link:https://www.zigbee2mqtt.io/devices/SWV.html[SWV - Water Valve]
+
 .Tuya Zigbee
 * 3 Gang Portable Remote:
 Open the remote, click 5s on reset button
