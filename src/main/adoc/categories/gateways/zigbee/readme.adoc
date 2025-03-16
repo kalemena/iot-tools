@@ -247,6 +247,10 @@ Press the link button 4 times.
 .SONOFF
 * link:https://www.zigbee2mqtt.io/devices/SWV.html[SWV - Water Valve]
 
+.Shelly
+* link:https://www.zigbee2mqtt.io/devices/WS90.html[Shelly - Ecowitt WS90]
+Press 2 times the calibration button
+
 .Heiman
 * link:https://www.zigbee2mqtt.io/devices/HS1SA.html[Heiman - Smoke detector]
 Hold reset for 5s
