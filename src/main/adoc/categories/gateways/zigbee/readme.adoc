@@ -223,6 +223,8 @@ Hold reset for 3s
 Hold reset until led light and blink
 * link:https://www.zigbee2mqtt.io/devices/MCCGQ11LM.html[Door sensor]
 Hold reset for about 5s
+* link:https://www.zigbee2mqtt.io/devices/RTCGQ01LM.html[Motion Sensor]
+Hold reset for about 5s
 
 .Lidl
 * link:https://www.zigbee2mqtt.io/devices/HG06337.html[Lidl 220v plug]
@@ -245,7 +247,8 @@ Press the pair button (found under the back cover next to the battery) 4 times i
 Press the link button 4 times.
 
 .SONOFF
-* link:https://www.zigbee2mqtt.io/devices/SWV.html[SWV - Water Valve]
+* link:https://www.zigbee2mqtt.io/devices/SWV.html[SWV - Water Valve] 
+Press and hold for 5 seconds (link:https://support.sonoff.tech/swv-usermanual/[User Manual])
 
 .Shelly
 * link:https://www.zigbee2mqtt.io/devices/WS90.html[Shelly - Ecowitt WS90]
