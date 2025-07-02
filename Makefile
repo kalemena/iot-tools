@@ -5,7 +5,8 @@ DEVICE := /dev/ttyUSB1
 BUILD_DATE := $(shell date -u +"%Y-%m-%dT%H:%M:%SZ")
 TAG_DATE := $(shell date -u +"%Y-%m-%d")
 VCS_REF := $(shell git rev-parse --short HEAD)
-DOCKER_BUILD_OPTS := --cache-from ${IMAGE}:${VERSION}-atmega-latest
+# DOCKER_BUILD_OPTS := --cache-from ${IMAGE}:${VERSION}-atmega-latest
+DOCKER_PLATFORM := --platform linux/amd64
 
 THIS_FILE := $(lastword $(MAKEFILE_LIST))
 
