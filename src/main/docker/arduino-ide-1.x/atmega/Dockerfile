@@ -1,4 +1,4 @@
-FROM ubuntu:24.04
+FROM --platform=linux/amd64 ubuntu:24.04
 
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE
@@ -24,7 +24,7 @@ RUN apt-get -y update \
         wget unzip \
         openjdk-11-jre \
         python3 python3-pip \
-        git \
+        git curl \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -57,7 +57,7 @@ RUN export uid=1000 gid=1000 \
 USER developer
 
 # ADD Libraries
-RUN 
+RUN mkdir -p ${HOME}/Arduino/libraries
 WORKDIR ${HOME}/Arduino/libraries
 
 RUN \
@@ -97,5 +97,7 @@ RUN \
     && wget -q http://www.airspayce.com/mikem/arduino/AccelStepper/AccelStepper-1.64.zip && unzip -q AccelStepper-1.64.zip && rm AccelStepper-1.64.zip
 
 WORKDIR ${HOME}
+
+# ENV JAVA_TOOL_OPTIONS='-Dsun.java2d.xrender=false -Dsun.java2d.pmoffscreen=false -Dremote.x11.workaround=false -Dawt.useSystemAAFontSettings=lcd -Dsun.java2d.renderer=sun.java2d.marlin.MarlinRenderingEngine -Djava2d.font.loadFontConf=true'
 
 ENV DISPLAY=:1.0
