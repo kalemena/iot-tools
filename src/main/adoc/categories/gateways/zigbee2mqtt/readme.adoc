@@ -122,4 +122,21 @@ Zigbee2MQTT:info  2022-09-17 15:19:44: R0... (0x...): E1524/E1810 - IKEA TRADFRI
 
 TIP: link:https://www.zigbee2mqtt.io/advanced/support-new-devices/01_support_new_devices.html[]
 
+.Sample logs = is NOT supported
+[source, bash]
+----
+[2024-06-08 22:21:49] debug: 	z2m: Received Zigbee message from '0xa4c458b828c63ce5', type 'readResponse', cluster 'genBasic', data '{}' from endpoint 1 with groupID null
+[2024-06-08 22:21:49] debug: 	z2m: Skipping message, still interviewing
+[2024-06-08 22:21:49] debug: 	zh:controller:endpoint: ZCL command 0xa4c458b828c63ce5/1 genBasic.read(["swBuildId"], {"timeout":10000,"disableResponse":false,"disableRecovery":false,"disableDefaultResponse":true,"direction":0,"srcEndpoint":null,"reservedBits":0,"manufacturerCode":null,"transactionSequenceNumber":null,"writeUndiv":false,"sendPolicy":"immediate"}) failed (Status 'UNSUPPORTED_ATTRIBUTE')
+[2024-06-08 22:21:49] debug: 	zh:controller:device: Interview - failed to read attribute 'softwareBuildID' from endpoint '1' (Error: ZCL command 0xa4c458b828c63ce5/1 genBasic.read(["swBuildId"], {"timeout":10000,"disableResponse":false,"disableRecovery":false,"disableDefaultResponse":true,"direction":0,"srcEndpoint":null,"reservedBits":0,"manufacturerCode":null,"transactionSequenceNumber":null,"writeUndiv":false,"sendPolicy":"immediate"}) failed (Status 'UNSUPPORTED_ATTRIBUTE'))
+[2024-06-08 22:21:49] debug: 	zh:controller:device: Interview - completed for device '0xa4c458b828c63ce5'
+[2024-06-08 22:21:49] debug: 	zh:controller:database: Writing database to '/app/data/database.db'
+[2024-06-08 22:21:49] info: 	zh:controller: Succesfully interviewed '0xa4c458b828c63ce5'
+[2024-06-08 22:21:49] info: 	z2m: Successfully interviewed '0xa4c458b828c63ce5', device has successfully been paired
+[2024-06-08 22:21:49] warning: 	z2m: Device '0xa4c458b828c63ce5' with Zigbee model 'TS0601' and manufacturer name '_TZE200_8ytb5h8u' is NOT supported, please follow https://www.zigbee2mqtt.io/advanced/support-new-devices/01_support_new_devices.html
+[2024-06-08 22:21:50] debug: 	z2m: MQTT publish: topic 'zigbee2mqtt/bridge/event', payload '{"data":{"definition":null,"friendly_name":"0xa4c458b828c63ce5","ieee_address":"0xa4c458b828c63ce5","status":"successful","supported":null},"type":"device_interview"}'
+[2024-06-08 22:21:50] debug: 	z2m: MQTT publish: topic 'zigbee2mqtt/bridge/log', payload '{"message":"interview_successful","meta":{"friendly_name":"0xa4c458b828c63ce5","supported":false},"type":"pairing"}'
+----
+
+
 
