@@ -1,6 +1,6 @@
 IMAGE := kalemena/arduino
 VERSION := 1.8.19
-DEVICE := /dev/ttyUSB1
+DEVICE := /dev/cu.usbserial-110
 
 BUILD_DATE := $(shell date -u +"%Y-%m-%dT%H:%M:%SZ")
 TAG_DATE := $(shell date -u +"%Y-%m-%d")
@@ -24,7 +24,7 @@ build: build-atmega build-esp8266 build-esp32
 # make build-esp32
 build-%: 
 	@echo "Building docker image ${IMAGE}:${VERSION}-$*"
-	docker build ${DOCKER_BUILD_OPTS} \
+	docker build ${DOCKER_PLATFORM} ${DOCKER_BUILD_OPTS} \
 		--build-arg BUILD_DATE=$(BUILD_DATE) \
 		--build-arg VCS_REF=${VCS_REF} \
 		--build-arg VERSION=${VERSION} \

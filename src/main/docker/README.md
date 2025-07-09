@@ -62,20 +62,31 @@ arduino-cli lib install --git-url https://github.com/hallard/LibTeleinfo.git
 
 > **Note:** The `boards-atmega.txt` file is only relevant for the Arduino IDE GUI (it hides unused board entries from the menu). With `arduino-cli` you select the board explicitly by FQBN – no hiding is needed.
 
-## Compile a sketch
+## Search for boards
 
 ```bash
-# For Arduino Nano (ATmega328P, old bootloader)
-arduino-cli compile --fqbn arduino:avr:nano:cpu=atmega328old ./src/main/sketches/Blink
+# List all supported boards and search for a keyword
+% arduino-cli board listall | grep -i nano
 
-# For Arduino Nano (ATmega328P, new bootloader)
-arduino-cli compile --fqbn arduino:avr:nano ./src/main/sketches/Blink
+# Search the board index for a specific model
+% arduino-cli board listall nano          
+Board Name            FQBN
+Arduino Nano          arduino:avr:nano
+Arduino Nano ESP32    esp32:esp32:nano_nora
+Geekble nano ESP32-S3 esp32:esp32:Geekble_Nano_ESP32S3
+M5NanoC6              esp32:esp32:m5stack_nanoc6
+Nano32                esp32:esp32:nano32
+UM NanoS3             esp32:esp32:um_nanos3
+
+# For Arduino Nano (ATmega328P, old bootloader)
+% export BOARD=arduino:avr:nano:cpu=atmega328old
 
 # For Arduino Pro/Pro Mini (ATmega328P, 16 MHz)
-arduino-cli compile --fqbn arduino:avr:pro:cpu=16MHzatmega328 ./src/main/sketches/Blink
+% export BOARD=arduino:avr:pro:cpu=16MHzatmega328
 
-# For Arduino Diecimila
-arduino-cli compile --fqbn arduino:avr:diecimila ./src/main/sketches/Blink
+# For ESP32 Wemos
+% export BOARD=esp32:esp32:d1_mini32
+```
 ```
 
 ## Upload to a board
