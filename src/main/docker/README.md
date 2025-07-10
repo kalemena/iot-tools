@@ -87,6 +87,12 @@ UM NanoS3             esp32:esp32:um_nanos3
 # For ESP32 Wemos
 % export BOARD=esp32:esp32:d1_mini32
 ```
+
+## Compile a sketch
+
+```bash
+% export SKETCH=./src/main/sketches/Blink
+% arduino-cli compile --fqbn ${BOARD} ${SKETCH}
 ```
 
 ## Upload to a board
