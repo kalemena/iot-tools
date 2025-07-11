@@ -99,10 +99,12 @@ UM NanoS3             esp32:esp32:um_nanos3
 
 ```bash
 # List connected boards to find the port
-arduino-cli board list
+% arduino-cli board list
+
+% export PORT=/dev/cu.usbserial-110
 
 # Upload (replace /dev/cu.usbserial-XXXX with your port)
-arduino-cli upload --fqbn arduino:avr:nano:cpu=atmega328old --port /dev/cu.usbserial-110 ./src/main/sketches/Blink
+% arduino-cli upload --fqbn ${BOARD} --port ${PORT} ${SKETCH}
 ```
 
 ### Common FQBNs for the visible boards
