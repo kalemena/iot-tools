@@ -120,6 +120,10 @@ UM NanoS3             esp32:esp32:um_nanos3
 ## Full example (one-liner)
 
 ```bash
-arduino-cli compile --fqbn arduino:avr:nano:cpu=atmega328old ./src/main/sketches/Blink \
-  && arduino-cli upload --fqbn arduino:avr:nano:cpu=atmega328old --port /dev/cu.usbserial-110 ./src/main/sketches/Blink
+% export BOARD=esp32:esp32:d1_mini32
+% export SKETCH=./kalemena/ti-dhome-web-relay-board/src/main/sketches/esp32-01-led/esp32-01-led.ino
+% export PORT=/dev/cu.usbserial-110
+
+% arduino-cli compile --fqbn ${BOARD} ${SKETCH} \
+  && arduino-cli upload --fqbn ${BOARD} --port ${PORT} ${SKETCH}
 ```
